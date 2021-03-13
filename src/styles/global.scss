@@ -1,0 +1,353 @@
+@import './utilities';
+@import './swiper';
+@import './icons';
+@import './helpers';
+@import './faq';
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+$primary-color: #dad7cd;
+$heading-color: white;
+$secondary-color: #dad7cd;
+$background-color: white ;
+$footer-color: rgba(19,19,19,1);
+
+$section-color: rgba(33,33,33,1);
+$section-alt-color: rgb(29, 30, 31);
+$section-title-color: white; 
+$section-subtitle-color: rgb(230 198 255 / 90%);
+
+$link-color: white;
+
+html {
+  min-height: 100vh; 
+  overflow-x: hidden;
+  background: $background-color;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $heading-color;
+  margin: 0;
+  font-family: 'Overpass';
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 12;
+}
+h1 { 
+  text-align: center;
+  font-weight: 700;
+}
+h2 {
+  color: $section-title-color;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: left;
+  text-transform: uppercase;
+  display: block;
+  font-size: 72px;
+  margin-left: -5px;
+  letter-spacing: 5px;
+    text-shadow: 2px 2px 5px #333;
+}
+h3 {
+  text-align: center;
+  color: rgba(255,255,255,0.8)
+}
+h5 { 
+  text-align: center;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  opacity: 0.5;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: $section-subtitle-color;
+  letter-spacing: 5px;
+
+}
+p {
+  margin: 0;
+  color: #999;
+  font-family: 'Roboto';
+  // text-align: center;
+}
+.subtext {
+  font-size: .80em;
+}
+a {
+  color: $link-color;
+  text-shadow: none;
+  text-decoration: none;
+  background-image: none;
+}
+header {
+  // position: relative;
+  background: none;
+  padding: 1rem 2rem;
+  top: 0;
+  width: 100%;
+  z-index: 99; 
+
+  .site-logo {
+    width: 50px;
+  }
+}
+iframe {
+  margin-bottom: 0px;
+}
+nav p {
+  margin-bottom: 20px;
+}
+ul {
+  margin-left: 0px;
+}
+
+section {
+  position: relative;
+  background: $section-color;
+  z-index: 1;
+  padding: 10rem 1rem;
+  min-height: 90vh;
+  min-height: 600px;
+  // text-align: center; 
+
+  .section-title {
+    h1 {
+      text-align: center;
+      margin-right: 12px;
+    }
+    p {
+      // text-align: center;
+      opacity: 0.8;
+    }
+  }
+  &:nth-child(odd) {
+    background: $section-alt-color;
+  }
+}
+
+.main-section {
+  // background-image: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-color: rgb(78, 78, 78);
+  color: white;
+  margin-top: -69px; 
+  text-align: center;
+  height: 80vh;
+  position: relative; 
+  z-index: -3;
+
+
+  h1 {
+    color: white;
+    transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    letter-spacing: 15px;
+    text-shadow: 2px 2px 5px #333;
+    opacity: 0.2;
+  }
+}
+
+
+nav {
+  display: inline; 
+  color: white;
+
+  ul {
+    margin-bottom: 0px;
+    li {
+      display: inline-block;
+      font-weight: 700;
+   color: white;
+      font-size: 16px;
+      width: 120px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+img {
+  margin-bottom: 0px;
+}
+.underline {
+  text-decoration: underline;
+}
+.bg-line {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  border-bottom: 4px dashed rgb(94, 102, 148);
+}
+.bg-dotted {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  border-top: 4px dotted rgb(94, 102, 148);
+}
+.bg-ridge {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  border: 4px inset rgb(94, 102, 148);
+}
+.bg-double {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  border-top: 4px double rgb(94, 102, 148);
+  height: 10px;
+  border-left: 4px solid rgb(94, 102, 148);
+  border-bottom: 4px double rgb(94, 102, 148);
+}
+
+.main {
+  position: relative;
+}
+.container {
+  margin: 2rem 2rem;
+}
+.layout {
+  margin: 3rem auto;
+  max-width: 1080px;
+  padding: 0 1rem;
+}
+.grid-container {
+  display: grid;
+  grid-row-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.logo-invert {
+  filter: invert(1);
+  }
+
+  #tsparticles {
+  position: absolute;
+    z-index: -3;
+}
+
+.video-banner {
+  min-height: 900px;
+  height: 100vh;
+  max-height: 100vh;
+  position: relative;
+  background: lightgray;
+  background: black;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  z-index: -4;
+}
+
+.video-banner::after {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    z-index: -3;
+}
+
+footer {
+  padding: 40px 0px;  
+  background: $footer-color;
+  grid-template-columns: 1fr 1fr 40px 2fr;
+  grid-template-rows: 100px 200px 100px;
+
+ .footer-copyright {
+   color:white;
+   font-size: 12px;
+ }
+
+ .site-logo {
+   text-align: left;
+   width: 50px;
+ }
+}
+
+.react-photo-gallery--gallery {
+  margin: 40px 0px;
+}
+
+.react-photo-gallery--gallery img {
+    position: relative;
+    max-width: 100%;
+    z-index: 1;
+    margin-bottom: 0px;
+    transition: all 0.2s;
+
+    // &:hover {
+    //   transform: scale(2.2);
+    //   z-index: 3;
+    //   border: 3px solid white;
+    //   box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+    // }
+}
+
+.MuiChip-root {
+  // color: white!important;
+  border-color: white !important;
+  background: #2d2e38 !important;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.MuiChip-label {
+  color: rgb(129 129 179) !important
+}
+//small 
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 24px;
+    padding: 0rem;
+  }
+  section {
+    padding: 0rem;
+  }
+}
+//md
+@media only screen and (max-width: 960px) {
+  section {
+    padding: 0rem;
+  }
+}
+//lg
+@media only screen and (max-width: 1280px) {
+  section {
+    padding: 4rem 1rem;
+  }
+}
+//xl
+@media only screen and (max-width: 1920px) {
+
+}
+
+.ytp-title-text {
+  display: none !important;
+}
