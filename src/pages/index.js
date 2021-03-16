@@ -33,6 +33,14 @@ import "swiper/components/scrollbar/scrollbar.scss"
 import "../styles/global.scss"
 import FsLightbox from "fslightbox-react"
 
+import Timeline from "@material-ui/lab/Timeline"
+import TimelineItem from "@material-ui/lab/TimelineItem"
+import TimelineSeparator from "@material-ui/lab/TimelineSeparator"
+import TimelineConnector from "@material-ui/lab/TimelineConnector"
+import TimelineContent from "@material-ui/lab/TimelineContent"
+import TimelineDot from "@material-ui/lab/TimelineDot"
+import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent"
+
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 
 export default function Home() {
@@ -87,7 +95,7 @@ export default function Home() {
   return (
     <Layout>
       <div class="main-section">
-        <h1>ERROLD TUMAQUE</h1>
+        {/* <h1>ERROLD TUMAQUE</h1> */}
         <Grid>
           <p>A full-stack web developer</p>
           <p>Photographer</p>
@@ -96,113 +104,76 @@ export default function Home() {
       </div>
 
       <section>
-        <div class="bg-line"></div>
-        <Container
-          maxWidth={"xl"}
-          data-sal="fade"
-          data-sal-duration="300"
-          data-sal-easing="ease"
-        >
+        {/* <div class="bg-line"></div> */}
+        <Container maxWidth={"xl"}>
           <Box class={"section-title"}>
             <h5>The Journey so Far</h5>
             <h2>TIMELINE</h2>
           </Box>
-          <Swiper
-            spaceBetween={40}
-            slidesPerView={1}
-            navigation
-            // centeredSlides
-            onSwiper={swiper => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
-            breakpoints={{
-              576: {
-                slidesPerView: 1,
-              },
-              768: {
-                slidesPerView: 2,
-              },
-              992: {
-                slidesPerView: 2,
-              },
-              1200: {
-                slidesPerView: 2,
-              },
-            }}
-          >
-            <SwiperSlide>
-              <img src={"./images/sites/pelican.jpg"}></img>
-              <img
-                class="logo logo-invert"
-                src={"./images/sites/pelican-logo.png"}
-              ></img>
-              <Grid
-                display={"flex"}
-                alignItems={"center"}
-                alignContent={"center"}
-                justify={"space-between"}
-              >
-                <h3>
-                  Pelican <span class="position">Web Developer</span>
-                </h3>
-              </Grid>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={"./images/sites/filmtools.jpg"}></img>
-              <img class="logo" src={"./images/sites/ft-logo.png"}></img>
-              <Grid
-                display={"flex"}
-                alignItems={"center"}
-                alignContent={"center"}
-                justify={"space-between"}
-              >
-                <h3>
-                  Filmtools <span class="position">Junior Web Developer</span>
-                </h3>
-              </Grid>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={"./images/sites/filmtools.jpg"}></img>
-              <img class="logo" src={"./images/sites/ft-logo.png"}></img>
-              <Grid
-                display={"flex"}
-                alignItems={"center"}
-                alignContent={"center"}
-                justify={"space-between"}
-              >
-                <h3>
-                  Freelance <span class="position">Web Developer</span>
-                </h3>
-              </Grid>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={"./images/sites/mab-digital.jpg"}></img>
-              <img class="logo" src={"./images/sites/mab-logo.png"}></img>
-              <Grid
-                display={"flex"}
-                alignItems={"center"}
-                alignContent={"center"}
-                justify={"space-between"}
-              >
-                <h3>
-                  MAB Digital{" "}
-                  <span class="position">Web Development Intern</span>
-                </h3>
-              </Grid>
-            </SwiperSlide>
-            <SwiperSlide>
-              <img src={"./images/sites/graduation.jpg"}></img>
-              <Grid
-                display={"flex"}
-                alignItems={"center"}
-                alignContent={"center"}
-                justify={"space-between"}
-              >
-                <h3>
-                  CSULB <span class="position">B.S. Computer Science</span>
-                </h3>
-              </Grid>
-            </SwiperSlide>
-          </Swiper>
+          <Box>
+            <Timeline>
+              <TimelineItem>
+                <TimelineOppositeContent>
+                  <Typography>2018 - Present</Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Typography>Pelican</Typography>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineOppositeContent>
+                  <Typography>2016 - Present</Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Typography>Freelance</Typography>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineOppositeContent>
+                  <Typography>2016 - 2018</Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Typography>Filmtools</Typography>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineOppositeContent>
+                  <Typography>2016 - 2018</Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Typography>MAB Digital</Typography>
+                </TimelineContent>
+              </TimelineItem>
+              <TimelineItem>
+                <TimelineOppositeContent>
+                  <Typography>2011 - 2016</Typography>
+                </TimelineOppositeContent>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent>
+                  <Typography>CSULB</Typography>
+                </TimelineContent>
+              </TimelineItem>
+            </Timeline>
+          </Box>
           <Grid
             container
             direction="row"
@@ -210,44 +181,52 @@ export default function Home() {
             alignItems={"flex-start"}
             justify={"flex-start"}
           >
-            <Grid item lg={"3"}>
-              <p>Front-End</p>
-              <div>
-                <Chip label="HTML5" />
-                <Chip label="CSS3" />
-                <Chip label="Javascript" />
-                <Chip label="JQuery" />
-                <Chip label="Bootstrap" />
-                <Chip label="Material UI" />
-                <Chip label="Flutter" />
-                <Chip label="React" />
-                <Chip label="Gatsby" />
-              </div>
+            <Grid item lg={"6"} xs={12}>
+              <Box mb={5}>
+                <p>Front-End</p>
+                <div>
+                  <Chip label="HTML5" />
+                  <Chip label="CSS3" />
+                  <Chip label="Javascript" />
+                  <Chip label="JQuery" />
+                  <Chip label="Bootstrap" />
+                  <Chip label="Material UI" />
+                  <Chip label="Flutter" />
+                  <Chip label="React" />
+                  <Chip label="Gatsby" />
+                </div>
+              </Box>
             </Grid>
-            <Grid item lg={"3"}>
-              <p>Back-End</p>
-              <div>
-                <Chip label="PHP" />
-                <Chip label="MySQL" />
-                <Chip label="MongoDB" />
-                <Chip label="NodeJS" />
-                <Chip label="AWS" />
-                <Chip label="Laravel" />
-              </div>
+            <Grid item lg={"6"} xs={12}>
+              <Box mb={5}>
+                <p>Back-End</p>
+                <div>
+                  <Chip label="PHP" />
+                  <Chip label="MySQL" />
+                  <Chip label="MongoDB" />
+                  <Chip label="NodeJS" />
+                  <Chip label="AWS" />
+                  <Chip label="Laravel" />
+                </div>
+              </Box>
             </Grid>
-            <Grid item lg={"3"}>
-              <p>CMS</p>
-              <div>
-                <Chip label="Wordpress" />
-                <Chip label="Magento" />
-              </div>
+            <Grid item lg={"6"} xs={12}>
+              <Box mb={5}>
+                <p>CMS</p>
+                <div>
+                  <Chip label="Wordpress" />
+                  <Chip label="Magento" />
+                </div>
+              </Box>
             </Grid>
-            <Grid item lg={"3"}>
-              <p>Editors</p>
-              <div>
-                <Chip label="Atom" />
-                <Chip label="VS Code" />
-              </div>
+            <Grid item lg={"6"} xs={12}>
+              <Box mb={5}>
+                <p>Editors</p>
+                <div>
+                  <Chip label="Atom" />
+                  <Chip label="VS Code" />
+                </div>
+              </Box>
             </Grid>
           </Grid>
         </Container>
@@ -256,12 +235,7 @@ export default function Home() {
       {/* Daily UI Designs */}
       <section>
         <div class="bg-dotted"></div>
-        <Container
-          maxWidth={"xl"}
-          data-sal="fade"
-          data-sal-duration="300"
-          data-sal-easing="ease"
-        >
+        <Container maxWidth={"xl"}>
           <Box class={"section-title"}>
             <h5>Modern ideas for pages that don't actually exist (yet)</h5>
             <h2>Daily UI Designs</h2>
@@ -283,7 +257,7 @@ export default function Home() {
                 slidesPerView: 2,
               },
               1200: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 slidesPerColumnFill: "row",
               },
             }}
@@ -352,7 +326,7 @@ export default function Home() {
 
       {/* Photography */}
       <section>
-        <div class="bg-ridge"></div>
+        {/* <div class="bg-ridge"></div> */}
         <Container maxWidth={"xl"}>
           <Box class={"section-title"}>
             <div
@@ -372,68 +346,55 @@ export default function Home() {
               <h2>PHOTOGRAPHY</h2>
             </div>
           </Box>
-          <div
-            div
-            data-sal="slide-up"
-            data-sal-duration="300"
-            data-sal-delay="200"
-            data-sal-easing="ease"
+          <Grid
+            container
+            direction={"row"}
+            alignContent={"centert"}
+            alignItems={"center"}
+            justify={"flex-start"}
+            spacing={2}
           >
-            <Swiper
-              spaceBetween={40}
-              navigation
-              onSwiper={swiper => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
-              breakpoints={{
-                576: {
-                  slidesPerView: 2,
-                },
-                768: {
-                  slidesPerView: 2,
-                },
-                992: {
-                  slidesPerColumn: 2,
-
-                  slidesPerView: 2,
-                },
-                1200: {
-                  slidesPerView: 2,
-                  slidesPerColumnFill: "row",
-                },
-              }}
-            >
-              <SwiperSlide>
+            <Grid item md={4} xs={12}>
+              <Box mb={5}>
                 <Link to="/weddings-engagements">
                   <img src={"./images/photography/weddings.jpg"}></img>
                   <h3>Weddings & Engagements</h3>
                 </Link>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Link to="/graduation-portraits">
-                  <img src={"./images/photography/grads.jpg"}></img>
-                  <h3>Graduation Portraits</h3>
-                </Link>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Link to="/portraits">
-                  <img src={"./images/photography/portraits.jpg"}></img>
-                  <h3>Portraits</h3>
-                </Link>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Link to="/companies">
-                  <img src={"./images/photography/companies.jpg"}></img>
-                </Link>
-                <h3>Companies</h3>
-              </SwiperSlide>
-              <SwiperSlide>
-                <Link to="/banquets-events">
-                  <img src={"./images/photography/events.jpg"}></img>
-                </Link>
-                <h3>Banquets & Events</h3>
-              </SwiperSlide>
-            </Swiper>
-          </div>
+              </Box>
+            </Grid>
+            <Grid item md={4} xs={12}>
+              <Box mb={5}>
+              <Link to="/graduation-portraits">
+                <img src={"./images/photography/grads.jpg"}></img>
+                <h3>Graduation Portraits</h3>
+              </Link>
+              </Box>
+            </Grid>
+            <Grid item md={4} xs={12}>
+              <Box mb={5}>
+              <Link to="/portraits">
+                <img src={"./images/photography/portraits.jpg"}></img>
+                <h3>Portraits</h3>
+              </Link>
+              </Box>
+            </Grid>
+            <Grid item md={4} xs={12}>
+              <Box mb={5}>
+              <Link to="/companies">
+                <img src={"./images/photography/companies.jpg"}></img>
+              </Link>
+              <h3>Companies</h3>
+              </Box>
+            </Grid>
+            <Grid item md={4} xs={12}>
+              <Box mb={5}>
+              <Link to="/banquets-events">
+                <img src={"./images/photography/events.jpg"}></img>
+              </Link>
+              <h3>Banquets & Events</h3>
+              </Box>
+            </Grid>
+          </Grid>
           <Box>
             <Grid
               container
@@ -461,12 +422,7 @@ export default function Home() {
 
       <section>
         <div class="bg-double"></div>
-        <Container
-          maxWidth={"xl"}
-          data-sal="slide-up"
-          data-sal-duration="300"
-          data-sal-easing="ease-out-back"
-        >
+        <Container maxWidth={"xl"}>
           <Box class={"section-title"}>
             <h5>Lights & Sounds</h5>
             <h2>MUSIC</h2>

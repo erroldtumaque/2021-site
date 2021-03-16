@@ -64,7 +64,6 @@ export default function Layout({ children }) {
                     alignItems={"right"}
                     justify={"flex-end"}
                   >
-                    <p>Hamburger</p>
                   </Grid>
                 </Grid>
               </Hidden>
