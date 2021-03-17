@@ -32,7 +32,7 @@ import "swiper/components/scrollbar/scrollbar.scss"
 
 import "../styles/global.scss"
 import FsLightbox from "fslightbox-react"
-
+import { sizing } from "@material-ui/system"
 import Timeline from "@material-ui/lab/Timeline"
 import TimelineItem from "@material-ui/lab/TimelineItem"
 import TimelineSeparator from "@material-ui/lab/TimelineSeparator"
@@ -95,11 +95,21 @@ export default function Home() {
   return (
     <Layout>
       <div class="main-section">
-        {/* <h1>ERROLD TUMAQUE</h1> */}
-        <Grid>
-          <p>A full-stack web developer</p>
-          <p>Photographer</p>
-          <p>Musician</p>
+        <Grid
+        className="h-full"
+          container
+          spacing={0}
+          align="center"
+          alignItems="centerh"
+          justify="center"
+          direction="column"
+        > 
+            <h1>ERROLD TUMAQUE</h1>
+            <Grid>
+              <p>Full-stack web developer</p>
+              <p>Photographer</p>
+              <p>Musician</p>
+            </Grid>
         </Grid>
       </div>
 
@@ -107,8 +117,22 @@ export default function Home() {
         {/* <div class="bg-line"></div> */}
         <Container maxWidth={"xl"}>
           <Box class={"section-title"}>
-            <h5>The Journey so Far</h5>
-            <h2>TIMELINE</h2>
+            <h5
+              data-sal="slide-up"
+              data-sal-duration="300"
+              data-sal-delay="300"
+              data-sal-easing="ease"
+            >
+              The Journey so Far
+            </h5>
+            <h2
+              data-sal="slide-down"
+              data-sal-duration="300"
+              data-sal-delay="200"
+              data-sal-easing="ease"
+            >
+              TIMELINE
+            </h2>
           </Box>
           <Box>
             <Timeline>
@@ -121,7 +145,16 @@ export default function Home() {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Typography>Pelican</Typography>
+                  <Box pb={5}>
+                    <img
+                      class="company-logo invert"
+                      src={"./images/sites/pelican-logo.png"}
+                    ></img>
+                    <Typography fontWeight={700}>
+                      <h4>Pelican Products Inc.</h4>
+                      <p>Web Developer/Designer</p>
+                    </Typography>
+                  </Box>
                 </TimelineContent>
               </TimelineItem>
               <TimelineItem>
@@ -133,7 +166,16 @@ export default function Home() {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Typography>Freelance</Typography>
+                  <Box pb={5}>
+                    <img
+                      class="company-logo invert"
+                      src={"./images/Errold-Logo.png"}
+                    ></img>
+                    <Typography>
+                      <h4>Freelance</h4>
+                      <p>Web Developer</p>
+                    </Typography>
+                  </Box>
                 </TimelineContent>
               </TimelineItem>
               <TimelineItem>
@@ -145,7 +187,18 @@ export default function Home() {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Typography>Filmtools</Typography>
+                  <Typography>
+                    <Box pb={5}>
+                      <img
+                        class="company-logo"
+                        src={"./images/sites/ft-logo.png"}
+                      ></img>
+                      <Typography>
+                        <h4>Filmtools</h4>
+                        <p>Junior Web Developer</p>
+                      </Typography>
+                    </Box>
+                  </Typography>
                 </TimelineContent>
               </TimelineItem>
               <TimelineItem>
@@ -157,7 +210,18 @@ export default function Home() {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Typography>MAB Digital</Typography>
+                  <Typography>
+                    <Box pb={5}>
+                      <img
+                        class="company-logo"
+                        src={"./images/sites/mab-logo.png"}
+                      ></img>
+                      <Typography>
+                        <h4>MAB Digital</h4>
+                        <p>Web Development Intern</p>
+                      </Typography>
+                    </Box>
+                  </Typography>
                 </TimelineContent>
               </TimelineItem>
               <TimelineItem>
@@ -169,7 +233,18 @@ export default function Home() {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent>
-                  <Typography>CSULB</Typography>
+                  <Typography>
+                    <Box pb={5}>
+                      <img
+                        class="company-logo invert"
+                        src={"./images/sites/csulb-logo.png"}
+                      ></img>
+                      <Typography>
+                        <h4>CSULBl</h4>
+                        <p>B.S. Computer Science</p>
+                      </Typography>
+                    </Box>
+                  </Typography>
                 </TimelineContent>
               </TimelineItem>
             </Timeline>
@@ -179,9 +254,9 @@ export default function Home() {
             direction="row"
             alignContent={"flex-start"}
             alignItems={"flex-start"}
-            justify={"flex-start"}
+            justify={"center"}
           >
-            <Grid item lg={"6"} xs={12}>
+            <Grid item lg={"4"} xs={12}>
               <Box mb={5}>
                 <p>Front-End</p>
                 <div>
@@ -197,7 +272,7 @@ export default function Home() {
                 </div>
               </Box>
             </Grid>
-            <Grid item lg={"6"} xs={12}>
+            <Grid item lg={"4"} xs={12}>
               <Box mb={5}>
                 <p>Back-End</p>
                 <div>
@@ -210,7 +285,15 @@ export default function Home() {
                 </div>
               </Box>
             </Grid>
-            <Grid item lg={"6"} xs={12}>
+          </Grid>
+          <Grid
+            container
+            direction="row"
+            alignContent={"flex-start"}
+            alignItems={"flex-start"}
+            justify={"center"}
+          >
+            <Grid item lg={"4"} xs={12}>
               <Box mb={5}>
                 <p>CMS</p>
                 <div>
@@ -219,7 +302,7 @@ export default function Home() {
                 </div>
               </Box>
             </Grid>
-            <Grid item lg={"6"} xs={12}>
+            <Grid item lg={"4"} xs={12}>
               <Box mb={5}>
                 <p>Editors</p>
                 <div>
@@ -309,16 +392,24 @@ export default function Home() {
           <Grid
             container
             direction={"row"}
-            alignContent={"flex-start"}
-            alignItems={"flex-start"}
-            justify={"flex-start"}
+            alignContent={"center"}
+            alignItems={"center"}
+            justify={"center"}
           >
-            <Grid item lg={"3"}>
-              <p>Design tools</p>
-              <div>
-                <SiAdobexd class="si-icon" />
-                <SiAdobeillustrator class="si-icon" />
-              </div>
+            <Grid
+              item
+              xs={"12"}
+              alignContent={"center"}
+              alignItems={"center"}
+              justify={"center"}
+            >
+              <Typography variant="p" align="center">
+                <p align="center">Design tools</p>
+                <div align="center">
+                  <SiAdobexd class="si-icon" />
+                  <SiAdobeillustrator class="si-icon" />
+                </div>
+              </Typography>
             </Grid>
           </Grid>
         </Container>
@@ -349,49 +440,74 @@ export default function Home() {
           <Grid
             container
             direction={"row"}
-            alignContent={"centert"}
+            alignContent={"center"}
             alignItems={"center"}
-            justify={"flex-start"}
-            spacing={2}
+            justify={"center"}
+            spacing={4}
           >
             <Grid item md={4} xs={12}>
               <Box mb={5}>
                 <Link to="/weddings-engagements">
-                  <img src={"./images/photography/weddings.jpg"}></img>
+                  <div class="album-container">
+                    <img
+                      class="album"
+                      src={"./images/photography/weddings.jpg"}
+                    ></img>
+                  </div>
                   <h3>Weddings & Engagements</h3>
                 </Link>
               </Box>
             </Grid>
             <Grid item md={4} xs={12}>
               <Box mb={5}>
-              <Link to="/graduation-portraits">
-                <img src={"./images/photography/grads.jpg"}></img>
-                <h3>Graduation Portraits</h3>
-              </Link>
+                <Link to="/graduation-portraits">
+                  <div class="album-container">
+                    <img
+                      class="album"
+                      src={"./images/photography/grads.jpg"}
+                    ></img>
+                  </div>
+                  <h3>Graduation Portraits</h3>
+                </Link>
               </Box>
             </Grid>
             <Grid item md={4} xs={12}>
               <Box mb={5}>
-              <Link to="/portraits">
-                <img src={"./images/photography/portraits.jpg"}></img>
-                <h3>Portraits</h3>
-              </Link>
+                <Link to="/portraits">
+                  <div class="album-container">
+                    <img
+                      class="album"
+                      src={"./images/photography/portraits.jpg"}
+                    ></img>
+                  </div>
+                  <h3>Portraits</h3>
+                </Link>
               </Box>
             </Grid>
             <Grid item md={4} xs={12}>
               <Box mb={5}>
-              <Link to="/companies">
-                <img src={"./images/photography/companies.jpg"}></img>
-              </Link>
-              <h3>Companies</h3>
+                <Link to="/companies">
+                  <div class="album-container">
+                    <img
+                      class="album"
+                      src={"./images/photography/companies.jpg"}
+                    ></img>
+                  </div>
+                </Link>
+                <h3>Companies</h3>
               </Box>
             </Grid>
             <Grid item md={4} xs={12}>
               <Box mb={5}>
-              <Link to="/banquets-events">
-                <img src={"./images/photography/events.jpg"}></img>
-              </Link>
-              <h3>Banquets & Events</h3>
+                <Link to="/banquets-events">
+                  <div class="album-container">
+                    <img
+                      class="album"
+                      src={"./images/photography/events.jpg"}
+                    ></img>
+                  </div>
+                </Link>
+                <h3>Banquets & Events</h3>
               </Box>
             </Grid>
           </Grid>
@@ -402,15 +518,17 @@ export default function Home() {
               alignItems={"flex-start"}
               justify={"flex-start"}
             >
-              <Grid item lg={4} xs={12}>
-                <p>Editing Tools:</p>
-                <SiAdobephotoshop class="si-icon" />
-                <SiAdobelightroomcc class="si-icon" />
+              <Grid item lg={12} xs={12}>
+                <p align="center">Editing Tools:</p>
+                <div align="center">
+                  <SiAdobephotoshop class="si-icon" />
+                  <SiAdobelightroomcc class="si-icon" />
+                </div>
               </Grid>
             </Grid>
           </Box>
           <Box mt={3}>
-            <p>
+            <p align="center">
               Interested in shooting with me? Don't be shy and{" "}
               <a class="underline" href="#">
                 contact me
@@ -445,7 +563,7 @@ export default function Home() {
                 slidesPerView: 3,
               },
               1200: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 slidesPerColumnFill: "row",
               },
             }}
@@ -484,21 +602,18 @@ export default function Home() {
           </Swiper>
 
           <Box mt={5}>
-            <Grid
-              container
-              // alignContent={"start"}
-              // alignItems={"start"}
-              justify={"start"}
-            >
-              <Grid item lg={6} xs={12}>
-                <p>Instruments:</p>
-                <Tooltip title="guitar" arrow>
-                  <GiGuitarHead class="gi-icon" alt="guitar" />
-                </Tooltip>
-                <GiGuitarBassHead class="gi-icon" alt="bass" />
-                <GiPianoKeys class="gi-icon" alt="piano" />
-                <GiDrum class="gi-icon" alt="drum" />
-                <GiMicrophone class="gi-icon" alt="microphone" />
+            <Grid container justify={"center"}>
+              <Grid item lg={12} xs={12}>
+                <p align="center">Instruments:</p>
+                <div align="center">
+                  <Tooltip title="guitar" arrow>
+                    <GiGuitarHead class="gi-icon" alt="guitar" />
+                  </Tooltip>
+                  <GiGuitarBassHead class="gi-icon" alt="bass" />
+                  <GiPianoKeys class="gi-icon" alt="piano" />
+                  <GiDrum class="gi-icon" alt="drum" />
+                  <GiMicrophone class="gi-icon" alt="microphone" />
+                </div>
               </Grid>
               {/* <Grid item lg={6} xs={12}>
                 <p>DAW of choice:</p>

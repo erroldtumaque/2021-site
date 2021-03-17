@@ -76,7 +76,6 @@ p {
   margin: 0;
   color: #999;
   font-family: 'Roboto';
-  // text-align: center;
 }
 .subtext {
   font-size: .80em;
@@ -88,7 +87,6 @@ a {
   background-image: none;
 }
 header {
-  // position: relative;
   background: none;
   padding: 1rem 2rem;
   top: 0;
@@ -145,16 +143,17 @@ section {
   position: relative; 
   z-index: -3;
 
-
   h1 {
-    color: white;
-    transform:  translateX(-50%) translateY(-50%) rotate(-90deg);
-    position: absolute;
-    top: 50%;
-    left: 2%;
-    letter-spacing: 15px;
+    color: $section-title-color;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  font-size: 72px;
+  margin-left: -5px;
+  letter-spacing: 5px;
     text-shadow: 2px 2px 5px #333;
-    opacity: 0.2;
   }
 }
 
@@ -179,6 +178,35 @@ nav {
 img {
   margin-bottom: 0px;
 }
+.album {
+  border: 4px solid rgba(255,255,255,0);
+  transition: 250ms all;
+
+   &:hover {
+      // margin-top: -20px;
+      transform: translateY(-10px);
+      z-index: 3;
+      border: 4px solid rgba(255,255,255,0.3);
+      border-radius: 4px;
+      box-shadow: 20px 20px 20px rgb(186 84 211 / 20%), -10px -10px 30px rgb(0 100 255 / 20%);
+    }
+}
+
+.album-container {
+  position: relative;
+}
+.album-container::before {
+  content:"";
+  background: rgba(255, 255, 255, 0.2);
+  display: block;
+  transform: skew(2deg);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -3;
+  top: -7px;
+}
+
 .underline {
   text-decoration: underline;
 }
