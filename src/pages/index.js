@@ -7,7 +7,6 @@ import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
 import Particles from "react-particles-js"
 import YouTube from "react-youtube"
-
 // Icons
 import { GiGuitarBassHead, GiGuitarHead, GiPianoKeys, GiDrum, GiMicrophone } from "react-icons/gi"
 import { ImFlickr3 } from "react-icons/im"
@@ -96,23 +95,22 @@ export default function Home() {
     <Layout>
       <div class="main-section">
         <Grid
-        className="h-full"
+          className="h-full"
           container
           spacing={0}
           align="center"
           alignItems="centerh"
           justify="center"
           direction="column"
-        > 
-            <h1>ERROLD TUMAQUE</h1>
-            <Grid>
-              <p>Full-stack web developer</p>
-              <p>Photographer</p>
-              <p>Musician</p>
-            </Grid>
+        >
+          <h1>ERROLD TUMAQUE</h1>
+          <Grid>
+            <p>Full-stack web developer</p>
+            <p>Photographer</p>
+            <p>Musician</p>
+          </Grid>
         </Grid>
       </div>
-
       <section>
         {/* <div class="bg-line"></div> */}
         <Container maxWidth={"xl"}>
@@ -539,13 +537,73 @@ export default function Home() {
       </section>
 
       <section>
-        <div class="bg-double"></div>
+        <div></div>
         <Container maxWidth={"xl"}>
           <Box class={"section-title"}>
             <h5>Lights & Sounds</h5>
             <h2>MUSIC</h2>
           </Box>
-          <Swiper
+          <Grid
+            container
+            direction={"row"}
+            alignContent={"center"}
+            alignItems={"center"}
+            justify={"center"}
+          >
+            <Grid item lg={2} justifyContent="center">
+            
+              <img
+                class="cover-art"
+                src={"./images/cover-art/is-everybody-going-crazy.jpg"}
+              ></img>
+            </Grid>
+            <Grid item lg={2}>
+              <img
+                class="cover-art"
+                src={"./images/cover-art/know-me.png"}
+              ></img>
+            </Grid>
+            <Grid item lg={2}>
+              <img
+                class="cover-art"
+                src={"./images/cover-art/get-your-wish.jpg"}
+              ></img>
+            </Grid>
+            <Grid item lg={2}>
+              <img class="cover-art" src={"./images/cover-art/stay.jpg"}></img>
+            </Grid>
+            <Grid item lg={2}>
+              <img
+                class="cover-art"
+                src={"./images/cover-art/sad-machine.jpg"}
+              ></img>
+            </Grid>
+            <Grid item lg={2}>
+              <img
+                class="cover-art"
+                src={"./images/cover-art/breathing.jpg"}
+              ></img>
+            </Grid>
+            <Grid item lg={2}>
+              <img
+                class="cover-art"
+                src={"./images/cover-art/la-la-lost.png"}
+              ></img>
+            </Grid>
+            <Grid item lg={2}>
+              <img
+                class="cover-art"
+                src={"./images/cover-art/babygirl.jpg"}
+              ></img>
+            </Grid>
+            <Grid item lg={2}>
+              <img
+                class="cover-art"
+                src={"./images/cover-art/before-he-cheats.jpg"}
+              ></img>
+            </Grid>
+          </Grid>
+          {/* <Swiper
             spaceBetween={40}
             navigation
             onSwiper={swiper => console.log(swiper)}
@@ -599,7 +657,7 @@ export default function Home() {
             <SwiperSlide>
               <YouTube videoId="3Z9vileQAmI" opts={opts} />
             </SwiperSlide>
-          </Swiper>
+          </Swiper> */}
 
           <Box mt={5}>
             <Grid container justify={"center"}>

@@ -92,6 +92,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 99; 
+  position: absolute;
 
   .site-logo {
     width: 50px;
@@ -132,7 +133,7 @@ section {
 }
 
 .main-section {
-  // background-image: url("https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260") !important;
+  background-image: url("../../static/images/bg/keyboard.jpg") !important;
   background-attachment: fixed !important;
   background-size: cover !important;
   background-color: rgb(78, 78, 78);
@@ -184,7 +185,18 @@ img {
 
    &:hover {
       // margin-top: -20px;
-      transform: translateY(-10px);
+      z-index: 3;
+      border: 4px solid rgba(255,255,255,0.3);
+      border-radius: 4px;
+      box-shadow: 20px 20px 20px rgb(186 84 211 / 20%), -10px -10px 30px rgb(0 100 255 / 20%);
+    }
+}
+.cover-art {
+  max-width: 200px;
+  margin: 0 auto;
+      border: 4px solid rgba(255,255,255,0);
+   &:hover {
+      // margin-top: -20px;
       z-index: 3;
       border: 4px solid rgba(255,255,255,0.3);
       border-radius: 4px;
@@ -197,7 +209,7 @@ img {
 }
 .album-container::before {
   content:"";
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
   display: block;
   transform: skew(2deg);
   position: absolute;
@@ -238,9 +250,6 @@ img {
   border-bottom: 4px double rgb(94, 102, 148);
 }
 
-.main {
-  position: relative;
-}
 .container {
   margin: 2rem 2rem;
 }
