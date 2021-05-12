@@ -1,0 +1,64 @@
+.company-logo {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+.invert {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.icon-flickr {
+  color: linear-gradient(to right, #eaee44, #eaee44 50%, #33d0ff 100%);
+}
+
+.io-icon, .si-icon, .im-icon, .gi-icon, .si-icon {
+  color: #fdfdfd;
+  font-size: 36px;
+  margin: 5px 10px;
+}
+
+.io-icon:hover, .si-icon:hover, .im-icon:hover, .gi-icon:hover, .si-icon:hover {
+  color: white;
+}
+
+.photoshop-icon {
+  color: #4FCCFE;
+}
+
+.xd-icon {
+  color: purple;
+}
+
+.ai-icon {
+  color: orange;
+}
+
+.nikon-icon {
+  max-width: 120px;
+}
+
+.g-red {
+  color: #BB001B;
+}
+
+.li-blue {
+  color: #2867B2;
+}
+
+.fb-blue {
+  color: #3b5998;
+}
+
+.ig-pink {
+  color: #c13584;
+}
+
+.github-purple {
+  color: #6e5494;
+}
+
+.footer-icon {
+  font-size: 24px;
+}
+/*# sourceMappingURL=icons.css.map */

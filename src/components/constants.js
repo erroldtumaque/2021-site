@@ -1,0 +1,1 @@
+export const CDN = "https://res.cloudinary.com/dtwcwprxv/image/upload/"

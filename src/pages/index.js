@@ -8,7 +8,13 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import Particles from "react-particles-js"
 import YouTube from "react-youtube"
 // Icons
-import { GiGuitarBassHead, GiGuitarHead, GiPianoKeys, GiDrum, GiMicrophone } from "react-icons/gi"
+import {
+  GiGuitarBassHead,
+  GiGuitarHead,
+  GiPianoKeys,
+  GiDrum,
+  GiMicrophone,
+} from "react-icons/gi"
 import { ImFlickr3 } from "react-icons/im"
 import {
   SiAdobexd,
@@ -40,10 +46,12 @@ import TimelineContent from "@material-ui/lab/TimelineContent"
 import TimelineDot from "@material-ui/lab/TimelineDot"
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent"
 
-SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
+import { CDN } from "../components/constants"
+//res.cloudinary.com/dtwcwprxv/image/upload/
+
+https: SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 
 export default function Home() {
-
   const [lightboxController, setLightboxController] = useState({
     toggler: false,
     slide: 1,
@@ -67,8 +75,7 @@ export default function Home() {
       },
       {
         title: "Best video games?",
-        content:
-          "Hollow Knight, Breath of the Wild, and Outer Wilds",
+        content: "Hollow Knight, Breath of the Wild, and Outer Wilds",
       },
     ],
   }
@@ -80,7 +87,7 @@ export default function Home() {
       autoplay: 0,
       controls: 0,
       showInfo: 0,
-      modestBranding: 1
+      modestBranding: 1,
     },
   }
 
@@ -146,7 +153,7 @@ export default function Home() {
                   <Box pb={5}>
                     <img
                       class="company-logo invert"
-                      src={"./images/sites/pelican-logo.png"}
+                      src={CDN + "sites/pelican-logo.png"}
                     ></img>
                     <Typography fontWeight={700}>
                       <h4>Pelican Products Inc.</h4>
@@ -167,7 +174,7 @@ export default function Home() {
                   <Box pb={5}>
                     <img
                       class="company-logo invert"
-                      src={"./images/Errold-Logo.png"}
+                      src={CDN + "Errold-Logo.png"}
                     ></img>
                     <Typography>
                       <h4>Freelance</h4>
@@ -189,7 +196,7 @@ export default function Home() {
                     <Box pb={5}>
                       <img
                         class="company-logo"
-                        src={"./images/sites/ft-logo.png"}
+                        src={CDN + "sites/ft-logo.png"}
                       ></img>
                       <Typography>
                         <h4>Filmtools</h4>
@@ -212,7 +219,7 @@ export default function Home() {
                     <Box pb={5}>
                       <img
                         class="company-logo"
-                        src={"./images/sites/mab-logo.png"}
+                        src={CDN + "sites/mab-logo.png"}
                       ></img>
                       <Typography>
                         <h4>MAB Digital</h4>
@@ -235,7 +242,7 @@ export default function Home() {
                     <Box pb={5}>
                       <img
                         class="company-logo invert"
-                        src={"./images/sites/csulb-logo.png"}
+                        src={CDN + "sites/csulb-logo.png"}
                       ></img>
                       <Typography>
                         <h4>CSULBl</h4>
@@ -344,45 +351,40 @@ export default function Home() {
             }}
           >
             <SwiperSlide onClick={() => openLightboxOnSlide(1)}>
-              <img class="img-ui" src={"./images/daily-ui/404.jpg"}></img>
+              <img class="img-ui" src={CDN + "daily-ui/search.jpg"}></img>
               <h3>404 Page</h3>
-              {/* <h3>404 Page</h3> */}
             </SwiperSlide>
             <SwiperSlide onClick={() => openLightboxOnSlide(2)}>
-              <img
-                class="img-ui"
-                src={"./images/daily-ui/credit-card.jpg"}
-              ></img>
+              <img class="img-ui" src={CDN + "daily-ui/credit-card.jpg"}></img>
               <h3>Credit Card Checkout</h3>
-              {/* <h3>Credit Card Checkout</h3> */}
             </SwiperSlide>
             <SwiperSlide onClick={() => openLightboxOnSlide(3)}>
-              <img class="img-ui" src={"./images/daily-ui/search.jpg"}></img>
+              <img class="img-ui" src={CDN + "daily-ui/search.jpg"}></img>
               {/* <h3>Search</h3> */}
               <h3>Search</h3>
             </SwiperSlide>
             <SwiperSlide onClick={() => openLightboxOnSlide(4)}>
               <img
                 class="img-ui"
-                src={"./images/daily-ui/direct-messaging.jpg"}
+                src={CDN + "daily-ui/direct-messaging.jpg"}
               ></img>
               <h3>Direct Messaging</h3>
             </SwiperSlide>
             <SwiperSlide onClick={() => openLightboxOnSlide(5)}>
               <img
                 class="img-ui"
-                src={"./images/daily-ui/flash-message.jpg"}
+                src={CDN + "daily-ui/flash-message.jpg"}
               ></img>
               <h3>Flash Message</h3>
             </SwiperSlide>
             <SwiperSlide onClick={() => openLightboxOnSlide(6)}>
-              <img class="img-ui" src={"./images/daily-ui/settings.jpg"}></img>
+              <img class="img-ui" src={CDN + "daily-ui/settings.jpg"}></img>
               <h3>Settings</h3>
             </SwiperSlide>
             <SwiperSlide onClick={() => openLightboxOnSlide(7)}>
               <img
                 class="img-ui"
-                src={"./images/daily-ui/landing-page-t.jpg"}
+                src={CDN + "daily-ui/landing-page-t.jpg"}
               ></img>
               <h3>Landing Page</h3>
             </SwiperSlide>
@@ -415,7 +417,6 @@ export default function Home() {
 
       {/* Photography */}
       <section>
-        {/* <div class="bg-ridge"></div> */}
         <Container maxWidth={"xl"}>
           <Box class={"section-title"}>
             <div
@@ -449,7 +450,7 @@ export default function Home() {
                   <div class="album-container">
                     <img
                       class="album"
-                      src={"./images/photography/weddings.jpg"}
+                      src={CDN + "photography/weddings.jpg"}
                     ></img>
                   </div>
                   <h3>Weddings & Engagements</h3>
@@ -462,7 +463,7 @@ export default function Home() {
                   <div class="album-container">
                     <img
                       class="album"
-                      src={"./images/photography/grads.jpg"}
+                      src={CDN + "photography/grads.jpg"}
                     ></img>
                   </div>
                   <h3>Graduation Portraits</h3>
@@ -475,7 +476,7 @@ export default function Home() {
                   <div class="album-container">
                     <img
                       class="album"
-                      src={"./images/photography/portraits.jpg"}
+                      src={CDN + "photography/portraits.jpg"}
                     ></img>
                   </div>
                   <h3>Portraits</h3>
@@ -488,7 +489,7 @@ export default function Home() {
                   <div class="album-container">
                     <img
                       class="album"
-                      src={"./images/photography/companies.jpg"}
+                      src={CDN + "photography/companies.jpg"}
                     ></img>
                   </div>
                 </Link>
@@ -501,7 +502,7 @@ export default function Home() {
                   <div class="album-container">
                     <img
                       class="album"
-                      src={"./images/photography/events.jpg"}
+                      src={CDN + "photography/events.jpg"}
                     ></img>
                   </div>
                 </Link>
@@ -536,7 +537,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section>
+      {/* <section>
         <div></div>
         <Container maxWidth={"xl"}>
           <Box class={"section-title"}>
@@ -551,113 +552,51 @@ export default function Home() {
             justify={"center"}
           >
             <Grid item lg={2} justifyContent="center">
-            
               <img
                 class="cover-art"
-                src={"./images/cover-art/is-everybody-going-crazy.jpg"}
+                src={CDN + "cover-art/is-everybody-going-crazy.jpg"}
+              ></img>
+            </Grid>
+            <Grid item lg={2}>
+              <img class="cover-art" src={CDN + "cover-art/know-me.png"}></img>
+            </Grid>
+            <Grid item lg={2}>
+              <img
+                class="cover-art"
+                src={CDN + "cover-art/get-your-wish.jpg"}
+              ></img>
+            </Grid>
+            <Grid item lg={2}>
+              <img class="cover-art" src={CDN + "cover-art/stay.jpg"}></img>
+            </Grid>
+            <Grid item lg={2}>
+              <img
+                class="cover-art"
+                src={CDN + "cover-art/sad-machine.jpg"}
               ></img>
             </Grid>
             <Grid item lg={2}>
               <img
                 class="cover-art"
-                src={"./images/cover-art/know-me.png"}
+                src={CDN + "cover-art/breathing.jpg"}
               ></img>
             </Grid>
             <Grid item lg={2}>
               <img
                 class="cover-art"
-                src={"./images/cover-art/get-your-wish.jpg"}
+                src={CDN + "cover-art/la-la-lost.png"}
               ></img>
             </Grid>
             <Grid item lg={2}>
-              <img class="cover-art" src={"./images/cover-art/stay.jpg"}></img>
+              <img class="cover-art" src={CDN + "cover-art/babygirl.jpg"}></img>
             </Grid>
             <Grid item lg={2}>
               <img
                 class="cover-art"
-                src={"./images/cover-art/sad-machine.jpg"}
-              ></img>
-            </Grid>
-            <Grid item lg={2}>
-              <img
-                class="cover-art"
-                src={"./images/cover-art/breathing.jpg"}
-              ></img>
-            </Grid>
-            <Grid item lg={2}>
-              <img
-                class="cover-art"
-                src={"./images/cover-art/la-la-lost.png"}
-              ></img>
-            </Grid>
-            <Grid item lg={2}>
-              <img
-                class="cover-art"
-                src={"./images/cover-art/babygirl.jpg"}
-              ></img>
-            </Grid>
-            <Grid item lg={2}>
-              <img
-                class="cover-art"
-                src={"./images/cover-art/before-he-cheats.jpg"}
+                src={CDN + "cover-art/before-he-cheats.jpg"}
               ></img>
             </Grid>
           </Grid>
-          {/* <Swiper
-            spaceBetween={40}
-            navigation
-            onSwiper={swiper => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
-            breakpoints={{
-              576: {
-                slidesPerView: 2,
-              },
-              768: {
-                slidesPerView: 2,
-              },
-              992: {
-                slidesPerColumn: 2,
-
-                slidesPerView: 3,
-              },
-              1200: {
-                slidesPerView: 3,
-                slidesPerColumnFill: "row",
-              },
-            }}
-          >
-            <SwiperSlide>
-              <YouTube videoId="lTr66MRNStA" opts={opts} />
-              <h3>Is Everybody Going Crazy?</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-              <YouTube videoId="ot57y2Cn6q8" opts={opts} />
-              <h3>Know Me</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-              <YouTube videoId="0tup7AN09S0" opts={opts} />
-              <h3>Get Your Wish</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-              <YouTube videoId="w5viZMC5y88" opts={opts} />
-              <h3>Sad Machine</h3>
-            </SwiperSlide>
-            <SwiperSlide>
-              <YouTube videoId="vJW-r-ScJY4" opts={opts} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <YouTube videoId="om6Bygc6p3Y" opts={opts} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <YouTube videoId="Zs3qOKOneAg" opts={opts} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <YouTube videoId="33OY3aZjNH8" opts={opts} />
-            </SwiperSlide>
-            <SwiperSlide>
-              <YouTube videoId="3Z9vileQAmI" opts={opts} />
-            </SwiperSlide>
-          </Swiper> */}
 
           <Box mt={5}>
             <Grid container justify={"center"}>
@@ -673,14 +612,10 @@ export default function Home() {
                   <GiMicrophone class="gi-icon" alt="microphone" />
                 </div>
               </Grid>
-              {/* <Grid item lg={6} xs={12}>
-                <p>DAW of choice:</p>
-                <img class="invert" src={"./images/logos/ableton.png"} />
-              </Grid> */}
             </Grid>
           </Box>
         </Container>
-      </section>
+      </section> */}
 
       <Footer></Footer>
     </Layout>
