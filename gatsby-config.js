@@ -1,28 +1,19 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
-
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: "Errold",
+    description:
+      "Web Developer | Photographyer | Musician",
+    url: "https://www.errold.com", 
+  },
   plugins: [
-     {
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          'Quattrocento Sans',
-          'overpass',
-          'pt sans',
-          'nunito',
-          'alegreya sans',
-          'playfair display',
-          'roboto'
-        ]
+        fonts: ["Overpass", "Roboto"],
       },
-      display: 'swap'
+      display: "swap",
     },
-     {
+    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
@@ -31,6 +22,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-scroll-reveal`
+    `gatsby-plugin-scroll-reveal`,
   ],
 }

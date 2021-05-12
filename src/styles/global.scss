@@ -9,15 +9,15 @@
 }
 
 $primary-color: #dad7cd;
-$heading-color: white;
+$heading-color: #333;
 $secondary-color: #dad7cd;
 $background-color: white ;
 $footer-color: rgba(19,19,19,1);
 
-$section-color: rgba(33,33,33,1);
-$section-alt-color: rgb(29, 30, 31);
-$section-title-color: white; 
-$section-subtitle-color: rgb(230 198 255 / 90%);
+$section-color: rgba(255,255,255,1);
+$section-alt-color: rgba(0,0,0,0.1);
+$section-title-color:  #333; 
+$section-subtitle-color: purple;
 
 $link-color: white;
 
@@ -55,11 +55,11 @@ h2 {
   font-size: 72px;
   margin-left: -5px;
   letter-spacing: 5px;
-    text-shadow: 2px 2px 5px #333;
+    // text-shadow: 2px 2px 5px #333;
 }
 h3 {
   text-align: center;
-  color: rgba(255,255,255,0.8)
+  color: $section-title-color;
 }
 h5 { 
   text-align: center;
@@ -352,7 +352,7 @@ footer {
 }
 
 .MuiChip-label {
-  color: rgb(129 129 179) !important
+  color: white;
 }
 //small 
 @media only screen and (max-width: 600px) {

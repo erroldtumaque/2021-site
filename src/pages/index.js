@@ -47,7 +47,6 @@ import TimelineDot from "@material-ui/lab/TimelineDot"
 import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent"
 
 import { CDN } from "../components/constants"
-//res.cloudinary.com/dtwcwprxv/image/upload/
 
 https: SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 
@@ -208,7 +207,7 @@ export default function Home() {
               </TimelineItem>
               <TimelineItem>
                 <TimelineOppositeContent>
-                  <Typography>2016 - 2018</Typography>
+                  <Typography>2015</Typography>
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineDot />
@@ -224,29 +223,6 @@ export default function Home() {
                       <Typography>
                         <h4>MAB Digital</h4>
                         <p>Web Development Intern</p>
-                      </Typography>
-                    </Box>
-                  </Typography>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent>
-                  <Typography>2011 - 2016</Typography>
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Typography>
-                    <Box pb={5}>
-                      <img
-                        class="company-logo invert"
-                        src={CDN + "sites/csulb-logo.png"}
-                      ></img>
-                      <Typography>
-                        <h4>CSULBl</h4>
-                        <p>B.S. Computer Science</p>
                       </Typography>
                     </Box>
                   </Typography>
