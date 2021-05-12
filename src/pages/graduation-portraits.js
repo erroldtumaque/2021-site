@@ -8,231 +8,233 @@ import Box from "@material-ui/core/Box"
 
 import Gallery from "react-photo-masonry"
 
+import { CDN } from "../components/constants"
+
 import "../styles/global.scss"
 
 export default function weddingsGallery() {
     const photos = [
       {
-        src: "../../images/photography/grads/grad-1.jpg",
+        src: CDN + "photography/grads/grad-1.jpg",
         width: 4,
         height: 6,
       },
       {
-        src: "../../images/photography/grads/grad-2.jpg",
+        src: CDN + "photography/grads/grad-2.jpg",
         width: 6,
         height: 4,
       },
       {
-        src: "../../images/photography/grads/grad-3.jpg",
+        src: CDN + "photography/grads/grad-3.jpg",
         width: 4,
         height: 6,
       },
       {
-        src: "../../images/photography/grads/grad-4.jpg",
+        src: CDN + "photography/grads/grad-4.jpg",
         width: 6,
         height: 4,
       },
       {
-        src: "../../images/photography/grads/grad-5.jpg",
+        src: CDN + "photography/grads/grad-5.jpg",
         width: 6,
         height: 4,
       },
       {
-        src: "../../images/photography/grads/grad-6.jpg",
+        src: CDN + "photography/grads/grad-6.jpg",
         width: 4,
         height: 6,
       },
       {
-        src: "../../images/photography/grads/grad-7.jpg",
+        src: CDN + "photography/grads/grad-7.jpg",
         width: 6,
         height: 4,
       },
       {
-        src: "../../images/photography/grads/grad-8.jpg",
+        src: CDN + "photography/grads/grad-8.jpg",
         width: 6,
         height: 4,
       },
       {
-        src: "../../images/photography/grads/grad-9.jpg",
+        src: CDN + "photography/grads/grad-9.jpg",
         width: 6,
         height: 4,
       },
       {
-        src: "../../images/photography/grads/grad-10.jpg",
+        src: CDN + "photography/grads/grad-10.jpg",
         width: 4,
         height: 6,
       },
       {
-        src: "../../images/photography/grads/grad-11.jpg",
+        src: CDN + "photography/grads/grad-11.jpg",
         width: 6,
         height: 4,
       },
       {
-        src: "../../images/photography/grads/grad-12.jpg",
+        src: CDN + "photography/grads/grad-12.jpg",
         width: 6,
         height: 4,
       },
       {
-        src: "../../images/photography/grads/grad-13.jpg",
+        src: CDN + "photography/grads/grad-13.jpg",
         width: 6,
         height: 4,
       },
       {
-        src: "../../images/photography/grads/grad-14.jpg",
+        src: CDN + "photography/grads/grad-14.jpg",
         width: 6,
         height: 4,
       },
       {
-        src: "../../images/photography/grads/grad-15.jpg",
+        src: CDN + "photography/grads/grad-15.jpg",
         width: 4,
         height: 6,
       },
       {
-        src: "../../images/photography/grads/grad-16.jpg",
+        src: CDN + "photography/grads/grad-16.jpg",
         width: 6,
         height: 4,
       },
       {
-        src: "../../images/photography/grads/grad-17.jpg",
+        src: CDN + "photography/grads/grad-17.jpg",
         width: 4,
         height: 6,
       },
       {
-        src: "../../images/photography/grads/grad-18.jpg",
+        src: CDN + "photography/grads/grad-18.jpg",
         width: 4,
         height: 6,
       },
       {
-        src: "../../images/photography/grads/grad-19.jpg",
+        src: CDN + "photography/grads/grad-19.jpg",
         width: 6,
         height: 4,
       },
       {
-        src: "../../images/photography/grads/grad-20.jpg",
+        src: CDN + "photography/grads/grad-20.jpg",
         width: 4,
         height: 6,
       },
       {
-        src: "../../images/photography/grads/grad-21.jpg",
+        src: CDN + "photography/grads/grad-21.jpg",
         width: 4,
         height: 6,
       },
       {
-        src: "../../images/photography/grads/grad-22.jpg",
+        src: CDN + "photography/grads/grad-22.jpg",
         width: 4,
         height: 6,
       },
       {
-        src: "../../images/photography/grads/grad-23.jpg",
+        src: CDN + "photography/grads/grad-23.jpg",
         width: 6,
         height: 4,
       },
       {
-        src: "../../images/photography/grads/grad-24.jpg",
+        src: CDN + "photography/grads/grad-24.jpg",
         width: 4,
         height: 6,
       },
       {
-        src: "../../images/photography/grads/grad-25.jpg",
+        src: CDN + "photography/grads/grad-25.jpg",
         width: 6,
         height: 4,
       }, {
-        src: "../../images/photography/grads/grad-26.jpg",
+        src: CDN + "photography/grads/grad-26.jpg",
         width: 4,
         height: 6,
       }, {
-        src: "../../images/photography/grads/grad-27.jpg",
+        src: CDN + "photography/grads/grad-27.jpg",
         width: 6,
         height: 4,
       }, {
-        src: "../../images/photography/grads/grad-28.jpg",
+        src: CDN + "photography/grads/grad-28.jpg",
         width: 6,
         height: 4,
       }, {
-        src: "../../images/photography/grads/grad-29.jpg",
+        src: CDN + "photography/grads/grad-29.jpg",
         width: 6,
         height: 4,
       }, {
-        src: "../../images/photography/grads/grad-30.jpg",
+        src: CDN + "photography/grads/grad-30.jpg",
         width: 4,
         height: 6,
       }, {
-        src: "../../images/photography/grads/grad-31.jpg",
+        src: CDN + "photography/grads/grad-31.jpg",
         width: 6,
         height: 4,
       }, {
-        src: "../../images/photography/grads/grad-32.jpg",
+        src: CDN + "photography/grads/grad-32.jpg",
         width: 6,
         height: 4,
       }, {
-        src: "../../images/photography/grads/grad-33.jpg",
+        src: CDN + "photography/grads/grad-33.jpg",
         width: 4,
         height: 6,
       },
       {
-        src: "../../images/photography/grads/grad-34.jpg",
+        src: CDN + "photography/grads/grad-34.jpg",
         width: 6,
         height: 4,
       },
        {
-        src: "../../images/photography/grads/grad-35.jpg",
+        src: CDN + "photography/grads/grad-35.jpg",
         width: 6,
         height: 4,
       },
        {
-        src: "../../images/photography/grads/grad-36.jpg",
+        src: CDN + "photography/grads/grad-36.jpg",
         width: 6,
         height: 4,
       },
        {
-        src: "../../images/photography/grads/grad-37.jpg",
+        src: CDN + "photography/grads/grad-37.jpg",
         width: 6,
         height: 4,
       },
        {
-        src: "../../images/photography/grads/grad-38.jpg",
+        src: CDN + "photography/grads/grad-38.jpg",
         width: 4,
         height: 6,
       },
        {
-        src: "../../images/photography/grads/grad-39.jpg",
+        src: CDN + "photography/grads/grad-39.jpg",
         width: 6,
         height: 4,
       },
        {
-        src: "../../images/photography/grads/grad-40.jpg",
+        src: CDN + "photography/grads/grad-40.jpg",
         width: 6,
         height: 4,
       },
        {
-        src: "../../images/photography/grads/grad-41.jpg",
+        src: CDN + "photography/grads/grad-41.jpg",
         width: 6,
         height: 4,
       }, {
-        src: "../../images/photography/grads/grad-42.jpg",
+        src: CDN + "photography/grads/grad-42.jpg",
         width: 6,
         height: 4,
       },
       {
-        src: "../../images/photography/grads/grad-43.jpg",
+        src: CDN + "photography/grads/grad-43.jpg",
         width: 6,
         height: 4,
       },
 
 {
-        src: "../../images/photography/grads/grad-44.jpg",
+        src: CDN + "photography/grads/grad-44.jpg",
         width: 6,
         height: 4,
       },
 
 {
-        src: "../../images/photography/grads/grad-45.jpg",
+        src: CDN + "photography/grads/grad-45.jpg",
         width: 6,
         height: 4,
       },
 
 {
-        src: "../../images/photography/grads/grad-46.jpg",
+        src: CDN + "photography/grads/grad-46.jpg",
         width: 4,
         height: 6,
       },
