@@ -109,7 +109,7 @@ export default function Home() {
           justify="center"
           direction="column"
         >
-          <img class="site-logo" src={"./images/errold-bracket-logo.png"} />
+          <img class="site-logo" src={CDN + "errold-bracket-logo.png"} />
           {/* <Grid>
             <p>Full-stack web developer</p>
             <p>Photographer</p>
