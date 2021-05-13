@@ -9,7 +9,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: ["Overpass", "Roboto"],
+        fonts: ["Krona One","Overpass", "Roboto"],
       },
       display: "swap",
     },

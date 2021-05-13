@@ -1,4 +1,4 @@
-$icons-color: #fdfdfd;
+$icons-color: #333;
 $icons-hover-color: white;
 
 .company-logo {
@@ -10,12 +10,13 @@ $icons-hover-color: white;
 }
 
 .icon-flickr {
-  color: linear-gradient(to right, 
-    #eaee44,  
-    #eaee44 50%, 
-    #33d0ff 100%);
+  color: linear-gradient(to right, #eaee44, #eaee44 50%, #33d0ff 100%);
 }
-.io-icon, .si-icon, .im-icon, .gi-icon , .si-icon {
+.io-icon,
+.si-icon,
+.im-icon,
+.gi-icon,
+.si-icon {
   color: $icons-color;
   font-size: 36px;
   margin: 5px 10px;
@@ -28,7 +29,7 @@ $icons-hover-color: white;
   }
 }
 .photoshop-icon {
-  color: #4FCCFE;
+  color: #4fccfe;
 }
 .xd-icon {
   color: purple;
@@ -41,18 +42,18 @@ $icons-hover-color: white;
 }
 
 .g-red {
-  color: #BB001B;
+  color: #bb001b;
 }
 
 .li-blue {
-  color: #2867B2;
+  color: #2867b2;
 }
 
 .fb-blue {
   color: #3b5998;
 }
 
-.ig-pink{
+.ig-pink {
   color: #c13584;
 }
 

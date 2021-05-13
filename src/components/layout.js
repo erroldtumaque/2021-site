@@ -49,9 +49,9 @@ export default function Layout({ children }) {
                           RESUME
                         </a>
                       </li> */}
-                      <li>
+                      {/* <li>
                         <a href="mailto:errold.tumaque@gmail.com">CONTACT</a>
-                      </li>
+                      </li> */}
                     </ul>
                   </Grid>
                 </Grid>

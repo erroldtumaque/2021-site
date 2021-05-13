@@ -12,18 +12,26 @@
   color: linear-gradient(to right, #eaee44, #eaee44 50%, #33d0ff 100%);
 }
 
-.io-icon, .si-icon, .im-icon, .gi-icon, .si-icon {
-  color: #fdfdfd;
+.io-icon,
+.si-icon,
+.im-icon,
+.gi-icon,
+.si-icon {
+  color: #333;
   font-size: 36px;
   margin: 5px 10px;
 }
 
-.io-icon:hover, .si-icon:hover, .im-icon:hover, .gi-icon:hover, .si-icon:hover {
+.io-icon:hover,
+.si-icon:hover,
+.im-icon:hover,
+.gi-icon:hover,
+.si-icon:hover {
   color: white;
 }
 
 .photoshop-icon {
-  color: #4FCCFE;
+  color: #4fccfe;
 }
 
 .xd-icon {
@@ -39,11 +47,11 @@
 }
 
 .g-red {
-  color: #BB001B;
+  color: #bb001b;
 }
 
 .li-blue {
-  color: #2867B2;
+  color: #2867b2;
 }
 
 .fb-blue {

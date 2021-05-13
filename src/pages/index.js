@@ -105,194 +105,209 @@ export default function Home() {
           container
           spacing={0}
           align="center"
-          alignItems="centerh"
+          alignItems="center"
           justify="center"
           direction="column"
         >
-          <h1>ERROLD TUMAQUE</h1>
-          <Grid>
+          <img class="site-logo" src={"./images/errold-bracket-logo.png"} />
+          {/* <Grid>
             <p>Full-stack web developer</p>
             <p>Photographer</p>
             <p>Musician</p>
-          </Grid>
+          </Grid> */}
         </Grid>
       </div>
       <section>
-        {/* <div class="bg-line"></div> */}
-        <Container maxWidth={"xl"}>
+        <Container maxWidth={"lg"}>
           <Box class={"section-title"}>
-            <h5
+            <h4
               data-sal="slide-up"
               data-sal-duration="300"
               data-sal-delay="300"
               data-sal-easing="ease"
             >
-              The Journey so Far
-            </h5>
+              Full Stack
+            </h4>
             <h2
               data-sal="slide-down"
               data-sal-duration="300"
               data-sal-delay="200"
               data-sal-easing="ease"
             >
-              TIMELINE
+              Web Developer
             </h2>
           </Box>
-          <Box>
-            <Timeline>
-              <TimelineItem>
-                <TimelineOppositeContent>
-                  <Typography>2018 - Present</Typography>
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Box pb={5}>
-                    <img
-                      class="company-logo invert"
-                      src={CDN + "sites/pelican-logo.png"}
-                    ></img>
-                    <Typography fontWeight={700}>
-                      <h4>Pelican Products Inc.</h4>
-                      <p>Web Developer/Designer</p>
-                    </Typography>
-                  </Box>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent>
-                  <Typography>2016 - Present</Typography>
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Box pb={5}>
-                    <img
-                      class="company-logo invert"
-                      src={CDN + "Errold-Logo.png"}
-                    ></img>
-                    <Typography>
-                      <h4>Freelance</h4>
-                      <p>Web Developer</p>
-                    </Typography>
-                  </Box>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent>
-                  <Typography>2016 - 2018</Typography>
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Typography>
-                    <Box pb={5}>
-                      <img
-                        class="company-logo"
-                        src={CDN + "sites/ft-logo.png"}
-                      ></img>
-                      <Typography>
-                        <h4>Filmtools</h4>
-                        <p>Junior Web Developer</p>
-                      </Typography>
-                    </Box>
-                  </Typography>
-                </TimelineContent>
-              </TimelineItem>
-              <TimelineItem>
-                <TimelineOppositeContent>
-                  <Typography>2015</Typography>
-                </TimelineOppositeContent>
-                <TimelineSeparator>
-                  <TimelineDot />
-                  <TimelineConnector />
-                </TimelineSeparator>
-                <TimelineContent>
-                  <Typography>
-                    <Box pb={5}>
-                      <img
-                        class="company-logo"
-                        src={CDN + "sites/mab-logo.png"}
-                      ></img>
-                      <Typography>
-                        <h4>MAB Digital</h4>
-                        <p>Web Development Intern</p>
-                      </Typography>
-                    </Box>
-                  </Typography>
-                </TimelineContent>
-              </TimelineItem>
-            </Timeline>
-          </Box>
-          <Grid
-            container
-            direction="row"
-            alignContent={"flex-start"}
-            alignItems={"flex-start"}
-            justify={"center"}
-          >
-            <Grid item lg={"4"} xs={12}>
-              <Box mb={5}>
-                <p>Front-End</p>
-                <div>
-                  <Chip label="HTML5" />
-                  <Chip label="CSS3" />
-                  <Chip label="Javascript" />
-                  <Chip label="JQuery" />
-                  <Chip label="Bootstrap" />
-                  <Chip label="Material UI" />
-                  <Chip label="Flutter" />
-                  <Chip label="React" />
-                  <Chip label="Gatsby" />
-                </div>
-              </Box>
-            </Grid>
-            <Grid item lg={"4"} xs={12}>
-              <Box mb={5}>
-                <p>Back-End</p>
-                <div>
+          <Box my={10}>
+            <Grid
+              container
+              alignContent="center"
+              alignItems="center"
+              justify=""
+            >
+              <Grid
+                item
+                lg={5}
+                md={6}
+                xs={12}
+                data-sal="slide-up"
+                data-sal-duration="300"
+                data-sal-easing="ease"
+                data-sal-delay="200"
+              >
+                <img
+                  class="site-logo"
+                  src={"./images/sites/isometric-pelican.png"}
+                />
+              </Grid>
+              <Grid item md={1}></Grid>
+              <Grid item md={5}>
+                <h5
+                  data-sal="slide-up"
+                  data-sal-duration="300"
+                  data-sal-easing="ease"
+                >
+                  Web Developer/Designer
+                </h5>
+                <h3>PELICAN PRODUCTS</h3>
+                <p>
+                  World's best case manufacturer. Weatherproof, dustproof,
+                  crushproof protection for guns, film equipment, and much more.{" "}
+                </p>
+                <Box mt={2}>
                   <Chip label="PHP" />
                   <Chip label="MySQL" />
-                  <Chip label="MongoDB" />
-                  <Chip label="NodeJS" />
-                  <Chip label="AWS" />
-                  <Chip label="Laravel" />
-                </div>
+                  <Chip label="Javascript" />
+                  <Chip label="Jquery" />
+                  <Chip label="Bootstrap" />
+                </Box>
+              </Grid>
+            </Grid>
+          </Box>
+
+          <Grid container alignContent="center" alignItems="center" justify="">
+            <Grid item lg={5}>
+              <h5>Web Developer</h5>
+              <h3>Filmtools</h3>
+              <p>
+                Motion picture and digital video equipment supplies with
+                eCommerce and brick and mortar store.
+              </p>
+              <Box mt={2}>
+                <Chip label="Magento 2" />
+                <Chip label="Magento Enterprise" />
+              </Box>
+            </Grid>
+            <Grid item lg={1}></Grid>
+            <Grid
+              item
+              lg={5}
+              xs={12}
+              data-sal="slide-up"
+              data-sal-duration="300"
+              data-sal-easing="ease"
+              data-sal-delay="200"
+            >
+              <img
+                class="site-logo"
+                src={"./images/sites/isometric-filmtools.png"}
+              />
+            </Grid>
+          </Grid>
+
+          <Grid container alignContent="center" alignItems="center" justify="">
+            <Grid
+              item
+              lg={5}
+              xs={3}
+              data-sal="slide-up"
+              data-sal-duration="300"
+              data-sal-easing="ease"
+              data-sal-delay="200"
+            >
+              <img
+                class="site-logo"
+                src={"./images/sites/isometric-pelican.png"}
+              />
+            </Grid>
+            <Grid item lg={1}></Grid>
+            <Grid item lg={5}>
+              <h5>Web Developer</h5>
+              <h3>MAB Digital</h3>
+              <p>
+                Full service digital brand agency based in Orange County
+                supporting fitness, health, and other local businesses.
+              </p>
+              <Box mt={2}>
+                <Chip label="HTML" />
+                <Chip label="CSS" />
+                <Chip label="Javascript" />
               </Box>
             </Grid>
           </Grid>
-          <Grid
-            container
-            direction="row"
-            alignContent={"flex-start"}
-            alignItems={"flex-start"}
-            justify={"center"}
-          >
-            <Grid item lg={"4"} xs={12}>
-              <Box mb={5}>
-                <p>CMS</p>
-                <div>
-                  <Chip label="Wordpress" />
-                  <Chip label="Magento" />
-                </div>
-              </Box>
+
+          <Box mt={10}>
+            <Grid
+              container
+              direction="row"
+              alignContent={"flex-start"}
+              alignItems={"flex-start"}
+              justify={"center"}
+            >
+              <Grid item lg={"6"} xs={12}>
+                <Box mb={5}>
+                  <p>Front-End</p>
+                  <div>
+                    <Chip label="HTML5" />
+                    <Chip label="CSS3" />
+                    <Chip label="Javascript" />
+                    <Chip label="JQuery" />
+                    <Chip label="Bootstrap" />
+                    <Chip label="Material UI" />
+                    <Chip label="Flutter" />
+                    <Chip label="React" />
+                    <Chip label="Gatsby" />
+                  </div>
+                </Box>
+              </Grid>
+              <Grid item lg={"6"} xs={12}>
+                <Box mb={5}>
+                  <p>Back-End</p>
+                  <div>
+                    <Chip label="MongoDB" />
+                    <Chip label="NodeJS" />
+                    <Chip label="AWS" />
+                    <Chip label="Laravel" />
+                  </div>
+                </Box>
+              </Grid>
             </Grid>
-            <Grid item lg={"4"} xs={12}>
-              <Box mb={5}>
-                <p>Editors</p>
-                <div>
-                  <Chip label="Atom" />
-                  <Chip label="VS Code" />
-                </div>
-              </Box>
+            <Grid
+              container
+              direction="row"
+              alignContent={"flex-start"}
+              alignItems={"flex-start"}
+              justify={"center"}
+            >
+              <Grid item lg={"6"} xs={12}>
+                <Box mb={5}>
+                  <p>CMS</p>
+                  <div>
+                    <Chip label="Wordpress" />
+                    <Chip label="Magento" />
+                  </div>
+                </Box>
+              </Grid>
+              <Grid item lg={"6"} xs={12}>
+                <Box mb={5}>
+                  <p>Editors</p>
+                  <div>
+                    <Chip label="Atom" />
+                    <Chip label="VS Code" />
+                  </div>
+                </Box>
+              </Grid>
             </Grid>
-          </Grid>
+          </Box>
         </Container>
       </section>
 
@@ -301,8 +316,8 @@ export default function Home() {
         <div class="bg-dotted"></div>
         <Container maxWidth={"xl"}>
           <Box class={"section-title"}>
-            <h5>Modern ideas for pages that don't actually exist (yet)</h5>
-            <h2>Daily UI Designs</h2>
+            <h4>Daily UI</h4>
+            <h2>Designs</h2>
           </Box>
           <Swiper
             spaceBetween={40}
@@ -382,8 +397,15 @@ export default function Home() {
               <Typography variant="p" align="center">
                 <p align="center">Design tools</p>
                 <div align="center">
-                  <SiAdobexd class="si-icon" />
-                  <SiAdobeillustrator class="si-icon" />
+                  <Chip
+                    avatar={<SiAdobexd class="logo-invert" />}
+                    label="Adobe XD"
+                  />
+                  <Chip
+                    avatar={<SiAdobeillustrator class="logo-invert" />}
+                    label="Adobe Illustrator"
+                  />
+                  <Chip label="Figma" />
                 </div>
               </Typography>
             </Grid>
@@ -401,7 +423,7 @@ export default function Home() {
               data-sal-delay="400"
               data-sal-easing="ease"
             >
-              <h5>Shots, everybody</h5>
+              <h4>Shots, everybody</h4>
             </div>
             <div
               data-sal="slide-down"

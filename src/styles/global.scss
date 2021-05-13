@@ -12,10 +12,11 @@ $primary-color: #dad7cd;
 $heading-color: #333;
 $secondary-color: #dad7cd;
 $background-color: white ;
-$footer-color: rgba(19,19,19,1);
+$footer-color: rgba(19,19,19,0.3);
+$h4-color: hsla(288,61%,60%,1);
 
-$section-color: rgba(255,255,255,1);
-$section-alt-color: rgba(0,0,0,0.1);
+$section-color: rgba(255,255,255,0.3);
+$section-alt-color: rgba(255,255,255,0.3);
 $section-title-color:  #333; 
 $section-subtitle-color: purple;
 
@@ -24,7 +25,14 @@ $link-color: white;
 html {
   min-height: 100vh; 
   overflow-x: hidden;
-  background: $background-color;
+background-color:#c299ff;
+  background-image:  
+    radial-gradient(at 7% 86%, hsla(269,89%,62%,1) 0, transparent 47%),  
+    radial-gradient(at 59% 13%, hsla(329,76%,64%,1) 0, transparent 52%),  
+    radial-gradient(at 11% 72%, hsla(276,75%,78%,1) 0, transparent 53%),  
+    radial-gradient(at 48% 91%, hsla(175,65%,67%,1) 0, transparent 44%),  
+    radial-gradient(at 59% 45%, hsla(203,86%,62%,1) 0, transparent 58%),  
+    radial-gradient(at 79% 36%, hsla(210,85%,72%,1) 0, transparent 44%);
 }
 
 body {
@@ -48,33 +56,43 @@ h1 {
 h2 {
   color: $section-title-color;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
   text-align: center;
   text-transform: uppercase;
   display: block;
   font-size: 72px;
   margin-left: -5px;
   letter-spacing: 5px;
+  
     // text-shadow: 2px 2px 5px #333;
 }
 h3 {
-  text-align: center;
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 24px;
+text-transform: uppercase;
   color: $section-title-color;
 }
-h5 { 
+h4 {
   text-align: center;
+  color: $h4-color;
+  font-weight: 700;
+  letter-spacing: 5px;
   text-transform: uppercase;
+
+}
+h5 { 
   font-family: 'Roboto';
   opacity: 0.5;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  letter-spacing: 2px;
   color: $section-subtitle-color;
-  letter-spacing: 5px;
 
 }
 p {
   margin: 0;
-  color: #999;
+  color: #333;
   font-family: 'Roboto';
 }
 .subtext {
@@ -96,6 +114,7 @@ header {
 
   .site-logo {
     width: 50px;
+    max-width: 100%;
   }
 }
 iframe {
@@ -108,13 +127,42 @@ ul {
   margin-left: 0px;
 }
 
+.main-section {
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  color: white;
+//   margin-top: -69px; 
+  text-align: center;
+  height: 40vh;
+  position: relative; 
+  z-index: -3;
+
+  h1 {
+  color: $section-title-color;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  font-size: 72px;
+  margin-left: -5px;
+  letter-spacing: 5px;
+    text-shadow: 2px 2px 5px #333;
+  }
+}
+
 section {
   position: relative;
   background: $section-color;
+  border-radius: 10px;
   z-index: 1;
-  padding: 10rem 1rem;
+  padding: 4rem 1rem;
   min-height: 90vh;
   min-height: 600px;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   // text-align: center; 
 
   .section-title {
@@ -132,31 +180,7 @@ section {
   }
 }
 
-.main-section {
-  background-image: url("../../static/images/bg/keyboard.jpg") !important;
-  background-attachment: fixed !important;
-  background-size: cover !important;
-  background-color: rgb(78, 78, 78);
-  color: white;
-  margin-top: -69px; 
-  text-align: center;
-  height: 80vh;
-  position: relative; 
-  z-index: -3;
 
-  h1 {
-    color: $section-title-color;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  display: block;
-  font-size: 72px;
-  margin-left: -5px;
-  letter-spacing: 5px;
-    text-shadow: 2px 2px 5px #333;
-  }
-}
 
 
 nav {
@@ -349,6 +373,7 @@ footer {
   background: #2d2e38 !important;
   margin-right: 10px;
   margin-top: 10px;
+  padding: 10px 20px !important;
 }
 
 .MuiChip-label {
