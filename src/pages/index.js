@@ -102,7 +102,7 @@ export default function Home() {
        <div className="application">
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Errold</title>
+          <title>Errold | Web Developer, Photographer, Musician</title>
           <link rel="canonical" href="https://www.errold.com" />
         </Helmet>
       </div>
@@ -332,8 +332,9 @@ export default function Home() {
               },
             }}
           >
+            
             <SwiperSlide onClick={() => openLightboxOnSlide(1)}>
-              <img class="img-ui" src={CDN + "daily-ui/search.jpg"}></img>
+              <img class="img-ui" src={CDN + "daily-ui/404.jpg"}></img>
               <h3>404 Page</h3>
             </SwiperSlide>
             <SwiperSlide onClick={() => openLightboxOnSlide(2)}>
@@ -425,80 +426,57 @@ export default function Home() {
               <h2>PHOTOGRAPHY</h2>
             </div>
           </Box>
-          <Grid
-            container
-            direction={"row"}
-            alignContent={"center"}
-            alignItems={"center"}
-            justify={"center"}
-            spacing={4}
+          <Swiper
+            spaceBetween={40}
+            slidesPerView={1}
+            navigation
+            onSwiper={swiper => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+            breakpoints={{
+              576: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              992: {
+                slidesPerView: 2,
+              },
+              1200: {
+                slidesPerView: 3,
+                slidesPerColumnFill: "row",
+              },
+            }}
           >
-            <Grid item md={4} xs={12}>
-              <Box mb={5}>
-                <Link to="/weddings-engagements">
-                  <div class="album-container">
-                    <img
-                      class="album"
-                      src={CDN + "photography/weddings.jpg"}
-                    ></img>
-                  </div>
-                  <h3>Weddings & Engagements</h3>
-                </Link>
-              </Box>
-            </Grid>
-            <Grid item md={4} xs={12}>
-              <Box mb={5}>
-                <Link to="/graduation-portraits">
-                  <div class="album-container">
-                    <img
-                      class="album"
-                      src={CDN + "photography/grads.jpg"}
-                    ></img>
-                  </div>
-                  <h3>Graduation Portraits</h3>
-                </Link>
-              </Box>
-            </Grid>
-            <Grid item md={4} xs={12}>
-              <Box mb={5}>
-                <Link to="/portraits">
-                  <div class="album-container">
-                    <img
-                      class="album"
-                      src={CDN + "photography/portraits.jpg"}
-                    ></img>
-                  </div>
-                  <h3>Portraits</h3>
-                </Link>
-              </Box>
-            </Grid>
-            <Grid item md={4} xs={12}>
-              <Box mb={5}>
-                <Link to="/companies">
-                  <div class="album-container">
-                    <img
-                      class="album"
-                      src={CDN + "photography/companies.jpg"}
-                    ></img>
-                  </div>
-                </Link>
-                <h3>Companies</h3>
-              </Box>
-            </Grid>
-            <Grid item md={4} xs={12}>
-              <Box mb={5}>
-                <Link to="/banquets-events">
-                  <div class="album-container">
-                    <img
-                      class="album"
-                      src={CDN + "photography/events.jpg"}
-                    ></img>
-                  </div>
-                </Link>
-                <h3>Banquets & Events</h3>
-              </Box>
-            </Grid>
-          </Grid>
+            <SwiperSlide onClick={() => openLightboxOnSlide(1)}>
+              <img class="img-ui" src={CDN + "photography/grads.jpg"}></img>
+              <h3>Graduation Portraits</h3>
+            </SwiperSlide>
+            <SwiperSlide onClick={() => openLightboxOnSlide(2)}>
+              <img class="img-ui" src={CDN + "photography/portraits.jpg"}></img>
+              <h3>Portraits</h3>
+            </SwiperSlide>
+            <SwiperSlide onClick={() => openLightboxOnSlide(3)}>
+              <img class="img-ui" src={CDN + "photography/weddings.jpg"}></img>
+              {/* <h3>Search</h3> */}
+              <h3>Weddings & Engagements</h3>
+            </SwiperSlide>
+            <SwiperSlide onClick={() => openLightboxOnSlide(4)}>
+              <img
+                class="img-ui"
+                src={CDN + "photography/companies.jpg"}
+              ></img>
+              <h3>Companies</h3>
+            </SwiperSlide>
+            <SwiperSlide onClick={() => openLightboxOnSlide(5)}>
+              <img
+                class="img-ui"
+                src={CDN + "photography/events.jpg"}
+              ></img>
+              <h3>Banquets & Events</h3>
+            </SwiperSlide>
+          </Swiper>
+          
           <Box>
             <Grid
               container
