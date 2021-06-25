@@ -25,14 +25,7 @@ $link-color: white;
 html {
   min-height: 100vh; 
   overflow-x: hidden;
-background-color:#c299ff;
-  background-image:  
-    radial-gradient(at 7% 86%, hsla(269,89%,62%,1) 0, transparent 47%),  
-    radial-gradient(at 59% 13%, hsla(329,76%,64%,1) 0, transparent 52%),  
-    radial-gradient(at 11% 72%, hsla(276,75%,78%,1) 0, transparent 53%),  
-    radial-gradient(at 48% 91%, hsla(175,65%,67%,1) 0, transparent 44%),  
-    radial-gradient(at 59% 45%, hsla(203,86%,62%,1) 0, transparent 58%),  
-    radial-gradient(at 79% 36%, hsla(210,85%,72%,1) 0, transparent 44%);
+background-color:lightgray;
 }
 
 body {
@@ -212,7 +205,6 @@ img {
       z-index: 3;
       border: 4px solid rgba(255,255,255,0.3);
       border-radius: 4px;
-      box-shadow: 20px 20px 20px rgb(186 84 211 / 20%), -10px -10px 30px rgb(0 100 255 / 20%);
     }
 }
 .cover-art {

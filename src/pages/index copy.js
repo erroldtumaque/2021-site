@@ -100,7 +100,22 @@ export default function Home() {
   return (
     <Layout>
       <div class="main-section">
-        
+        <Grid
+          className="h-full"
+          container
+          spacing={0}
+          align="center"
+          alignItems="center"
+          justify="center"
+          direction="column"
+        >
+          <img class="site-logo" src={CDN + "errold-bracket-logo.png"} />
+          {/* <Grid>
+            <p>Full-stack web developer</p>
+            <p>Photographer</p>
+            <p>Musician</p>
+          </Grid> */}
+        </Grid>
       </div>
       <section>
         <Container maxWidth={"lg"}>
