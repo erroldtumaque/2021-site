@@ -23,7 +23,7 @@ import {
   SiAdobelightroomcc,
 } from "react-icons/si"
 import { BiPhotoAlbum } from "react-icons/bi"
-
+import { Helmet } from "react-helmet"
 import Faq from "react-faq-component"
 
 // Material Components
@@ -99,8 +99,14 @@ export default function Home() {
 
   return (
     <Layout>
+       <div className="application">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Errold</title>
+          <link rel="canonical" href="https://www.errold.com" />
+        </Helmet>
+      </div>
       <div class="main-section">
-        
       </div>
       <section>
         <Container maxWidth={"lg"}>

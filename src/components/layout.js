@@ -1,14 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Grid, Hidden, Drawer, Menu, Container } from "@material-ui/core"
-import { spacing } from '@material-ui/system';
-
-const ListLink = props => (
-  <li>
-    <Link to={props.to}>{props.children}</Link>
-  </li>
-)
-
+import { Grid, Hidden, Container } from "@material-ui/core"
 
 export default function Layout({ children }) {
   return (
