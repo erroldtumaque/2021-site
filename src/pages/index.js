@@ -304,7 +304,6 @@ export default function Home() {
 
       {/* Daily UI Designs */}
       <section>
-        <div class="bg-dotted"></div>
         <Container maxWidth={"xl"}>
           <Box class={"section-title"}>
             <h4>Daily UI</h4>
