@@ -55,10 +55,9 @@ h2 {
 	font-size: 48px;
 	margin-left: -5px;
 	letter-spacing: 5px;
-
-	// text-shadow: 2px 2px 5px #333;
 }
 h3 {
+	bottom: 10px;
 	font-weight: 700;
 	font-size: 28px;
 	margin-bottom: 24px;
@@ -88,7 +87,10 @@ p {
 	font-family: 'Roboto';
 }
 .subtext {
+	margin-top: 2rem;
+	text-align: center;
 	font-size: .80em;
+	color: rgba(0,0,0,0.4);
 }
 a {
 	color: $link-color;
@@ -120,18 +122,28 @@ ul {
 }
 
 .main-section {
-	background-attachment: fixed !important;
-	background-size: cover !important;
+	background-size: 200% 200% !important;
 	background: #136a8a;	/* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #267871, #136a8a);	/* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+	background-position: 0% 0%;
 	color: white;
 	text-align: center;
 	height: 140px;
 	position: relative;
 	z-index: -3;
 	margin-bottom: -40px;
+
+	-webkit-animation-name: rotate;
+-webkit-animation-duration: 4s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-timing-function:linear;
+-moz-animation-name: rotate;
+-moz-animation-duration: 4s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-timing-function:linear;
+
+
 
 	h1 {
 	color: $section-title-color;
@@ -146,7 +158,17 @@ ul {
 	text-shadow: 2px 2px 5px #333;
 	}
 }
+@-webkit-keyframes rotate {
+	0% { background-position: 0% 0%; }
+	50% {  background-position: 100% 100%; }
+	100% { background-position: 0% 0%; }
+}
 
+@-moz-keyframes rotate {
+	0% { background-position: 0% 0%; }
+	50% {  background-position: 100% 100%; }
+	100% { background-position: 0% 0%; }
+}
 section {
 	position: relative;
 	background: $section-color;
@@ -155,7 +177,7 @@ section {
 	padding: 4rem 1rem;
 	min-height: 90vh;
 	min-height: 600px;
-	width: 90%;
+	max-width: 1440px;
 	margin: 0 auto;
 	margin-bottom: 3rem;
 
@@ -327,20 +349,25 @@ footer {
 	grid-template-columns: 1fr 1fr 40px 2fr;
 	grid-template-rows: 100px 200px 100px;
 
- .footer-copyright {
-	 color:white;
-	 font-size: 12px;
- }
+	.footer-copyright {
+		color:white;
+		font-size: 12px;
+	}
 
- .site-logo {
-	 text-align: left;
-	 width: 50px;
- }
+	.site-logo {
+		 text-align: left;
+		 width: 50px;
+	}
 
- ul li {
-	margin: 0px 8px;
-	display: inline-block;
- }
+	ul {
+		margin-bottom: 0px;
+	}
+
+	ul li {
+		font-size: 14px;
+		margin: 0px 8px;
+		display: inline-block;
+	}
 }
 
 .react-photo-gallery--gallery {
@@ -365,6 +392,12 @@ footer {
 
 .MuiChip-label {
 	color: white;
+}
+
+.MuiChip-avatar {
+	color: white !important;
+	background: rgba(0,0,0,0.03);
+	padding: 1px;
 }
 //small
 @media only screen and (max-width: 600px) {

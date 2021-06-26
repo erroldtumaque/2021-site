@@ -115,66 +115,57 @@ export default function Home() {
 				</h4>
 				<h2 data-sal="slide-down" data-sal-duration="300" data-sal-delay="200" data-sal-easing="ease">Web Developer
 				</h2>
-				</Box>
+			</Box>
 			<Box my={10}>
-				<Grid container alignContent="center" alignItems="center" justify="">
-					<Grid item lg={5} md={6} xs={12} data-sal="slide-up" data-sal-duration="300" data-sal-easing="ease" data-sal-delay="200">
-					<img class="site-logo" src={"./images/sites/isometric-pelican.png"}/>
+				<Grid container alignContent="center" alignItems="center" spacing={1}>
+					<Grid item lg={6}>
+						<img class="site-logo" src={"./images/sites/isometric-pelican.png"}/>
+						<h5>Web Developer/Designer</h5>
+						<h3>PELICAN PRODUCTS</h3>
+						<p>World's best case manufacturer. Weatherproof, dustproof, crushproof protection for guns, film equipment, and much more.{" "}</p>
+						<Box mt={2}>
+							<Chip label="PHP" />
+							<Chip label="MySQL" />
+							<Chip label="Javascript" />
+							<Chip label="Jquery" />
+							<Chip label="Bootstrap" />
+						</Box>
 					</Grid>
-					<Grid item md={1}></Grid>
-					<Grid item md={5}>
-					<h5 data-sal="slide-up" data-sal-duration="300" data-sal-easing="ease">
-						Web Developer/Designer
-					</h5>
-					<h3>PELICAN PRODUCTS</h3>
-					<p>World's best case manufacturer. Weatherproof, dustproof, crushproof protection for guns, film equipment, and much more.{" "}</p>
-					<Box mt={2}>
-						<Chip label="PHP" />
-						<Chip label="MySQL" />
-						<Chip label="Javascript" />
-						<Chip label="Jquery" />
-						<Chip label="Bootstrap" />
-					</Box>
+					<Grid item lg={6}>
+						<img class="site-logo" src={"./images/sites/isometric-filmtools.png"} />
+						<h5>Web Developer</h5>
+						<h3>Filmtools</h3>
+						<p>Motion picture and digital video equipment supplies with eCommerce and brick and mortar store.</p>
+						<Box mt={2}>
+							<Chip label="Magento 2" />
+							<Chip label="Magento Enterprise" />
+						</Box>
+					</Grid>
+					<Grid item lg={6}>
+						<img class="site-logo" src={"./images/sites/isometric-filmtools.png"} />
+						<h5>Web Developer</h5>
+						<h3>Freelance</h3>
+						<p>Motion picture and digital video equipment supplies with eCommerce and brick and mortar store.</p>
+						<Box mt={2}>
+							<Chip label="Magento 2" />
+							<Chip label="Magento Enterprise" />
+						</Box>
+					</Grid>
+					<Grid item lg={6}>
+						<img class="site-logo" src={"./images/sites/isometric-pelican.png"} />
+						<h5>Web Developer</h5>
+						<h3>MAB Digital</h3>
+						<p>Full service digital brand agency based in Orange County supporting fitness, health, and other local businesses.</p>
+						<Box mt={2}>
+							<Chip label="HTML" />
+							<Chip label="CSS" />
+							<Chip label="Javascript" />
+						</Box>
 					</Grid>
 				</Grid>
 			</Box>
-			<Grid container alignContent="center" alignItems="center" justify="">
-				<Grid item lg={5}>
-					<h5>Web Developer</h5>
-					<h3>Filmtools</h3>
-					<p>
-					Motion picture and digital video equipment supplies with
-					eCommerce and brick and mortar store.
-					</p>
-					<Box mt={2}>
-						<Chip label="Magento 2" />
-						<Chip label="Magento Enterprise" />
-					</Box>
-				</Grid>
-				<Grid item lg={1}></Grid>
-				<Grid item lg={5} xs={12} data-sal="slide-up" data-sal-duration="300" data-sal-easing="ease" data-sal-delay="200">
-					<img class="site-logo" src={"./images/sites/isometric-filmtools.png"} />
-				</Grid>
-			</Grid>
-			<Grid container alignContent="center" alignItems="center" justify="">
-				<Grid item lg={5} xs={3} data-sal="slide-up" data-sal-duration="300" data-sal-easing="ease" data-sal-delay="200">
-					<img class="site-logo" src={"./images/sites/isometric-pelican.png"} />
-				</Grid>
-				<Grid item lg={1}></Grid>
-				<Grid item lg={5}>
-					<h5>Web Developer</h5>
-					<h3>MAB Digital</h3>
-					<p>Full service digital brand agency based in Orange County supporting fitness, health, and other local businesses.
-					</p>
-					<Box mt={2}>
-						<Chip label="HTML" />
-						<Chip label="CSS" />
-						<Chip label="Javascript" />
-					</Box>
-				</Grid>
-			</Grid>
 			<Box mt={10}>
-				<Grid container direction="row" alignContent={"flex-start"} alignItems={"flex-start"}justify={"center"}>
+				{/* <Grid container direction="row" alignContent={"flex-start"} alignItems={"flex-start"}justify={"center"}>
 					<Grid item lg={"6"} xs={12}>
 						<Box mb={5}>
 							<p>Front-End</p>
@@ -202,6 +193,7 @@ export default function Home() {
 							</div>
 						</Box>
 					</Grid>
+
 				</Grid>
 				<Grid container direction="row" alignContent={"flex-start"} alignItems={"flex-start"} justify={"center"}>
 					<Grid item lg={"6"} xs={12}>
@@ -223,11 +215,12 @@ export default function Home() {
 						</Box>
 					</Grid>
 				</Grid>
+				*/}
 			</Box>
 		</Container>
 		</section>
 		<section>
-		<Container maxWidth={"xl"}>
+		<Container maxWidth={"lg"}>
 			<Box class={"section-title"}>
 				<h4>Daily UI</h4>
 				<h2>Designs</h2>
@@ -274,18 +267,7 @@ export default function Home() {
 					<h3>Landing Page</h3>
 				</SwiperSlide>
 			</Swiper>
-			<Grid container direction={"row"} alignContent={"center"} alignItems={"center"} justify={"center"}>
-				<Grid item xs={"12"} alignContent={"center"} alignItems={"center"}justify={"center"}>
-					<Typography variant="p" align="center">
-					<p align="center">Design tools</p>
-					<div align="center">
-						<Chip avatar={<SiAdobexd/>} label="Adobe XD"/>
-						<Chip avatar={<SiAdobeillustrator />} label="Adobe Illustrator" />
-						<Chip label="Figma" />
-					</div>
-					</Typography>
-				</Grid>
-			</Grid>
+			<p class="subtext">Designed with Adobe XD, Adobe Illustrator and Figma</p>
 		</Container>
 		</section>
 		<section>
@@ -312,26 +294,37 @@ export default function Home() {
 					}}
 				>
 					<SwiperSlide onClick={() => openLightboxOnSlide(1)}>
-						<img class="img-ui" src={CDN + "photography/grads.jpg"} alt="grads"></img>
-						<h3>Graduation Portraits</h3>
+						<Link to="/graduation-portraits">
+							<img class="img-ui" src={CDN + "photography/grads.jpg"} alt="grads"></img>
+							<h3>Graduation Portraits</h3>
+						</Link>
 					</SwiperSlide>
 					<SwiperSlide onClick={() => openLightboxOnSlide(2)}>
-						<img class="img-ui" src={CDN + "photography/portraits.jpg"} alt="portraits"></img>
-						<h3>Portraits</h3>
+						<Link to="/portraits">
+							<img class="img-ui" src={CDN + "photography/portraits.jpg"} alt="portraits"></img>
+							<h3>Portraits</h3>
+						</Link>
 					</SwiperSlide>
 					<SwiperSlide onClick={() => openLightboxOnSlide(3)}>
-						<img class="img-ui" src={CDN + "photography/weddings.jpg"} alt="weddings"></img>
-						<h3>Weddings & Engagements</h3>
+						<Link to="/weddings-engagements">
+							<img class="img-ui" src={CDN + "photography/weddings.jpg"} alt="weddings"></img>
+							<h3>Weddings & Engagements</h3>
+						</Link>
 					</SwiperSlide>
 					<SwiperSlide onClick={() => openLightboxOnSlide(4)}>
-						<img class="img-ui" src={CDN + "photography/companies.jpg"} alt="companies"></img>
-						<h3>Companies</h3>
+						<Link to="/companies">
+							<img class="img-ui" src={CDN + "photography/companies.jpg"} alt="companies"></img>
+							<h3>Companies</h3>
+						</Link>
 					</SwiperSlide>
 					<SwiperSlide onClick={() => openLightboxOnSlide(5)}>
-						<img class="img-ui" src={CDN + "photography/events.jpg"} alt="events"></img>
-						<h3>Banquets & Events</h3>
+						<Link to="/banquets-events">
+							<img class="img-ui" src={CDN + "photography/events.jpg"} alt="events"></img>
+							<h3>Banquets & Events</h3>
+						</Link>
 					</SwiperSlide>
 				</Swiper>
+				<p class="subtext">Shot with Nikon D750</p>
 			</Container>
 		</section>
 		<Footer></Footer>
