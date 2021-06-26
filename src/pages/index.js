@@ -225,15 +225,16 @@ export default function Home() {
 				<h4>Daily UI</h4>
 				<h2>Designs</h2>
 			</Box>
-			<Swiper spaceBetween={40}slidesPerView={1} navigation
+			<Swiper spaceBetween={40} slidesPerView={1} navigation
+				pagination={{"clickable": true}}
 				onSwiper={swiper => console.log(swiper)}
 				onSlideChange={() => console.log("slide change")}
 				breakpoints={{
 					576: { slidesPerView: 2, },
 					768: { slidesPerView: 2, },
-					992: { slidesPerView: 2, },
+					992: { slidesPerView: 1, },
 					1200: {
-						slidesPerView: 3,
+						slidesPerView: 2,
 						slidesPerColumnFill: "row",
 					},
 				}}
@@ -280,15 +281,16 @@ export default function Home() {
 						<h2>PHOTOGRAPHY</h2>
 					</div>
 				</Box>
-				<Swiper spaceBetween={40} slidesPerView={1} navigation
+				<Swiper spaceBetween={40} slidesPerView={2} navigation
 					onSwiper={swiper => console.log(swiper)}
 					onSlideChange={() => console.log("slide change")}
+					pagination={{"clickable": true}}
 					breakpoints={{
-						576: { slidesPerView: 2,},
-						768: { slidesPerView: 2,},
-						992: {slidesPerView: 2,},
+						576: { slidesPerView: 1,},
+						768: { slidesPerView: 1,},
+						992: {slidesPerView: 1,},
 						1200: {
-							slidesPerView: 3,
+							slidesPerView: 2,
 							slidesPerColumnFill: "row",
 						},
 					}}
