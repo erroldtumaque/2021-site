@@ -1,15 +1,15 @@
 .company-logo {
-	max-width: 200px;
-	max-height: 100px;
+  max-width: 200px;
+  max-height: 100px;
 }
 
 .invert {
-	-webkit-filter: invert(1);
-			filter: invert(1);
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .icon-flickr {
-	color: linear-gradient(to right, #eaee44, #eaee44 50%, #33d0ff 100%);
+  color: linear-gradient(to right, #eaee44, #eaee44 50%, #33d0ff 100%);
 }
 
 .io-icon,
@@ -17,9 +17,9 @@
 .im-icon,
 .gi-icon,
 .si-icon {
-	color: #333;
-	font-size: 36px;
-	margin: 5px 10px;
+  color: #333;
+  font-size: 36px;
+  margin: 5px 10px;
 }
 
 .io-icon:hover,
@@ -27,46 +27,46 @@
 .im-icon:hover,
 .gi-icon:hover,
 .si-icon:hover {
-	color: white;
+  color: white;
 }
 
 .photoshop-icon {
-	color: #4fccfe;
+  color: #4fccfe;
 }
 
 .xd-icon {
-	color: purple;
+  color: purple;
 }
 
 .ai-icon {
-	color: orange;
+  color: orange;
 }
 
 .nikon-icon {
-	max-width: 120px;
+  max-width: 120px;
 }
 
 .g-red {
-	color: #bb001b;
+  color: #bb001b;
 }
 
 .li-blue {
-	color: #2867b2;
+  color: #2867b2;
 }
 
 .fb-blue {
-	color: #3b5998;
+  color: #3b5998;
 }
 
 .ig-pink {
-	color: #c13584;
+  color: #c13584;
 }
 
 .github-purple {
-	color: #6e5494;
+  color: #6e5494;
 }
 
 .footer-icon {
-	font-size: 24px;
+  font-size: 24px;
 }
 /*# sourceMappingURL=icons.css.map */

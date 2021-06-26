@@ -1,44 +1,44 @@
 .faq-body {
-	text-align: center !important;
-	margin-top: 2rem !important;
-	padding: 10px !important;
+  text-align: center !important;
+  margin-top: 2rem !important;
+  padding: 10px !important;
 }
 
 .faq-row-wrapper {
-	background: none !important;
+  background: none !important;
 }
 
 .faq-row-wrapper .row-title {
-	-webkit-box-pack: center !important;
-		-ms-flex-pack: center !important;
-			justify-content: center !important;
-	background: white;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  background: white;
 }
 
 .faq-row-wrapper .faq-title {
-	border-bottom: 0px !important;
-	background: none;
+  border-bottom: 0px !important;
+  background: none;
 }
 
 .faq-row-wrapper h2 {
-	font-size: 72px !important;
-	margin: 0 auto !important;
+  font-size: 72px !important;
+  margin: 0 auto !important;
 }
 
 .faq-row-wrapper .faq-row {
-	background: white;
+  background: white;
 }
 
 .faq-row-wrapper .row-title-text {
-	background: white;
-	font-weight: 600;
-	font-size: 24px;
-	padding: 20px 10px !important;
+  background: white;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 20px 10px !important;
 }
 
 .faq-row-wrapper .row-content-text {
-	font-weight: 400;
-	font-size: 18px;
-	padding: 0px 10px 20px 10px !important;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0px 10px 20px 10px !important;
 }
 /*# sourceMappingURL=faq.css.map */
