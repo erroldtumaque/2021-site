@@ -49,7 +49,7 @@ h1 {
 h2 {
 	color: $section-title-color;
 	font-weight: 700;
-	margin-bottom: 4rem;
+	margin-bottom: 1rem;
 	text-align: center;
 	text-transform: uppercase;
 	display: block;
@@ -159,8 +159,6 @@ section {
 	width: 90%;
 	margin: 0 auto;
 	margin-bottom: 6rem;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-	// text-align: center;
 
 	.section-title {
 	h1 {
@@ -176,9 +174,6 @@ section {
 	background: $section-alt-color;
 	}
 }
-
-
-
 
 nav {
 	display: inline;
@@ -383,14 +378,14 @@ footer {
 //small
 @media only screen and (max-width: 600px) {
 	h2 {
-	font-size: 28px;
+		font-size: 28px;
 	}
 	h5 {
-	font-size: 14px;
-	padding: 0rem;
+		font-size: 14px;
+		padding: 0rem;
 	}
 	section {
-	padding: 0rem;
+		padding: 0rem;
 	}
 }
 //md
