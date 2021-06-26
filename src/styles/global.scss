@@ -11,12 +11,12 @@
 $primary-color: #dad7cd;
 $heading-color: #333;
 $secondary-color: #dad7cd;
-$background-color: white ;
+$background-color:#f4f4f4 ;
 $footer-color: #212121;
 $h4-color:#136a8a;
 
 $section-color: rgba(255,255,255,1);
-$section-alt-color: rgba(255,255,255,0.3);
+$section-alt-color: rgba(255,255,255,1);
 $section-title-color:	#333;
 $section-subtitle-color: #267871;
 
@@ -25,7 +25,7 @@ $link-color: white;
 html {
 	min-height: 100vh;
 	overflow-x: hidden;
-	background-color:#f8f8f8;
+	background-color:$background-color;
 }
 
 body {
@@ -49,7 +49,6 @@ h1 {
 h2 {
 	color: $section-title-color;
 	font-weight: 700;
-	margin-bottom: 1rem;
 	text-align: center;
 	text-transform: uppercase;
 	display: block;
@@ -158,7 +157,7 @@ section {
 	min-height: 600px;
 	width: 90%;
 	margin: 0 auto;
-	margin-bottom: 6rem;
+	margin-bottom: 3rem;
 
 	.section-title {
 	h1 {
@@ -354,17 +353,9 @@ footer {
 	z-index: 1;
 	margin-bottom: 0px;
 	transition: all 0.2s;
-
-	// &:hover {
-	//	 transform: scale(2.2);
-	//	 z-index: 3;
-	//	 border: 3px solid white;
-	//	 box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-	// }
 }
 
 .MuiChip-root {
-	// color: white!important;
 	border-color: white !important;
 	background: #66a579 !important;
 	margin-right: 10px;

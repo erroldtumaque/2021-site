@@ -279,14 +279,8 @@ export default function Home() {
 					<Typography variant="p" align="center">
 					<p align="center">Design tools</p>
 					<div align="center">
-						<Chip
-						avatar={<SiAdobexd class="logo-invert" />}
-						label="Adobe XD"
-						/>
-						<Chip
-						avatar={<SiAdobeillustrator class="logo-invert" />}
-						label="Adobe Illustrator"
-						/>
+						<Chip avatar={<SiAdobexd/>} label="Adobe XD"/>
+						<Chip avatar={<SiAdobeillustrator />} label="Adobe Illustrator" />
 						<Chip label="Figma" />
 					</div>
 					</Typography>
@@ -338,20 +332,6 @@ export default function Home() {
 						<h3>Banquets & Events</h3>
 					</SwiperSlide>
 				</Swiper>
-				<Box>
-					<Grid container alignContent={"flex-start"} alignItems={"flex-start"}justify={"flex-start"}>
-						<Grid item lg={12} xs={12}>
-						<p align="center">Editing Tools:</p>
-						<div align="center">
-							<SiAdobephotoshop class="si-icon" />
-							<SiAdobelightroomcc class="si-icon" />
-						</div>
-						</Grid>
-					</Grid>
-				</Box>
-				<Box mt={3}>
-					<p align="center">Interested in shooting with me? Don't be shy and <a class="underline" href="#">contact me</a></p>
-				</Box>
 			</Container>
 		</section>
 		<Footer></Footer>

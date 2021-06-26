@@ -14,7 +14,6 @@ $position-color: #aaa;
 	transition: 250ms all;
 	overflow: visible;
 
-
 	&:hover {
 		img {
 			z-index: 3;
@@ -49,30 +48,30 @@ $position-color: #aaa;
 	}
 
 	iframe {
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-	transition: all 0.3s;
-
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		transition: all 0.3s;
 	}
 
 	h3 {
-	opacity: 0;
-	bottom: 15px;
-	z-index: 4;
-	margin-top: 5px;
-	margin-bottom: 0px;
-	margin-left: 5px;
-	font-family: 'Roboto';
-	font-weight: 500;
-	color: #333;
-	letter-spacing: 1px;
-	transition: all 0.3s;
-	display: block;
-	text-transform: capitalize;
-	.position {
+		opacity: 1;
+		bottom: 15px;
+		z-index: 4;
+		margin-top: 5px;
+		margin-bottom: 0px;
 		margin-left: 5px;
-		color: $position-color;
-		font-size: 75%;
-	}
+		font-family: 'Roboto';
+		font-weight: 500;
+		color: #333;
+		letter-spacing: 1px;
+		transition: all 0.3s;
+		display: block;
+		text-transform: capitalize;
+
+		.position {
+			margin-left: 5px;
+			color: $position-color;
+			font-size: 75%;
+		}
 
 	&:first-of-type {
 	font-family: 'Overpass';
