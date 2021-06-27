@@ -70,7 +70,6 @@ h4 {
 	font-weight: 700;
 	letter-spacing: 5px;
 	text-transform: uppercase;
-
 }
 h5 {
 	font-family: 'Roboto';
@@ -124,8 +123,8 @@ ul {
 .main-section {
 	background-size: 200% 200% !important;
 	background: #136a8a;	/* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #267871, #136a8a);	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: -webkit-linear-gradient(to right, #7ebfba, #136a8a);	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #7ebfba, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	background-position: 0% 0%;
 	color: white;
 	text-align: center;
@@ -135,14 +134,13 @@ ul {
 	margin-bottom: -40px;
 
 	-webkit-animation-name: rotate;
--webkit-animation-duration: 4s;
--webkit-animation-iteration-count:infinite;
--webkit-animation-timing-function:linear;
--moz-animation-name: rotate;
--moz-animation-duration: 4s;
--moz-animation-iteration-count:infinite;
--moz-animation-timing-function:linear;
-
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -moz-animation-name: rotate;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
 
 
 	h1 {
@@ -180,7 +178,7 @@ section {
 	max-width: 1440px;
 	margin: 0 auto;
 	margin-bottom: 3rem;
-
+	overflow-x: hidden;
 	.section-title {
 	h1 {
 		text-align: center;
