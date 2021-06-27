@@ -1,10 +1,12 @@
 :root {
-    --dual-shadow: 20px 20px 20px rgb(186 84 211 / 20%), -10px -10px 30px rgb(0 100 255 / 20%);
+	--dual-shadow: 20px 20px 20px rgb(186 84 211 / 20%), -10px -10px 30px rgb(0 100 255 / 20%);
 }
 $position-color: #aaa;
+$bullet-color: #87aabb !important;
 
 .swiper-container {
 	overflow: visible !important;
+	margin: 20px 0px;
 }
 .swiper-wrapper {
 	padding: 20px 0px;
@@ -17,37 +19,37 @@ $position-color: #aaa;
 	transition: 250ms all;
 	overflow: visible;
 
-    .zoom-container {
-	    transition: 250ms all;
-        overflow: hidden;
+	.zoom-container {
+		transition: 250ms all;
+		overflow: hidden;
 		border-radius: 10px;
 		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
-        p {
-            color: white;
-            opacity: 0;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            letter-spacing: 2px;
-            transform: translate(-50%,-50%);
-            z-index: 10;
-        }
-    }
+		p {
+			color: white;
+			opacity: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			letter-spacing: 2px;
+			transform: translate(-50%,-50%);
+			z-index: 10;
+		}
+	}
 
 	&:hover {
-        .zoom-container {
+		.zoom-container {
 			box-shadow: var(--dual-shadow);
 
-            p {
-                opacity: 1;
-            }
-        }
+			p {
+				opacity: 1;
+			}
+		}
 		img {
-            filter: brightness(0.5) blur(3px);
-        }
+			filter: brightness(0.5) blur(3px);
+		}
 		iframe {
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 		}
 		h3 {
 			opacity: 1;
@@ -64,10 +66,10 @@ $position-color: #aaa;
 		margin-bottom: -10px;
 		cursor: pointer;
 		transition: all 0.2s;
-        &:hover {
-            transition: 0.3s;
-            transform: scale(1.05);
-        }
+		&:hover {
+			transition: 0.3s;
+			transform: scale(1.05);
+		}
 	}
 
 	iframe {
@@ -112,8 +114,8 @@ $position-color: #aaa;
 	}
 }
 
-.swiper-pagination-bullet-active {
-	background: #58c79d !important;
+.swiper-pagination-bullet {
+	background: $bullet-color;
 }
 .swiper-button-prev, .swiper-button-next {
 }
@@ -123,10 +125,10 @@ $position-color: #aaa;
 }
 
 .swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
-    bottom: -24px !important;
-    z-index: 9;
+	bottom: -32px !important;
+	z-index: 9;
 }
 
 :root {
-	--swiper-theme-color: white !important;
+	--swiper-theme-color: #87aabb !important;
 }

@@ -10,6 +10,9 @@ import { Helmet } from "react-helmet"
 
 import { Container} from "@material-ui/core"
 import { MdPhotoLibrary, MdZoomOutMap } from "react-icons/md";
+import { FiCamera } from "react-icons/fi";
+
+
 import Box from "@material-ui/core/Box"
 
 import "swiper/swiper.scss"
@@ -50,93 +53,98 @@ export default function Home() {
 	return (
 	<Layout>
 		<div className="application">
-		<Helmet>
-			<meta charSet="utf-8" />
-			<title>Errold | Web Developer, Photographer, Musician</title>
-			<link rel="canonical" href="https://www.errold.com" />
-		</Helmet>
+			<Helmet>
+				<meta charSet="utf-8" />
+				<title>Errold | Web Developer, Photographer, Musician</title>
+				<link rel="canonical" href="https://www.errold.com" />
+			</Helmet>
 		</div>
-		<div class="main-section"><Particles
-	params={{
-		"particles": {
-			"number": {
-				"value": 10
-			},
-			"size": {
-				"value": 3
-			}
-		},
-		"interactivity": {
-			"events": {
-				"onhover": {
-					"enable": true,
-					"mode": "repulse"
-				}
-			}
-		}
-	}} /></div>
+		<div class="animated-bar">
+			<Particles
+				params={{
+					"particles": {
+						"number": {
+							"value": 10
+						},
+						"size": {
+							"value": 3
+						}
+					},
+					"interactivity": {
+						"events": {
+							"onhover": {
+								"enable": true,
+								"mode": "repulse"
+							}
+						}
+					}
+				}}
+			/>
+		</div>
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-				<h4 data-sal="slide-up"	data-sal-duration="300"data-sal-delay="300" data-sal-easing="ease">Full-Stack</h4>
-				<h2 data-sal="slide-down" data-sal-duration="300" data-sal-delay="200" data-sal-easing="ease">Web Developer</h2>
+				<h4 data-sal="slide-up">Full-Stack</h4>
+				<h2 data-sal="slide-down" data-sal-delay="200">Web Developer</h2>
 				</Box>
 				<Swiper
-				spaceBetween={15}
-				slidesPerView={3}
-				navigation={false}
-				pagination={{ clickable: true }}
-				onSwiper={swiper => console.log(swiper)}
-				onSlideChange={() => console.log("slide change")}
-				// effect={'coverflow'}
-				// centeredSlides={true}
-				coverflowEffect={{
-				  "rotate": 50,
-				  "stretch": 0,
-				  "depth": 100,
-				  "modifier": 1,
-				  "slideShadows": false
-				}}
-				breakpoints={{
-					576: { slidesPerView: 2 },
-					768: { slidesPerView: 2 },
-					992: { slidesPerView: 2 },
-					1200: {
-					slidesPerView: 3,
-					slidesPerColumnFill: "row",
-					},
-				}}
+					data-sal="fade" data-sal-duration="600" data-sal-delay="300"
+					spaceBetween={15}
+					slidesPerView={3}
+					navigation={false}
+					initialSlide={1}
+					pagination={{ clickable: true }}
+					onSwiper={swiper => console.log(swiper)}
+					onSlideChange={() => console.log("slide change")}
+					effect={'coverflow'}
+					centeredSlides={true}
+					coverflowEffect={{
+					  "rotate": 50,
+					  "stretch": 0,
+					  "depth": 100,
+					  "modifier": 1,
+					  "slideShadows": false
+					}}
+					breakpoints={{
+						576: { slidesPerView: 2 },
+						768: { slidesPerView: 2 },
+						992: { slidesPerView: 2 },
+						1200: {
+						slidesPerView: 3,
+						slidesPerColumnFill: "row",
+						},
+					}}
 				>
-					<SwiperSlide onClick={() => openLightboxOnSlide(1)}>
-						<div class="zoom-container">
-							<img class="site-logo"src={"./images/sites/pelican.jpg"} alt="pelican products"/>
-							<p><MdZoomOutMap /><br></br>Learn More</p>
-							</div>
-							<h3>Pelican Products Inc.</h3>
-							<h4>Web Developer/Designer</h4>
-					</SwiperSlide>
 					<SwiperSlide onClick={() => openLightboxOnSlide(2)}>
 						<div class="zoom-container">
-							<img class="site-logo"src={"./images/sites/filmtools.jpg"} alt="filmtools"/>
+							<img src={"./images/sites/filmtools.jpg"} alt="filmtools"/>
 							<p><MdZoomOutMap /><br></br>Learn More</p>
 						</div>
 						<h3>Filmtools</h3>
-						<h4>Web Developer</h4>
+						<h5>Web Developer</h5>
+					</SwiperSlide>
+					<SwiperSlide onClick={() => openLightboxOnSlide(1)}>
+						<div class="zoom-container">
+							<img src={"./images/sites/pelican.jpg"} alt="pelican products"/>
+							<p><MdZoomOutMap /><br></br>Learn More</p>
+						</div>
+						<h3>Pelican Products Inc.</h3>
+						<h5>Web Developer/Designer</h5>
 					</SwiperSlide>
 					<SwiperSlide onClick={() => openLightboxOnSlide(3)}>
 						<div class="zoom-container">
-							<img class="site-logo"src={"./images/sites/mab-digital.jpg"} alt="mab digital"/>
+							<img src={"./images/sites/mab-digital.jpg"} alt="mab digital"/>
 							<p><MdZoomOutMap /><br></br>Learn More</p>
 						</div>
 						<h3>MAB Digital</h3>
-						<h4>Web Developer</h4>
+						<h5>Web Developer</h5>
 					</SwiperSlide>
 				</Swiper>
 				<p class="subtext">Freelance work for</p>
 
 				{/* <Grid container alignContent="center" alignItems="center" spacing={1}>
 					<Grid item lg={6}>
-					<img class="site-logo"src={"./images/sites/isometric-pelican.png"}/>
+					<img src={"./images/sites/isometric-pelican.png"}/>
 					<h5>Web Developer/Designer</h5>
 					<h3>PELICAN PRODUCTS</h3>
 					<p> World's best case manufacturer. Weatherproof, dustproof, crushproof protection for guns, film equipment, and much more.</p>
@@ -150,7 +158,7 @@ export default function Home() {
 					</Grid>
 					<Grid item lg={6}>
 					<img
-						class="site-logo"
+
 						src={"./images/sites/isometric-filmtools.png"}
 					/>
 					<h5>Web Developer</h5>
@@ -166,7 +174,7 @@ export default function Home() {
 					</Grid>
 					<Grid item lg={6}>
 					<img
-						class="site-logo"
+
 						src={"./images/sites/isometric-filmtools.png"}
 					/>
 					<h5>Web Developer</h5>
@@ -181,7 +189,7 @@ export default function Home() {
 					</Box>
 					</Grid>
 					<Grid item lg={6}>
-					<img class="site-logo" src={"./images/sites/isometric-pelican.png"}/>
+					<img  src={"./images/sites/isometric-pelican.png"}/>
 					<h5>Web Developer</h5>
 					<h3>MAB Digital</h3>
 					<p>Full service digital brand agency based in Orange County supporting fitness, health, and other local businesses.</p>
@@ -198,34 +206,35 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-				<h4 data-sal="slide-up"	data-sal-duration="300"data-sal-delay="300" data-sal-easing="ease">Daily UI</h4>
-				<h2 data-sal="slide-down"	data-sal-duration="300"data-sal-delay="300" data-sal-easing="ease">Designs</h2>
+				<h4 data-sal="slide-up">Daily UI</h4>
+				<h2 data-sal="slide-down" data-sal-delay="200">Designs</h2>
 				</Box>
 				<Swiper
-				spaceBetween={0}
-				slidesPerView={3}
-				navigation={false}
-				initialSlide={1}
-				pagination={{ clickable: true }}
-				onSwiper={swiper => console.log(swiper)}
-				effect={'coverflow'}
-				centeredSlides={true}
-				coverflowEffect={{
-				  "rotate": 50,
-				  "stretch": 0,
-				  "depth": 100,
-				  "modifier": 1,
-				  "slideShadows": false
-				}}
-				breakpoints={{
-					576: { slidesPerView: 2 },
-					768: { slidesPerView: 2 },
-					992: { slidesPerView: 2 },
-					1200: {
-					slidesPerView: 3,
-					slidesPerColumnFill: "row",
-					},
-				}}
+					data-sal="fade" data-sal-duration="600" data-sal-delay="300"
+					spaceBetween={0}
+					slidesPerView={3}
+					navigation={false}
+					initialSlide={1}
+					pagination={{ clickable: true }}
+					onSwiper={swiper => console.log(swiper)}
+					effect={'coverflow'}
+					centeredSlides={true}
+					coverflowEffect={{
+					  "rotate": 50,
+					  "stretch": 0,
+					  "depth": 100,
+					  "modifier": 1,
+					  "slideShadows": false
+					}}
+					breakpoints={{
+						576: { slidesPerView: 2 },
+						768: { slidesPerView: 2 },
+						992: { slidesPerView: 2 },
+						1200: {
+						slidesPerView: 3,
+						slidesPerColumnFill: "row",
+						},
+					}}
 				>
 					<SwiperSlide onClick={() => openLightboxOnSlide(1)}>
 						<div class="zoom-container">
@@ -280,16 +289,17 @@ export default function Home() {
 				<p class="subtext">Designed with Adobe XD, Adobe Illustrator and Figma</p>
 			</Container>
 		</section>
+
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-				<div data-sal="slide-up" data-sal-duration="300" data-sal-delay="400"data-sal-easing="ease"><h4>Shoots & </h4></div>
-				<div data-sal="slide-down" data-sal-duration="300" data-sal-delay="200" data-sal-easing="ease">
+				<div data-sal="slide-up"><h4>Shoots & </h4></div>
+				<div data-sal="slide-down" data-sal-delay="200">
 					<h2>PHOTOGRAPHY</h2>
 				</div>
 				</Box>
 				<Swiper
-					spaceBetween={0}
+					data-sal="fade" data-sal-duration="600" data-sal-delay="300"
 					slidesPerView={3}
 					navigation={false}
 					onSwiper={swiper => console.log(swiper)}
