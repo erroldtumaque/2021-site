@@ -90,6 +90,10 @@ p {
 	text-align: center;
 	font-size: .80em;
 	color: rgba(0,0,0,0.4);
+
+	span {
+		font-size: 14px;
+	}
 }
 a {
 	color: $link-color;

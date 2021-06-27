@@ -349,7 +349,7 @@ export default function portraitsGallery() {
 			<h5>Faces in Places</h5>
 			<h2>Portraits</h2>
 			<Box>
-				<Gallery photos={photos} direction={"column"}/>
+				<Gallery photos={photos} direction={"row"}/>
 			</Box>
 			<ContactPhotos></ContactPhotos>
 			</Grid>

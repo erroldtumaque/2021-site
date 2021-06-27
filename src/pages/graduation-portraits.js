@@ -253,7 +253,7 @@ export default function weddingsGallery() {
 			<h5>One Degree Hotter</h5>
 			<h2>Graduation Portraits</h2>
 			<Box>
-				<Gallery photos={photos} direction={"column"}/>
+				<Gallery photos={photos} direction={"row"}/>
 			</Box>
 			<ContactPhotos></ContactPhotos>
 			</Grid>

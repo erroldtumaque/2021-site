@@ -179,7 +179,7 @@ export default function weddingsGallery() {
 	return (
 		<Layout>
 		<section>
-			<Grid 
+			<Grid
 			display={"flex"}
 			alignItems={"center"}
 			alignContent={"center"}
@@ -188,7 +188,7 @@ export default function weddingsGallery() {
 			<h5>Special Moments</h5>
 			<h2>Banquets & Events</h2>
 			<Box>
-				<Gallery photos={photos} direction={"column"}/>
+				<Gallery photos={photos} direction={"row"}/>
 			</Box>
 			<ContactPhotos></ContactPhotos>
 			</Grid>

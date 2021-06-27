@@ -64,7 +64,7 @@ export default function CompaniesGallery() {
 		width: 6,
 		height: 4,
 		},
-	 
+
 		{
 		src: CDN + "photography/companies/thm-1.jpg",
 		width: 6,
@@ -145,7 +145,7 @@ export default function CompaniesGallery() {
 				<h5>Goji, Perfetta, Tan Hong Mai</h5>
 				<h2>COMPANIES</h2>
 				<Box>
-				<Gallery photos={photos} direction={"column"} />
+				<Gallery photos={photos} direction={"row"} />
 				</Box>
 				<ContactPhotos></ContactPhotos>
 			</Grid>

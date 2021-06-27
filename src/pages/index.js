@@ -2,20 +2,12 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Footer from "../components/footer"
-import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
 import Particles from "react-particles-js"
 import YouTube from "react-youtube"
-import { ImFlickr3 } from "react-icons/im"
-import {
-	SiAdobexd,
-	SiAdobephotoshop,
-	SiAdobeillustrator,
-	SiAdobelightroomcc,
-} from "react-icons/si"
 import { Helmet } from "react-helmet"
 
-import { Grid, Container, Chip } from "@material-ui/core"
+import { Container} from "@material-ui/core"
 import { MdPhotoLibrary, MdZoomOutMap } from "react-icons/md";
 import Box from "@material-ui/core/Box"
 
@@ -27,7 +19,7 @@ import "swiper/components/scrollbar/scrollbar.scss"
 import "../styles/global.scss"
 import { CDN } from "../components/constants"
 
-https: SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
+// https: SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
 
 export default function Home() {
 	const [lightboxController, setLightboxController] = useState({
@@ -63,23 +55,23 @@ export default function Home() {
 		</Helmet>
 		</div>
 		<div class="main-section"><Particles
-    params={{
-	    "particles": {
-	        "number": {
-	            "value": 10
-	        },
-	        "size": {
-	            "value": 3
-	        }
-	    },
-	    "interactivity": {
-	        "events": {
-	            "onhover": {
-	                "enable": true,
-	                "mode": "repulse"
-	            }
-	        }
-	    }
+	params={{
+		"particles": {
+			"number": {
+				"value": 10
+			},
+			"size": {
+				"value": 3
+			}
+		},
+		"interactivity": {
+			"events": {
+				"onhover": {
+					"enable": true,
+					"mode": "repulse"
+				}
+			}
+		}
 	}} /></div>
 		<section>
 			<Container maxWidth={"xl"}>
@@ -106,7 +98,7 @@ export default function Home() {
 				>
 					<SwiperSlide onClick={() => openLightboxOnSlide(1)}>
 						<div class="zoom-container">
-							<img class="site-logo"src={"./images/sites/pelican.jpg"}/>
+							<img class="site-logo"src={"./images/sites/pelican.jpg"} alt="pelican products"/>
 							<p><MdZoomOutMap /><br></br>Learn More</p>
 							</div>
 							<h3>Pelican Products Inc.</h3>
@@ -114,7 +106,7 @@ export default function Home() {
 					</SwiperSlide>
 					<SwiperSlide onClick={() => openLightboxOnSlide(2)}>
 						<div class="zoom-container">
-							<img class="site-logo"src={"./images/sites/filmtools.jpg"}/>
+							<img class="site-logo"src={"./images/sites/filmtools.jpg"} alt="filmtools"/>
 							<p><MdZoomOutMap /><br></br>Learn More</p>
 						</div>
 						<h3>Filmtools</h3>
@@ -122,7 +114,7 @@ export default function Home() {
 					</SwiperSlide>
 					<SwiperSlide onClick={() => openLightboxOnSlide(3)}>
 						<div class="zoom-container">
-							<img class="site-logo"src={"./images/sites/mab-digital.jpg"}/>
+							<img class="site-logo"src={"./images/sites/mab-digital.jpg"} alt="mab digital"/>
 							<p><MdZoomOutMap /><br></br>Learn More</p>
 						</div>
 						<h3>MAB Digital</h3>
@@ -238,7 +230,7 @@ export default function Home() {
 				   </SwiperSlide>
 						<SwiperSlide onClick={() => openLightboxOnSlide(3)}>
 						<div class="zoom-container">
-							<img class="img-ui" src={CDN + "daily-ui/search-t.jpg"} akt="search"></img>
+							<img class="img-ui" src={CDN + "daily-ui/search-t.jpg"} alt="search"></img>
 							<p><MdZoomOutMap /><br></br>View Full</p>
 						</div>
 						<h3>Search</h3>
@@ -323,11 +315,7 @@ export default function Home() {
 					<SwiperSlide onClick={() => openLightboxOnSlide(4)}>
 						<Link to="/companies">
 						<div class="zoom-container">
-							<img
-							class="img-ui"
-							src={CDN + "photography/companies.jpg"}
-							alt="companies"
-							></img>
+							<img class="img-ui" src={CDN + "photography/companies.jpg"} alt="companies"></img>
 							<p><MdPhotoLibrary /><br></br>View Album</p>
 						</div>
 						<h3>Companies</h3>
@@ -336,18 +324,14 @@ export default function Home() {
 					<SwiperSlide onClick={() => openLightboxOnSlide(5)}>
 						<Link to="/banquets-events">
 						<div class="zoom-container">
-							<img
-							class="img-ui"
-							src={CDN + "photography/events.jpg"}
-							alt="events"
-							></img>
+							<img class="img-ui" src={CDN + "photography/events.jpg"} alt="events"></img>
 							<p><MdPhotoLibrary /><br></br>View Album</p>
 						</div>
 						<h3>Banquets & Events</h3>
 						</Link>
 					</SwiperSlide>
 				</Swiper>
-				<p class="subtext">Shot with Nikon D750</p>
+				<p class="subtext">Shot with Nikon D750 DSLR<br></br><span>24mm; 50mm; 24-70mm; 85mm</span></p>
 			</Container>
 		</section>
 		<Footer></Footer>

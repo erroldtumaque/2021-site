@@ -355,7 +355,7 @@ export default function weddingsGallery() {
 		width: 6,
 		height: 4,
 		},
-	
+
 	]
 
 	return (
@@ -371,7 +371,7 @@ export default function weddingsGallery() {
 			<h5>Cute, right?</h5>
 			<h2>Weddings & Engagements</h2>
 			<Box>
-				<Gallery photos={photos} direction={"column"}/>
+				<Gallery photos={photos} direction={"row"}/>
 			</Box>
 			<ContactPhotos></ContactPhotos>
 			</Grid>
