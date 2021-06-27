@@ -195,8 +195,8 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-				<h4>Daily UI</h4>
-				<h2>Designs</h2>
+				<h4 data-sal="slide-up"	data-sal-duration="300"data-sal-delay="300" data-sal-easing="ease">Daily UI</h4>
+				<h2 data-sal="slide-down"	data-sal-duration="300"data-sal-delay="300" data-sal-easing="ease">Designs</h2>
 				</Box>
 				<Swiper
 				spaceBetween={15}
@@ -271,7 +271,7 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-				<div data-sal="slide-down" data-sal-duration="300" data-sal-delay="400"data-sal-easing="ease"><h4>Shots, everybody</h4></div>
+				<div data-sal="slide-up" data-sal-duration="300" data-sal-delay="400"data-sal-easing="ease"><h4>Shoots & </h4></div>
 				<div data-sal="slide-down" data-sal-duration="300" data-sal-delay="200" data-sal-easing="ease">
 					<h2>PHOTOGRAPHY</h2>
 				</div>
