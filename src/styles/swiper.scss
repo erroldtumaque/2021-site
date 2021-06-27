@@ -1,3 +1,6 @@
+:root { 
+    --dual-shadow: 20px 20px 20px rgb(186 84 211 / 20%), -10px -10px 30px rgb(0 100 255 / 20%);
+}
 $position-color: #aaa;
 
 .swiper-container {
@@ -17,7 +20,7 @@ $position-color: #aaa;
 	&:hover {
 		img {
 			z-index: 3;
-			box-shadow: 20px 20px 20px rgb(186 84 211 / 20%), -10px -10px 30px rgb(0 100 255 / 20%);
+			box-shadow: var(--dual-shadow);
 		}
 		iframe {
 				 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
