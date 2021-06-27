@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Footer from "../components/footer"
+import SwiperCore, { EffectCoverflow, Navigation, Pagination, Scrollbar, A11y } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
 import Particles from "react-particles-js"
 import YouTube from "react-youtube"
@@ -15,11 +16,12 @@ import "swiper/swiper.scss"
 import "swiper/components/navigation/navigation.scss"
 import "swiper/components/pagination/pagination.scss"
 import "swiper/components/scrollbar/scrollbar.scss"
+import "swiper/components/effect-coverflow/effect-coverflow.min.css"
 
 import "../styles/global.scss"
 import { CDN } from "../components/constants"
 
-// https: SwiperCore.use([Navigation, Pagination, Scrollbar, A11y])
+SwiperCore.use([EffectCoverflow,Navigation, Pagination, Scrollbar, A11y])
 
 export default function Home() {
 	const [lightboxController, setLightboxController] = useState({
@@ -81,17 +83,26 @@ export default function Home() {
 				</Box>
 				<Swiper
 				spaceBetween={15}
-				slidesPerView={1}
+				slidesPerView={3}
 				navigation={false}
 				pagination={{ clickable: true }}
 				onSwiper={swiper => console.log(swiper)}
 				onSlideChange={() => console.log("slide change")}
+				// effect={'coverflow'}
+				// centeredSlides={true}
+				coverflowEffect={{
+				  "rotate": 50,
+				  "stretch": 0,
+				  "depth": 100,
+				  "modifier": 1,
+				  "slideShadows": false
+				}}
 				breakpoints={{
 					576: { slidesPerView: 2 },
 					768: { slidesPerView: 2 },
 					992: { slidesPerView: 2 },
 					1200: {
-					slidesPerView: 2,
+					slidesPerView: 3,
 					slidesPerColumnFill: "row",
 					},
 				}}
@@ -191,18 +202,27 @@ export default function Home() {
 				<h2 data-sal="slide-down"	data-sal-duration="300"data-sal-delay="300" data-sal-easing="ease">Designs</h2>
 				</Box>
 				<Swiper
-				spaceBetween={15}
-				slidesPerView={1}
+				spaceBetween={0}
+				slidesPerView={3}
 				navigation={false}
+				initialSlide={1}
 				pagination={{ clickable: true }}
 				onSwiper={swiper => console.log(swiper)}
-				onSlideChange={() => console.log("slide change")}
+				effect={'coverflow'}
+				centeredSlides={true}
+				coverflowEffect={{
+				  "rotate": 50,
+				  "stretch": 0,
+				  "depth": 100,
+				  "modifier": 1,
+				  "slideShadows": false
+				}}
 				breakpoints={{
 					576: { slidesPerView: 2 },
 					768: { slidesPerView: 2 },
 					992: { slidesPerView: 2 },
 					1200: {
-					slidesPerView: 2,
+					slidesPerView: 3,
 					slidesPerColumnFill: "row",
 					},
 				}}
@@ -269,18 +289,28 @@ export default function Home() {
 				</div>
 				</Box>
 				<Swiper
-					spaceBetween={15}
-					slidesPerView={2}
+					spaceBetween={0}
+					slidesPerView={3}
 					navigation={false}
 					onSwiper={swiper => console.log(swiper)}
 					onSlideChange={() => console.log("slide change")}
 					pagination={{ clickable: true }}
+					initialSlide={1}
+					effect={'coverflow'}
+					centeredSlides={true}
+					coverflowEffect={{
+					  "rotate": 50,
+					  "stretch": 0,
+					  "depth": 100,
+					  "modifier": 1,
+					  "slideShadows": false
+					}}
 					breakpoints={{
 						576: { slidesPerView: 1 },
 						768: { slidesPerView: 1 },
 						992: { slidesPerView: 1 },
 						1200: {
-						slidesPerView: 2,
+						slidesPerView: 3,
 						slidesPerColumnFill: "row",
 						},
 					}}
