@@ -214,7 +214,7 @@ export default function Home() {
 					spaceBetween={0}
 					slidesPerView={3}
 					navigation={false}
-					initialSlide={1}
+					initialSlide={2}
 					pagination={{ clickable: true }}
 					onSwiper={swiper => console.log(swiper)}
 					effect={'coverflow'}
@@ -243,13 +243,6 @@ export default function Home() {
 					</div>
 					<h3>404 Page</h3>
 					</SwiperSlide>
-					<SwiperSlide onClick={() => openLightboxOnSlide(4)}>
-						<div class="zoom-container">
-						<img class="img-ui"src={CDN + "daily-ui/direct-messaging-t.jpg"} alt="direct messaging"></img>
-						<p><MdZoomOutMap /><br></br>View Full</p>
-						</div>
-						<h3>Direct Messaging</h3>
-					</SwiperSlide>
 					<SwiperSlide onClick={() => openLightboxOnSlide(7)}>
 						<div class="zoom-container">
 							<img class="img-ui" src={CDN + "daily-ui/landing-page-t.jpg"} alt="landing-page"></img>
@@ -257,6 +250,13 @@ export default function Home() {
 						</div>
 						<h3>Landing Page</h3>
 				   </SwiperSlide>
+                   <SwiperSlide onClick={() => openLightboxOnSlide(4)}>
+						<div class="zoom-container">
+						<img class="img-ui"src={CDN + "daily-ui/direct-messaging-t.jpg"} alt="direct messaging"></img>
+						<p><MdZoomOutMap /><br></br>View Full</p>
+						</div>
+						<h3>Direct Messaging</h3>
+					</SwiperSlide>
 						<SwiperSlide onClick={() => openLightboxOnSlide(3)}>
 						<div class="zoom-container">
 							<img class="img-ui" src={CDN + "daily-ui/search-t.jpg"} alt="search"></img>
@@ -305,7 +305,7 @@ export default function Home() {
 					onSwiper={swiper => console.log(swiper)}
 					onSlideChange={() => console.log("slide change")}
 					pagination={{ clickable: true }}
-					initialSlide={1}
+					initialSlide={2}
 					effect={'coverflow'}
 					centeredSlides={true}
 					coverflowEffect={{
@@ -334,15 +334,6 @@ export default function Home() {
 						<h3>Graduation Portraits</h3>
 						</Link>
 					</SwiperSlide>
-					<SwiperSlide onClick={() => openLightboxOnSlide(2)}>
-						<Link to="/portraits">
-						<div class="zoom-container">
-							<img class="img-ui" src={CDN + "photography/portraits.jpg"} alt="portraits"></img>
-							<p><MdPhotoLibrary /><br></br>View Album</p>
-						</div>
-						<h3>Portraits</h3>
-						</Link>
-					</SwiperSlide>
 					<SwiperSlide onClick={() => openLightboxOnSlide(3)}>
 						<Link to="/weddings-engagements">
 						<div class="zoom-container">
@@ -350,6 +341,15 @@ export default function Home() {
 							<p><MdPhotoLibrary /><br></br>View Album</p>
 						</div>
 						<h3>Weddings & Engagements</h3>
+						</Link>
+					</SwiperSlide>
+                    	<SwiperSlide onClick={() => openLightboxOnSlide(2)}>
+						<Link to="/portraits">
+						<div class="zoom-container">
+							<img class="img-ui" src={CDN + "photography/portraits.jpg"} alt="portraits"></img>
+							<p><MdPhotoLibrary /><br></br>View Album</p>
+						</div>
+						<h3>Portraits</h3>
 						</Link>
 					</SwiperSlide>
 					<SwiperSlide onClick={() => openLightboxOnSlide(4)}>
