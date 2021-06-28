@@ -1,17 +1,17 @@
 /*
 Error: Invalid CSS after "...color: #87aabb ": expected "}", was "!important;"
-        on line 133 of C:\Users\Errold\Documents\2021 Site\2021-site-2\src\styles\swiper.scss
+        on line 134 of C:\Users\Errold\Documents\2021 Site\2021-site-2\src\styles\swiper.scss
 
-128: 	bottom: -32px !important;
-129: 	z-index: 9;
-130: }
-131: 
-132: :root {
-133: 	--swiper-theme-color: #87aabb !important;
-134: }
+129: 	bottom: -32px !important;
+130: 	z-index: 9;
+131: }
+132: 
+133: :root {
+134: 	--swiper-theme-color: #87aabb !important;
+135: }
 
 Backtrace:
-C:\Users\Errold\Documents\2021 Site\2021-site-2\src\styles\swiper.scss:133
+C:\Users\Errold\Documents\2021 Site\2021-site-2\src\styles\swiper.scss:134
 C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
 C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1208:in `expected'
 C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1203:in `tok!'
@@ -35,4 +35,4 @@ C:/RailsInstaller/Ruby2.3.3/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...color: #87aabb \": expected \"}\", was \"!important;\"\A         on line 133 of C:\Users\Errold\Documents\2021 Site\2021-site-2\src\styles\swiper.scss\A \A 128: 	bottom: -32px !important;\A 129: 	z-index: 9;\A 130: }\A 131: \A 132: :root {\A 133: 	--swiper-theme-color: #87aabb !important;\A 134: }"; }
+  content: "Error: Invalid CSS after \"...color: #87aabb \": expected \"}\", was \"!important;\"\A         on line 134 of C:\Users\Errold\Documents\2021 Site\2021-site-2\src\styles\swiper.scss\A \A 129: 	bottom: -32px !important;\A 130: 	z-index: 9;\A 131: }\A 132: \A 133: :root {\A 134: 	--swiper-theme-color: #87aabb !important;\A 135: }"; }

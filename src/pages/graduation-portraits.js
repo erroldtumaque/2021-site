@@ -2,11 +2,13 @@ import React from "react"
 import Layout from "../components/layout"
 import Footer from "../components/footer"
 import ContactPhotos from "../components/contact-photos"
+import Particles from "react-particles-js"
 
 import { Grid, Container } from "@material-ui/core"
 import Box from "@material-ui/core/Box"
 
 import Gallery from "react-photo-masonry"
+import { Helmet } from "react-helmet"
 
 import { CDN } from "../components/constants"
 
@@ -242,24 +244,52 @@ export default function weddingsGallery() {
 
 	return (
 		<Layout>
-		<section>
-			<Container maxWidth={"xl"}>
-			<Grid
-			display={"flex"}
-			alignItems={"center"}
-			alignContent={"center"}
-			justify={"space-between"}
-			>
-			<h5>One Degree Hotter</h5>
-			<h2>Graduation Portraits</h2>
-			<Box>
-				<Gallery photos={photos} direction={"row"}/>
-			</Box>
-			<ContactPhotos></ContactPhotos>
-			</Grid>
-			</Container>
-		</section>
-		<Footer></Footer>
+			<div className="application">
+				<Helmet>
+					<meta charSet="utf-8" />
+					<title>Graduation Portraits | Errold</title>
+					<link rel="canonical" href="https://www.errold.com" />
+				</Helmet>
+			</div>
+			<div class="animated-bar">
+				<Particles
+					params={{
+						"particles": {
+							"number": {
+								"value": 10
+							},
+							"size": {
+								"value": 3
+							}
+						},
+						"interactivity": {
+							"events": {
+								"onhover": {
+									"enable": true,
+									"mode": "repulse"
+								}
+							}
+						}
+					}}
+				/>
+			</div>
+			<section>
+				<Container maxWidth={"xl"}>
+				<Grid
+				display={"flex"}
+				alignItems={"center"}
+				alignContent={"center"}
+				justify={"space-between"}
+				>
+				<h2>Graduation Portraits</h2>
+				<Box>
+					<Gallery photos={photos} direction={"row"}/>
+				</Box>
+				<ContactPhotos></ContactPhotos>
+				</Grid>
+				</Container>
+			</section>
+			<Footer></Footer>
 		</Layout>
 	)
 }
