@@ -1,38 +1,96 @@
-/*
-Error: Invalid CSS after "...color: #87aabb ": expected "}", was "!important;"
-        on line 134 of C:\Users\Errold\Documents\2021 Site\2021-site-2\src\styles\swiper.scss
+:root {
+  --dual-shadow: 20px 20px 20px rgb(186 84 211 / 20%), -10px -10px 30px rgb(0 100 255 / 20%); }
 
-129: 	bottom: -32px !important;
-130: 	z-index: 9;
-131: }
-132: 
-133: :root {
-134: 	--swiper-theme-color: #87aabb !important;
-135: }
+.swiper-container {
+  overflow: visible !important;
+  margin: 20px 0px; }
 
-Backtrace:
-C:\Users\Errold\Documents\2021 Site\2021-site-2\src\styles\swiper.scss:134
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1208:in `expected'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:679:in `block'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:696:in `block_child'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:41:in `parse'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:414:in `_to_tree'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/bin/sass:13:in `<top (required)>'
-C:/RailsInstaller/Ruby2.3.3/bin/sass:22:in `load'
-C:/RailsInstaller/Ruby2.3.3/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...color: #87aabb \": expected \"}\", was \"!important;\"\A         on line 134 of C:\Users\Errold\Documents\2021 Site\2021-site-2\src\styles\swiper.scss\A \A 129: 	bottom: -32px !important;\A 130: 	z-index: 9;\A 131: }\A 132: \A 133: :root {\A 134: 	--swiper-theme-color: #87aabb !important;\A 135: }"; }
+.swiper-wrapper {
+  padding: 20px 0px; }
+
+.swiper-container-multirow-column > .swiper-wrapper {
+  flex-direction: inherit; }
+
+.swiper-slide {
+  position: relative;
+  transition: 250ms all;
+  overflow: visible; }
+  .swiper-slide .zoom-container {
+    transition: 250ms all;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    .swiper-slide .zoom-container p {
+      color: white;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      letter-spacing: 2px;
+      transform: translate(-50%, -50%);
+      z-index: 10; }
+  .swiper-slide:hover .zoom-container {
+    box-shadow: var(--dual-shadow); }
+    .swiper-slide:hover .zoom-container p {
+      opacity: 1; }
+  .swiper-slide:hover img {
+    filter: brightness(0.5) blur(3px); }
+  .swiper-slide:hover iframe {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+  .swiper-slide:hover h3 {
+    opacity: 1; }
+  .swiper-slide:hover .logo {
+    box-shadow: none; }
+  .swiper-slide img {
+    position: relative;
+    max-width: 100%;
+    z-index: 1;
+    margin-bottom: -10px;
+    cursor: pointer;
+    transition: all 0.2s; }
+    .swiper-slide img:hover {
+      transition: 0.3s;
+      transform: scale(1.05); }
+  .swiper-slide iframe {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s; }
+  .swiper-slide h3 {
+    z-index: 4;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    margin-left: 5px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    color: #333;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    display: block;
+    text-transform: capitalize; }
+    .swiper-slide h3 .position {
+      margin-left: 5px;
+      color: #aaa;
+      font-size: 75%; }
+  .swiper-slide h4 {
+    font-size: 18px;
+    text-align: left;
+    margin-left: 5px;
+    margin-top: 5px;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    font-weight: 400; }
+  .swiper-slide p {
+    text-align: center; }
+
+.swiper-pagination-bullet {
+  background: #87aabb !important;
+  opacity: 0.3; }
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+  opacity: 0 !important; }
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -32px !important;
+  z-index: 9; }
+
+/*# sourceMappingURL=swiper.css.map */

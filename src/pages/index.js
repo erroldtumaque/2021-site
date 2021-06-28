@@ -5,7 +5,7 @@ import Footer from "../components/footer"
 import SwiperCore, { EffectCoverflow, Navigation, Pagination, Scrollbar, A11y } from "swiper"
 import { Swiper, SwiperSlide } from "swiper/react"
 import Particles from "react-particles-js"
-import YouTube from "react-youtube"
+// import YouTube from "react-youtube"
 import { Helmet } from "react-helmet"
 
 import { Container} from "@material-ui/core"
