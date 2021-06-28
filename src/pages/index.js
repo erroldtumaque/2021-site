@@ -90,7 +90,7 @@ export default function Home() {
 				<Swiper
 					data-sal="fade" data-sal-duration="600" data-sal-delay="300"
 					spaceBetween={15}
-					slidesPerView={3}
+					slidesPerView={1}
 					navigation={false}
 					initialSlide={1}
 					pagination={{ clickable: true }}
@@ -212,7 +212,7 @@ export default function Home() {
 				<Swiper
 					data-sal="fade" data-sal-duration="600" data-sal-delay="300"
 					spaceBetween={0}
-					slidesPerView={3}
+					slidesPerView={1}
 					navigation={false}
 					initialSlide={2}
 					pagination={{ clickable: true }}
@@ -300,7 +300,7 @@ export default function Home() {
 				</Box>
 				<Swiper
 					data-sal="fade" data-sal-duration="600" data-sal-delay="300"
-					slidesPerView={3}
+					slidesPerView={1}
 					navigation={false}
 					onSwiper={swiper => console.log(swiper)}
 					onSlideChange={() => console.log("slide change")}
