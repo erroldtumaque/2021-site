@@ -1,65 +1,733 @@
-/*
-Error: Invalid CSS after "...color: #87aabb ": expected "}", was "!important;"
-        on line 134 of C:/Users/Errold/Documents/2021 Site/2021-site-2/src/styles/swiper.scss
-        from line 2 of C:\Users\Errold\Documents\2021 Site\2021-site-2\src\styles\global.scss
+.hidden {
+  display: none !important;
+}
 
-129: 	bottom: -32px !important;
-130: 	z-index: 9;
-131: }
-132: 
-133: :root {
-134: 	--swiper-theme-color: #87aabb !important;
-135: }
+.text-center {
+  text-align: center;
+}
 
-Backtrace:
-C:/Users/Errold/Documents/2021 Site/2021-site-2/src/styles/swiper.scss:134
-C:\Users\Errold\Documents\2021 Site\2021-site-2\src\styles\global.scss:2
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1278:in `expected'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1208:in `expected'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:679:in `block'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:670:in `ruleset'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:696:in `block_child'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/scss/parser.rb:41:in `parse'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:414:in `_to_tree'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:321:in `to_tree'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `block in with_import'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `with_import'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:391:in `run'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/sass_scss.rb:63:in `process_result'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/base.rb:52:in `parse'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/exec/base.rb:19:in `parse!'
-C:/RailsInstaller/Ruby2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.5.1/bin/sass:13:in `<top (required)>'
-C:/RailsInstaller/Ruby2.3.3/bin/sass:22:in `load'
-C:/RailsInstaller/Ruby2.3.3/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...color: #87aabb \": expected \"}\", was \"!important;\"\A         on line 134 of C:/Users/Errold/Documents/2021 Site/2021-site-2/src/styles/swiper.scss\A         from line 2 of C:\Users\Errold\Documents\2021 Site\2021-site-2\src\styles\global.scss\A \A 129: 	bottom: -32px !important;\A 130: 	z-index: 9;\A 131: }\A 132: \A 133: :root {\A 134: 	--swiper-theme-color: #87aabb !important;\A 135: }"; }
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+:root {
+  --dual-shadow: 20px 20px 20px rgb(186 84 211 / 20%), -10px -10px 30px rgb(0 100 255 / 20%);
+}
+
+.swiper-container {
+  overflow: visible !important;
+  margin: 20px 0px;
+}
+
+.swiper-wrapper {
+  padding: 20px 0px;
+}
+
+.swiper-container-multirow-column > .swiper-wrapper {
+  -webkit-box-orient: inherit;
+  -webkit-box-direction: inherit;
+      -ms-flex-direction: inherit;
+          flex-direction: inherit;
+}
+
+.swiper-slide {
+  position: relative;
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+  overflow: visible;
+}
+
+.swiper-slide .zoom-container {
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.swiper-slide .zoom-container p {
+  color: white;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  letter-spacing: 2px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.swiper-slide:hover .zoom-container {
+  -webkit-box-shadow: var(--dual-shadow);
+          box-shadow: var(--dual-shadow);
+}
+
+.swiper-slide:hover .zoom-container p {
+  opacity: 1;
+}
+
+.swiper-slide:hover img {
+  -webkit-filter: brightness(0.5) blur(3px);
+          filter: brightness(0.5) blur(3px);
+}
+
+.swiper-slide:hover iframe {
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.swiper-slide:hover h3 {
+  opacity: 1;
+}
+
+.swiper-slide:hover .logo {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.swiper-slide img {
+  position: relative;
+  max-width: 100%;
+  z-index: 1;
+  margin-bottom: -10px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.swiper-slide img:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.swiper-slide iframe {
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.swiper-slide h3 {
+  z-index: 4;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 20px;
+  color: #333;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: block;
+  text-transform: capitalize;
+}
+
+.swiper-slide h3 .position {
+  margin-left: 5px;
+  color: #aaa;
+  font-size: 75%;
+}
+
+.swiper-slide h4 {
+  font-size: 18px;
+  text-align: left;
+  margin-left: 5px;
+  margin-top: 5px;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.swiper-slide p {
+  text-align: center;
+}
+
+.swiper-pagination-bullet {
+  background: #87aabb !important;
+  opacity: 0.3;
+}
+
+.swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+  opacity: 0 !important;
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: -32px !important;
+  z-index: 9;
+}
+
+.company-logo {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+.invert {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.icon-flickr {
+  color: linear-gradient(to right, #eaee44, #eaee44 50%, #33d0ff 100%);
+}
+
+.io-icon,
+.si-icon,
+.im-icon,
+.gi-icon,
+.si-icon {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 36px;
+  margin: 5px 10px;
+}
+
+.io-icon:hover,
+.si-icon:hover,
+.im-icon:hover,
+.gi-icon:hover,
+.si-icon:hover {
+  color: white;
+}
+
+.photoshop-icon {
+  color: #4fccfe;
+}
+
+.xd-icon {
+  color: purple;
+}
+
+.ai-icon {
+  color: orange;
+}
+
+.nikon-icon {
+  max-width: 120px;
+}
+
+.g-red {
+  color: #bb001b;
+}
+
+.li-blue {
+  color: #2867b2;
+}
+
+.fb-blue {
+  color: #3b5998;
+}
+
+.ig-pink {
+  color: #c13584;
+}
+
+.github-purple {
+  color: #6e5494;
+}
+
+.footer-icon {
+  font-size: 24px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.faq-body {
+  text-align: center !important;
+  margin-top: 2rem !important;
+  padding: 10px !important;
+}
+
+.faq-row-wrapper {
+  background: none !important;
+}
+
+.faq-row-wrapper .row-title {
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  background: white;
+}
+
+.faq-row-wrapper .faq-title {
+  border-bottom: 0px !important;
+  background: none;
+}
+
+.faq-row-wrapper h2 {
+  font-size: 72px !important;
+  margin: 0 auto !important;
+}
+
+.faq-row-wrapper .faq-row {
+  background: white;
+}
+
+.faq-row-wrapper .row-title-text {
+  background: white;
+  font-weight: 600;
+  font-size: 24px;
+  padding: 20px 10px !important;
+}
+
+.faq-row-wrapper .row-content-text {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0px 10px 20px 10px !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #f4f4f4;
+}
+
+body {
+  height: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  margin: 0;
+  font-family: 'Overpass';
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 12;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+h2 {
+  color: #212121;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  font-size: 48px;
+  margin-left: -5px;
+  letter-spacing: 5px;
+}
+
+h3 {
+  bottom: 10px;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+h4 {
+  text-align: center;
+  color: #aa87bb;
+  font-weight: 700;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-family: 'Roboto';
+  opacity: 0.5;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #175853;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+p {
+  margin: 0;
+  color: #333;
+  font-family: 'Roboto';
+}
+
+.subtext {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: .80em;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.subtext span {
+  font-size: 14px;
+}
+
+a {
+  color: white;
+  text-shadow: none;
+  text-decoration: none;
+  background-image: none;
+}
+
+header {
+  background: none;
+  padding: 1rem 2rem;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  position: absolute;
+}
+
+header .site-logo {
+  width: 50px;
+  max-width: 100%;
+}
+
+iframe {
+  margin-bottom: 0px;
+}
+
+nav p {
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-left: 0px;
+}
+
+.animated-bar {
+  background-size: 200% 200% !important;
+  background: #136a8a;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#136a8a), to(#743294));
+  background: linear-gradient(to right, #136a8a, #743294);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-position: 0% 0%;
+  color: white;
+  text-align: center;
+  height: 140px;
+  position: relative;
+  z-index: -3;
+  margin-bottom: -80px;
+  -webkit-animation-name: rotate;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: rotate;
+  -moz-animation-duration: 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+}
+
+.animated-bar h1 {
+  color: #212121;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  font-size: 72px;
+  margin-left: -5px;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 5px #333;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+section {
+  position: relative;
+  background: white;
+  border-radius: 5px;
+  z-index: 1;
+  padding: 4rem 1rem;
+  min-height: 90vh;
+  min-height: 600px;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  overflow-x: hidden;
+}
+
+section .section-title h1 {
+  text-align: center;
+  margin-right: 12px;
+}
+
+section .section-title p {
+  opacity: 0.8;
+}
+
+section:nth-child(odd) {
+  background: white;
+}
+
+nav {
+  display: inline;
+  color: white;
+}
+
+nav ul {
+  margin-bottom: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  font-weight: 700;
+  color: white;
+  font-size: 16px;
+  width: 120px;
+  margin-bottom: 0px;
+}
+
+img {
+  margin-bottom: 0px;
+}
+
+.album {
+  border: 4px solid rgba(255, 255, 255, 0);
+  -webkit-transition: 250ms all;
+  transition: 250ms all;
+}
+
+.album:hover {
+  z-index: 3;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+.album-container {
+  position: relative;
+}
+
+.album-container::before {
+  content: "";
+  background: rgba(255, 255, 255, 0.05);
+  display: block;
+  -webkit-transform: skew(2deg);
+          transform: skew(2deg);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -3;
+  top: -7px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.bg-line {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  border-bottom: 4px dashed #5e6694;
+}
+
+.bg-dotted {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  border-top: 4px dotted #5e6694;
+}
+
+.bg-ridge {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  border: 4px inset #5e6694;
+}
+
+.bg-double {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  border-top: 4px double #5e6694;
+  height: 10px;
+  border-left: 4px solid #5e6694;
+  border-bottom: 4px double #5e6694;
+}
+
+.container {
+  margin: 2rem 2rem;
+}
+
+.layout {
+  margin: 3rem auto;
+  max-width: 1080px;
+  padding: 0 1rem;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 50px;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.logo-invert {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+#tsparticles {
+  position: absolute;
+  z-index: -3;
+}
+
+.video-banner {
+  min-height: 900px;
+  height: 100vh;
+  max-height: 100vh;
+  position: relative;
+  background: lightgray;
+  background: black;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -4;
+}
+
+.video-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  z-index: -3;
+}
+
+footer {
+  padding: 40px 0px;
+  background: #212121;
+  -ms-grid-columns: 1fr 1fr 40px 2fr;
+      grid-template-columns: 1fr 1fr 40px 2fr;
+  -ms-grid-rows: 100px 200px 100px;
+      grid-template-rows: 100px 200px 100px;
+}
+
+footer .footer-copyright {
+  color: white;
+  font-size: 12px;
+}
+
+footer .site-logo {
+  text-align: left;
+  width: 50px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul {
+  margin-bottom: 0px;
+}
+
+footer ul li {
+  font-size: 14px;
+  margin: 0px 8px;
+  display: inline-block;
+}
+
+.react-photo-gallery--gallery {
+  margin: 40px 0px;
+}
+
+.react-photo-gallery--gallery img {
+  position: relative;
+  max-width: 100%;
+  z-index: 1;
+  margin-bottom: 0px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 10px;
+}
+
+.MuiChip-root {
+  border-color: white !important;
+  background: #66a579 !important;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px 20px !important;
+}
+
+.MuiChip-label {
+  color: white;
+}
+
+.MuiChip-avatar {
+  color: white !important;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 1px;
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 28px;
+  }
+  h5 {
+    font-size: 14px;
+    padding: 0rem;
+  }
+  section {
+    padding: 0rem;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  section {
+    padding: 0rem;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  section {
+    padding: 4rem 1rem;
+  }
+}
+
+.ytp-title-text {
+  display: none !important;
+}
+/*# sourceMappingURL=global.css.map */
