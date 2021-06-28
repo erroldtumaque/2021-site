@@ -7,11 +7,11 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import Particles from "react-particles-js"
 // import YouTube from "react-youtube"
 import { Helmet } from "react-helmet"
+import FsLightbox from 'fslightbox-react';
 
 import { Container} from "@material-ui/core"
 import { MdPhotoLibrary, MdZoomOutMap } from "react-icons/md";
 import { FiCamera } from "react-icons/fi";
-
 
 import Box from "@material-ui/core/Box"
 
@@ -28,30 +28,24 @@ SwiperCore.use([EffectCoverflow,Navigation, Pagination, Scrollbar, A11y])
 
 export default function Home() {
 	const [lightboxController, setLightboxController] = useState({
-	toggler: false,
-	slide: 1,
-	})
+		toggler: false,
+		slide: 1
+	});
 
-	const opts = {
-		width: "100%",
-		height: "500px",
-		playerVars: {
-			autoplay: 0,
-			controls: 0,
-			showInfo: 0,
-			modestBranding: 1,
-		},
-		}
+	function openLightboxOnSlide(number) {
+		var offset = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+		alert(offset);
 
-		function openLightboxOnSlide(number) {
+
 		setLightboxController({
 			toggler: !lightboxController.toggler,
-			slide: number,
-		})
+			slide: number
+		});
 	}
 
 	return (
 	<Layout>
+
 		<div className="application">
 			<Helmet>
 				<meta charSet="utf-8" />
@@ -99,23 +93,23 @@ export default function Home() {
 					effect={'coverflow'}
 					centeredSlides={true}
 					coverflowEffect={{
-					  "rotate": 50,
-					  "stretch": 0,
-					  "depth": 100,
-					  "modifier": 1,
-					  "slideShadows": false
+						"rotate": 50,
+						"stretch": 0,
+						"depth": 100,
+						"modifier": 1,
+						"slideShadows": false
 					}}
 					breakpoints={{
 						576: { slidesPerView: 2 },
 						768: { slidesPerView: 2 },
 						992: { slidesPerView: 2 },
 						1200: {
-						slidesPerView: 3,
-						slidesPerColumnFill: "row",
+							slidesPerView: 3,
+							slidesPerColumnFill: "row",
 						},
 					}}
 				>
-					<SwiperSlide onClick={() => openLightboxOnSlide(2)}>
+					<SwiperSlide>
 						<div class="zoom-container">
 							<img src={"./images/sites/filmtools.jpg"} alt="filmtools"/>
 							<p><MdZoomOutMap /><br></br>Learn More</p>
@@ -123,7 +117,7 @@ export default function Home() {
 						<h3>Filmtools</h3>
 						<h5>Web Developer</h5>
 					</SwiperSlide>
-					<SwiperSlide onClick={() => openLightboxOnSlide(1)}>
+					<SwiperSlide>
 						<div class="zoom-container">
 							<img src={"./images/sites/pelican.jpg"} alt="pelican products"/>
 							<p><MdZoomOutMap /><br></br>Learn More</p>
@@ -131,7 +125,7 @@ export default function Home() {
 						<h3>Pelican Products Inc.</h3>
 						<h5>Web Developer/Designer</h5>
 					</SwiperSlide>
-					<SwiperSlide onClick={() => openLightboxOnSlide(3)}>
+					<SwiperSlide>
 						<div class="zoom-container">
 							<img src={"./images/sites/mab-digital.jpg"} alt="mab digital"/>
 							<p><MdZoomOutMap /><br></br>Learn More</p>
@@ -141,66 +135,6 @@ export default function Home() {
 					</SwiperSlide>
 				</Swiper>
 				<p class="subtext">Freelance work for</p>
-
-				{/* <Grid container alignContent="center" alignItems="center" spacing={1}>
-					<Grid item lg={6}>
-					<img src={"./images/sites/isometric-pelican.png"}/>
-					<h5>Web Developer/Designer</h5>
-					<h3>PELICAN PRODUCTS</h3>
-					<p> World's best case manufacturer. Weatherproof, dustproof, crushproof protection for guns, film equipment, and much more.</p>
-					<Box mt={2}>
-						<Chip label="PHP" />
-						<Chip label="MySQL" />
-						<Chip label="Javascript" />
-						<Chip label="Jquery" />
-						<Chip label="Bootstrap" />
-					</Box>
-					</Grid>
-					<Grid item lg={6}>
-					<img
-
-						src={"./images/sites/isometric-filmtools.png"}
-					/>
-					<h5>Web Developer</h5>
-					<h3>Filmtools</h3>
-					<p>
-						Motion picture and digital video equipment supplies with
-						eCommerce and brick and mortar store.
-					</p>
-					<Box mt={2}>
-						<Chip label="Magento 2" />
-						<Chip label="Magento Enterprise" />
-					</Box>
-					</Grid>
-					<Grid item lg={6}>
-					<img
-
-						src={"./images/sites/isometric-filmtools.png"}
-					/>
-					<h5>Web Developer</h5>
-					<h3>Freelance</h3>
-					<p>
-						Motion picture and digital video equipment supplies with
-						eCommerce and brick and mortar store.
-					</p>
-					<Box mt={2}>
-						<Chip label="Magento 2" />
-						<Chip label="Magento Enterprise" />
-					</Box>
-					</Grid>
-					<Grid item lg={6}>
-					<img  src={"./images/sites/isometric-pelican.png"}/>
-					<h5>Web Developer</h5>
-					<h3>MAB Digital</h3>
-					<p>Full service digital brand agency based in Orange County supporting fitness, health, and other local businesses.</p>
-					<Box mt={2}>
-						<Chip label="HTML" />
-						<Chip label="CSS" />
-						<Chip label="Javascript" />
-					</Box>
-					</Grid>
-				</Grid>
-				*/}
 			</Container>
 		</section>
 		<section>
@@ -236,49 +170,49 @@ export default function Home() {
 						},
 					}}
 				>
-					<SwiperSlide onClick={() => openLightboxOnSlide(1)}>
+					<SwiperSlide  onClick={() => openLightboxOnSlide(1)}>
 						<div class="zoom-container">
 						<img class="img-ui" src={CDN + "daily-ui/404-t.jpg"} alt="404 page"></img>
 						<p><MdZoomOutMap /><br></br>View Full</p>
 					</div>
 					<h3>404 Page</h3>
 					</SwiperSlide>
-					<SwiperSlide onClick={() => openLightboxOnSlide(7)}>
+					<SwiperSlide onClick={() => openLightboxOnSlide(2)}>
 						<div class="zoom-container">
 							<img class="img-ui" src={CDN + "daily-ui/landing-page-t.jpg"} alt="landing-page"></img>
 							<p><MdZoomOutMap /><br></br>View Full</p>
 						</div>
 						<h3>Landing Page</h3>
 				   </SwiperSlide>
-                   <SwiperSlide onClick={() => openLightboxOnSlide(4)}>
+                   <SwiperSlide onClick={() => openLightboxOnSlide(3)}>
 						<div class="zoom-container">
 						<img class="img-ui"src={CDN + "daily-ui/direct-messaging-t.jpg"} alt="direct messaging"></img>
 						<p><MdZoomOutMap /><br></br>View Full</p>
 						</div>
 						<h3>Direct Messaging</h3>
 					</SwiperSlide>
-						<SwiperSlide onClick={() => openLightboxOnSlide(3)}>
+						<SwiperSlide onClick={() => openLightboxOnSlide(4)}>
 						<div class="zoom-container">
 							<img class="img-ui" src={CDN + "daily-ui/search-t.jpg"} alt="search"></img>
 							<p><MdZoomOutMap /><br></br>View Full</p>
 						</div>
 						<h3>Search</h3>
 					</SwiperSlide>
-					<SwiperSlide onClick={() => openLightboxOnSlide(2)}>
+					<SwiperSlide onClick={() => openLightboxOnSlide(5)}>
 						<div class="zoom-container">
 							<img class="img-ui" src={CDN + "daily-ui/credit-card-t.jpg"} alt="credit card"></img>
 							<p><MdZoomOutMap /><br></br>View Full</p>
 						</div>
 						<h3>Credit Card Checkout</h3>
 					</SwiperSlide>
-					<SwiperSlide onClick={() => openLightboxOnSlide(5)}>
+					<SwiperSlide onClick={() => openLightboxOnSlide(6)}>
 						<div class="zoom-container">
 							<img class="img-ui" src={CDN + "daily-ui/flash-message-t.jpg"} alt="flash message"></img>
 							<p><MdZoomOutMap /><br></br>View Full</p>
 						</div>
 						<h3>Flash Message</h3>
 					</SwiperSlide>
-					<SwiperSlide onClick={() => openLightboxOnSlide(6)}>
+					<SwiperSlide onClick={() => openLightboxOnSlide(7)}>
 						 <div class="zoom-container">
 							 <img class="img-ui" src={CDN + "daily-ui/settings-t.jpg"} alt="settings"></img>
 							 <p><MdZoomOutMap /><br></br>View Full</p>
@@ -375,6 +309,20 @@ export default function Home() {
 			</Container>
 		</section>
 		<Footer></Footer>
+
+		<FsLightbox
+			toggler={lightboxController.toggler}
+			sources={[
+				CDN + 'daily-ui/404.jpg',
+				CDN + 'daily-ui/landing-page.jpg',
+				CDN + 'daily-ui/direct-messaging.jpg',
+				CDN + 'daily-ui/search.jpg',
+				CDN + 'daily-ui/credit-card.jpg',
+				CDN + 'daily-ui/flash-message.jpg',
+				CDN + 'daily-ui/settings.jpg'
+			]}
+			slide={lightboxController.slide}
+		/>
 	</Layout>
 	)
 }
