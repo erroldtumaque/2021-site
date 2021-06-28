@@ -34,8 +34,6 @@ export default function Home() {
 
 	function openLightboxOnSlide(number) {
 		var offset = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
-		alert(offset);
-
 
 		setLightboxController({
 			toggler: !lightboxController.toggler,
