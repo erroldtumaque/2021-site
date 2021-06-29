@@ -26,8 +26,8 @@
 }
 
 .swiper-slide .zoom-container {
-  -webkit-transition: 250ms all;
-  transition: 250ms all;
+  -webkit-transition: 150ms all;
+  transition: 150ms all;
   overflow: hidden;
   border-radius: 10px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -35,6 +35,7 @@
 }
 
 .swiper-slide .zoom-container p {
+  pointer-events: none;
   color: white;
   opacity: 0;
   position: absolute;
