@@ -49,7 +49,7 @@ export default function Home() {
 		<div className="application">
 			<Helmet>
 				<meta charSet="utf-8" />
-				<title>Errold | Web Developer, Photographer, Musician</title>
+				<title>Errold | Full Stack Developer, Photographer, Musician</title>
 				<link rel="canonical" href="https://www.errold.com" />
 			</Helmet>
 		</div>
@@ -62,8 +62,8 @@ export default function Home() {
 								<img src={"./images/profile.jpg"} />
 							</Grid>
 							<Grid>
-								<h1 data-sal="slide-down" data-sal-delay="200">ERROLD</h1>
-								<h5>Web Developer | Photographer | Musician</h5>
+								<h1>ERROLD</h1>
+								<h5 data-sal="slide-down" data-sal-duration="600" data-sal-delay="300">Full Stack Developer | Photographer | Musician</h5>
 								<Grid className={""} container xs={12} item spacing={2}>
 									<Grid item>
 										<a href="mailto:errold.tumaque@gmail.com" target="_blank"><SiGmail class="main-icon" /></a>
@@ -104,11 +104,11 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-					<h4>Full-Stack</h4>
-					<h2>Web Developer</h2>
+					<h4>Full Stack</h4>
+					<h2>Developer</h2>
 				</Box>
 				<Swiper
-					data-sal="fade" data-sal-duration="600" data-sal-delay="300"
+					data-sal="fade" data-sal-duration="600"
 					spaceBetween={0}
 					slidesPerView={1}
 					navigation={false}

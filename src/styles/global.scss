@@ -17,7 +17,7 @@ $h4-color: #aa87bb;
 
 $section-color: rgba(255,255,255,1);
 $section-alt-color: rgba(255,255,255,1);
-$section-title-color:	#212121;
+$section-title-color: #333;
 $section-subtitle-color: #175853;
 
 $link-color: white;
@@ -40,6 +40,7 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'Overpass';
 	font-weight: 500;
 	letter-spacing: 1px;
+    display: inline-block;
 }
 h1 {
 	text-align: center;
@@ -52,9 +53,8 @@ h2 {
 	font-weight: 700;
 	text-align: center;
 	text-transform: uppercase;
-	display: block;
-	font-size: 48px;
-	margin-left: -5px;
+	font-size: 36px;
+	margin-left: 10px;
 	letter-spacing: 5px;
 }
 
@@ -71,13 +71,13 @@ h4 {
 	text-align: center;
 	color: $h4-color;
 	font-weight: 700;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	text-transform: uppercase;
 }
 
 h5 {
 	font-family: 'Roboto';
-	opacity: 0.5;
+	opacity: 0.5 !important;
 	font-weight: 500;
 	margin-bottom: 0.75rem;
 	color: white;
@@ -94,7 +94,7 @@ p {
 
 .subtext {
 	margin-top: 4rem;
-	text-align: center;
+	text-align: right;
 	font-size: .80em;
 	color: rgba(0,0,0,0.4);
 
@@ -132,7 +132,7 @@ ul {
 	margin-bottom: -16px;
 	border-bottom: 5px solid rgba(255,255,255,0.2);
 	animation-name: rotate;
-	animation-duration: 8s;
+	animation-duration: 10s;
 	animation-iteration-count:infinite;
 	animation-timing-function:linear;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
@@ -165,6 +165,9 @@ section {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 	.section-title {
+        position: relative;
+        margin-bottom: 60px;
+
 		h1 {
 			text-align: center;
 			margin-right: 12px;
@@ -173,6 +176,15 @@ section {
 			opacity: 0.8;
 		}
 	}
+    .section-title:after {
+        content: "";
+        width: 240px;
+        position: absolute;
+        height: 0px;
+        bottom: 24px;
+        left: -60px;
+        background: #eaeaea;
+    }
 }
 
 .profile-section {
