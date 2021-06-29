@@ -53,8 +53,7 @@ export default function Home() {
 				<link rel="canonical" href="https://www.errold.com" />
 			</Helmet>
 		</div>
-		<div class="animated-bar">
-
+		<div class="main-bar">
 			<Container class="profile-section" maxWidth={"xl"}>
 				<Grid container direction={"row"} alignItems={"center"} >
 					<Grid lg={12} xs={12} container item alignItems={"center"} >
@@ -105,8 +104,8 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-					<h4 data-sal="slide-up">Full-Stack</h4>
-					<h2 data-sal="slide-down" data-sal-delay="200">Web Developer</h2>
+					<h4>Full-Stack</h4>
+					<h2>Web Developer</h2>
 				</Box>
 				<Swiper
 					data-sal="fade" data-sal-duration="600" data-sal-delay="300"
@@ -143,7 +142,6 @@ export default function Home() {
 							<p><MdZoomOutMap /><br></br>Learn More</p>
 						</div>
 						<h3>Pelican Products Inc.</h3>
-						{/*  <h5>Web Developer/Designer</h5> */}
 					</SwiperSlide>
 					<SwiperSlide>
 						<div class="zoom-container">
@@ -151,7 +149,6 @@ export default function Home() {
 							<p><MdZoomOutMap /><br></br>Learn More</p>
 						</div>
 						<h3>Filmtools</h3>
-						{/*  <h5>Web Developer</h5> */}
 					</SwiperSlide>
 
 					<SwiperSlide>
@@ -160,7 +157,6 @@ export default function Home() {
 							<p><MdZoomOutMap /><br></br>Learn More</p>
 						</div>
 						<h3>MAB Digital</h3>
-						{/*  <h5>Web Developer</h5> */}
 					</SwiperSlide>
 				</Swiper>
 				<p class="subtext">Freelance work for</p>
@@ -169,11 +165,11 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-					<h4 data-sal="slide-up">Daily UI</h4>
-					<h2 data-sal="slide-down" data-sal-delay="200">Designs</h2>
+					<h4>Daily UI</h4>
+					<h2>Designs</h2>
 				</Box>
 				<Swiper
-					data-sal="fade" data-sal-duration="600" data-sal-delay="300"
+					data-sal="fade" data-sal-duration="600"
 					spaceBetween={0}
 					slidesPerView={1}
 					navigation={false}
@@ -256,13 +252,11 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-				<div data-sal="slide-up"><h4>Shoots & </h4></div>
-				<div data-sal="slide-down" data-sal-delay="200">
-					<h2>PHOTOGRAPHY</h2>
-				</div>
+                    <h4>Shoots & </h4>
+                    <h2>PHOTOGRAPHY</h2>
 				</Box>
 				<Swiper
-					data-sal="fade" data-sal-duration="600" data-sal-delay="300"
+					data-sal="fade" data-sal-duration="600"
 					slidesPerView={1}
 					navigation={false}
 					onSwiper={swiper => console.log(swiper)}

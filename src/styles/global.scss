@@ -40,7 +40,6 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'Overpass';
 	font-weight: 500;
 	letter-spacing: 1px;
-	z-index: 12;
 }
 h1 {
 	text-align: center;
@@ -57,8 +56,6 @@ h2 {
 	font-size: 48px;
 	margin-left: -5px;
 	letter-spacing: 5px;
-
-
 }
 
 h3 {
@@ -123,29 +120,24 @@ ul {
 	margin-left: 0px;
 }
 
-.animated-bar {
-	background-size: 200% 200% !important;
-	background: #136a8a;	/* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #136a8a, #743294);	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #136a8a, #743294); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.main-bar {
+	background-size: 300% 300% !important;
+	background: #136a8a;
+	background: -webkit-linear-gradient(to right, #136a8a, #743294);
+	background: linear-gradient(to right, #136a8a, #743294); 
 	background-position: 0% 0%;
 	color: white;
 	position: relative;
 	display: block;
-	margin-bottom: 60px;
+	margin-bottom: -24px;
 	border-bottom: 5px solid rgba(255,255,255,0.2);
-
-	-webkit-animation-name: rotate;
-	-webkit-animation-duration: 6s;
-	-webkit-animation-iteration-count:infinite;
-	-webkit-animation-timing-function:linear;
-	-moz-animation-name: rotate;
-	-moz-animation-duration: 6s;
-	-moz-animation-iteration-count:infinite;
-	-moz-animation-timing-function:linear;
+	animation-name: rotate;
+	animation-duration: 8s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; 
 
 	h1 {
-		// color: $section-title-color;
 		color: white;
 		font-weight: 700;
 		margin-bottom: -0.5rem;
@@ -154,7 +146,7 @@ ul {
 		display: block;
 		font-size: 72px;
 		letter-spacing: 5px;
-		text-shadow: 2px 2px 5px #333;
+		text-shadow: 1px 1px 4px #444;
 	}
 }
 
@@ -170,6 +162,7 @@ section {
 	margin: 0 auto;
 	margin-bottom: 3rem;
 	overflow-x: hidden;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
 	.section-title {
 		h1 {
@@ -190,7 +183,8 @@ section {
 	overflow: visible;
 	background: none;
 	margin-bottom: 0px;
-
+    box-shadow: none;
+    
 	.profile-img {
 		border-radius: 50px;
 		overflow: visible;
@@ -238,33 +232,9 @@ nav {
 	text-decoration: underline;
 }
 
-// .container {
-// 	margin: 2rem 2rem;
-// }
-// .layout {
-// 	margin: 3rem auto;
-// 	max-width: 1080px;
-// 	padding: 0 1rem;
-// }
-// .grid-container {
-// 	display: grid;
-// 	grid-row-gap: 50px;
-// 	grid-template-columns: auto auto auto;
-// 	background-color: #2196F3;
-// 	padding: 10px;
-// }
-//
-// .grid-item {
-// 	background-color: rgba(255, 255, 255, 0.8);
-// 	border: 1px solid rgba(0, 0, 0, 0.8);
-// 	padding: 20px;
-// 	font-size: 30px;
-// 	text-align: center;
-// }
-
 #tsparticles {
 	position: absolute;
-	right: -10px;
+	right: -80px;
 	top: 12%;
 }
 
@@ -336,6 +306,9 @@ footer {
 
 //small
 @media only screen and (max-width: 600px) {
+    .main-bar h1 {
+        font-size: 52px;
+    }
 	h2 {
 		font-size: 28px;
 	}
