@@ -184,7 +184,7 @@ section {
 	background: none;
 	margin-bottom: 0px;
     box-shadow: none;
-    
+
 	.profile-img {
 		border-radius: 50px;
 		overflow: visible;
@@ -192,14 +192,15 @@ section {
 
 		img {
 			background: rgba(255,255,255,0.2);
-			border-radius: 50%;
-			padding: 5px;
+			border-radius: 10px;
+			padding: 2px;
 			border: 1px solid rgba(0, 0, 0, 0.1);
 			float: left;
 			width: 150px;
 			max-width: 100%;
 			margin: 20px 20px 20px 0px;
-		}
+		    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; 
+        }
 	}
 
 	.section-title h1, h2, h3, h4, h5 {
