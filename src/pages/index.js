@@ -59,7 +59,7 @@ export default function Home() {
 					<Grid lg={12} xs={12} container item alignItems={"center"} >
 						<Grid container item alignItems={"center"} xs={12}>
 							<Grid item className={"profile-img"}>
-								<img src={"./images/profile.jpg"} />
+								<img src={CDN + "profile.jpg"} />
 							</Grid>
 							<Grid>
 								<h1>ERROLD</h1>
