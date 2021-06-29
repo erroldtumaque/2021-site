@@ -28,6 +28,24 @@ $icons-hover-color: white;
 	// margin-left: 0px;
 	}
 }
+
+.main-icon {
+	color: white;
+	border-radius: 5px;
+	font-size: 30px;
+	padding: 5px;
+	background: #59598e;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	z-index: 10;
+	
+	&:hover {
+		background: #a4a4c6;
+		transform: translateY(-2px);
+	}
+}
+
 .photoshop-icon {
 	color: #4fccfe;
 }

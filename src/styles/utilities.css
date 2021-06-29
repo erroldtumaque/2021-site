@@ -21,4 +21,16 @@
 .h-full {
   height: 100%;
 }
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
 /*# sourceMappingURL=utilities.css.map */

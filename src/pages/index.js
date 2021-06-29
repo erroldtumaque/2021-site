@@ -9,9 +9,12 @@ import Particles from "react-particles-js"
 import { Helmet } from "react-helmet"
 import FsLightbox from 'fslightbox-react';
 
-import { Container} from "@material-ui/core"
+import { Container, Grid } from "@material-ui/core"
 import { MdPhotoLibrary, MdZoomOutMap } from "react-icons/md";
 import { FiCamera } from "react-icons/fi";
+import { FaLinkedinIn, FaFacebookF, FaInstagram, FaGithub,   } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+
 
 import Box from "@material-ui/core/Box"
 
@@ -43,7 +46,6 @@ export default function Home() {
 
 	return (
 	<Layout>
-
 		<div className="application">
 			<Helmet>
 				<meta charSet="utf-8" />
@@ -52,39 +54,66 @@ export default function Home() {
 			</Helmet>
 		</div>
 		<div class="animated-bar">
-			<Particles
-				params={{
-					"particles": {
-						"number": {
-							"value": 10
-						},
-						"size": {
-							"value": 3
-						}
-					},
-					"interactivity": {
-						"events": {
-							"onhover": {
-								"enable": true,
-								"mode": "repulse"
+
+			<Container class="profile-section" maxWidth={"xl"}>
+				<Grid container direction={"row"} alignItems={"center"} >
+					<Grid lg={12} xs={12} container item alignItems={"center"} >
+						<Grid container item alignItems={"center"} xs={12}>
+							<Grid item className={"profile-img"}>
+								<img src={"./images/profile.jpg"} />
+							</Grid>
+							<Grid>
+								<h1 data-sal="slide-down" data-sal-delay="200">ERROLD</h1>
+								<h5>Web Developer | Photographer | Musician</h5>
+								<Grid className={""} container xs={12} item spacing={2}>
+									<Grid item>
+										<a href="mailto:errold.tumaque@gmail.com" target="_blank"><SiGmail class="main-icon" /></a>
+									</Grid>
+									<Grid item>
+										<FaLinkedinIn class="main-icon" />
+									</Grid>
+									<Grid item>
+										<FaFacebookF class="main-icon" />
+									</Grid>
+									<Grid item>
+										<FaInstagram class="main-icon" />
+									</Grid>
+									<Grid item>
+										<FaGithub class="main-icon" />
+									</Grid>
+								</Grid>
+							</Grid>
+						</Grid>
+					</Grid>
+				</Grid>
+				<Particles
+					params={{
+						"particles": {
+							"number": {
+								"value": 10
+							},
+							"size": {
+								"value": 3
 							}
-						}
-					}
-				}}
-			/>
+						},
+
+					}}
+				/>
+			</Container>
 		</div>
+
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-				<h4 data-sal="slide-up">Full-Stack</h4>
-				<h2 data-sal="slide-down" data-sal-delay="200">Web Developer</h2>
+					<h4 data-sal="slide-up">Full-Stack</h4>
+					<h2 data-sal="slide-down" data-sal-delay="200">Web Developer</h2>
 				</Box>
 				<Swiper
 					data-sal="fade" data-sal-duration="600" data-sal-delay="300"
-					spaceBetween={15}
+					spaceBetween={0}
 					slidesPerView={1}
 					navigation={false}
-					initialSlide={1}
+					initialSlide={0}
 					pagination={{ clickable: true }}
 					onSwiper={swiper => console.log(swiper)}
 					onSlideChange={() => console.log("slide change")}
@@ -102,6 +131,7 @@ export default function Home() {
 						768: { slidesPerView: 2 },
 						992: { slidesPerView: 2 },
 						1200: {
+							initialSlide: 1,
 							slidesPerView: 3,
 							slidesPerColumnFill: "row",
 						},
@@ -109,27 +139,28 @@ export default function Home() {
 				>
 					<SwiperSlide>
 						<div class="zoom-container">
-							<img src={"./images/sites/filmtools.jpg"} alt="filmtools"/>
-							<p><MdZoomOutMap /><br></br>Learn More</p>
-						</div>
-						<h3>Filmtools</h3>
-						<h5>Web Developer</h5>
-					</SwiperSlide>
-					<SwiperSlide>
-						<div class="zoom-container">
 							<img src={"./images/sites/pelican.jpg"} alt="pelican products"/>
 							<p><MdZoomOutMap /><br></br>Learn More</p>
 						</div>
 						<h3>Pelican Products Inc.</h3>
-						<h5>Web Developer/Designer</h5>
+						{/*  <h5>Web Developer/Designer</h5> */}
 					</SwiperSlide>
+					<SwiperSlide>
+						<div class="zoom-container">
+							<img src={"./images/sites/filmtools.jpg"} alt="filmtools"/>
+							<p><MdZoomOutMap /><br></br>Learn More</p>
+						</div>
+						<h3>Filmtools</h3>
+						{/*  <h5>Web Developer</h5> */}
+					</SwiperSlide>
+
 					<SwiperSlide>
 						<div class="zoom-container">
 							<img src={"./images/sites/mab-digital.jpg"} alt="mab digital"/>
 							<p><MdZoomOutMap /><br></br>Learn More</p>
 						</div>
 						<h3>MAB Digital</h3>
-						<h5>Web Developer</h5>
+						{/*  <h5>Web Developer</h5> */}
 					</SwiperSlide>
 				</Swiper>
 				<p class="subtext">Freelance work for</p>
@@ -138,15 +169,15 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-				<h4 data-sal="slide-up">Daily UI</h4>
-				<h2 data-sal="slide-down" data-sal-delay="200">Designs</h2>
+					<h4 data-sal="slide-up">Daily UI</h4>
+					<h2 data-sal="slide-down" data-sal-delay="200">Designs</h2>
 				</Box>
 				<Swiper
 					data-sal="fade" data-sal-duration="600" data-sal-delay="300"
 					spaceBetween={0}
 					slidesPerView={1}
 					navigation={false}
-					initialSlide={2}
+					initialSlide={0}
 					pagination={{ clickable: true }}
 					onSwiper={swiper => console.log(swiper)}
 					effect={'coverflow'}
@@ -163,8 +194,9 @@ export default function Home() {
 						768: { slidesPerView: 2 },
 						992: { slidesPerView: 2 },
 						1200: {
-						slidesPerView: 3,
-						slidesPerColumnFill: "row",
+							initialSlide: 3,
+							slidesPerView: 3,
+							slidesPerColumnFill: "row",
 						},
 					}}
 				>
@@ -182,20 +214,20 @@ export default function Home() {
 						</div>
 						<h3>Landing Page</h3>
 				   </SwiperSlide>
-                   <SwiperSlide onClick={() => openLightboxOnSlide(3)}>
-						<div class="zoom-container">
-						<img class="img-ui"src={CDN + "daily-ui/direct-messaging-t.jpg"} alt="direct messaging"></img>
-						<p><MdZoomOutMap /><br></br>View Full</p>
-						</div>
-						<h3>Direct Messaging</h3>
-					</SwiperSlide>
-						<SwiperSlide onClick={() => openLightboxOnSlide(4)}>
+					<SwiperSlide onClick={() => openLightboxOnSlide(3)}>
 						<div class="zoom-container">
 							<img class="img-ui" src={CDN + "daily-ui/search-t.jpg"} alt="search"></img>
 							<p><MdZoomOutMap /><br></br>View Full</p>
 						</div>
 						<h3>Search</h3>
 					</SwiperSlide>
+					<SwiperSlide onClick={() => openLightboxOnSlide(4)}>
+ 						<div class="zoom-container">
+ 						<img class="img-ui"src={CDN + "daily-ui/direct-messaging-t.jpg"} alt="direct messaging"></img>
+ 						<p><MdZoomOutMap /><br></br>View Full</p>
+ 						</div>
+ 						<h3>Direct Messaging</h3>
+ 					</SwiperSlide>
 					<SwiperSlide onClick={() => openLightboxOnSlide(5)}>
 						<div class="zoom-container">
 							<img class="img-ui" src={CDN + "daily-ui/credit-card-t.jpg"} alt="credit card"></img>
@@ -221,7 +253,6 @@ export default function Home() {
 				<p class="subtext">Designed with Adobe XD, Adobe Illustrator and Figma</p>
 			</Container>
 		</section>
-
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
@@ -237,7 +268,7 @@ export default function Home() {
 					onSwiper={swiper => console.log(swiper)}
 					onSlideChange={() => console.log("slide change")}
 					pagination={{ clickable: true }}
-					initialSlide={2}
+					initialSlide={0}
 					effect={'coverflow'}
 					centeredSlides={true}
 					coverflowEffect={{
@@ -252,8 +283,9 @@ export default function Home() {
 						768: { slidesPerView: 1 },
 						992: { slidesPerView: 1 },
 						1200: {
-						slidesPerView: 3,
-						slidesPerColumnFill: "row",
+							initialSlide: 2,
+							slidesPerView: 3,
+							slidesPerColumnFill: "row",
 						},
 					}}
 				>
@@ -313,8 +345,8 @@ export default function Home() {
 			sources={[
 				CDN + 'daily-ui/404.jpg',
 				CDN + 'daily-ui/landing-page.jpg',
-				CDN + 'daily-ui/direct-messaging.jpg',
 				CDN + 'daily-ui/search.jpg',
+				CDN + 'daily-ui/direct-messaging.jpg',
 				CDN + 'daily-ui/credit-card.jpg',
 				CDN + 'daily-ui/flash-message.jpg',
 				CDN + 'daily-ui/settings.jpg'
