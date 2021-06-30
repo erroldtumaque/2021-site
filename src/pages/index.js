@@ -1,26 +1,26 @@
-import React, { useState } from "react"
-import { Link } from "gatsby"
-import Layout from "../components/layout"
-import Footer from "../components/footer"
-import SwiperCore, { EffectCoverflow, Navigation, Pagination, Scrollbar, A11y } from "swiper"
-import { Swiper, SwiperSlide } from "swiper/react"
-import Particles from "react-particles-js"
+import React, { useState } from "react";
+import { Link } from "gatsby";
+import Layout from "../components/layout";
+import Footer from "../components/footer";
+import SwiperCore, { EffectCoverflow, Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Particles from "react-particles-js";
 // import YouTube from "react-youtube"
-import { Helmet } from "react-helmet"
+import { Helmet } from "react-helmet";
 import FsLightbox from 'fslightbox-react';
 
-import { Container, Grid } from "@material-ui/core"
+import { Container, Grid } from "@material-ui/core";
 import { MdPhotoLibrary, MdZoomOutMap } from "react-icons/md";
 import { FaLinkedinIn, FaFacebookF, FaInstagram, FaGithub,   } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
-import Box from "@material-ui/core/Box"
+import Box from "@material-ui/core/Box";
 
-import "swiper/swiper.scss"
-import 'swiper/swiper-bundle.css';
+import "swiper/swiper.scss";
+import "swiper/swiper-bundle.css";
 
-import "../styles/global.scss"
-import { CDN } from "../components/constants"
+import "../styles/global.scss";
+import { CDN } from "../components/constants";
 
 SwiperCore.use([EffectCoverflow,Navigation, Pagination, Scrollbar, A11y])
 
