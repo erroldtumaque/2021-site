@@ -50,7 +50,7 @@ export default function Home() {
 			</Helmet>
 		</div>
 		<div class="main-bar">
-			<Container className="profile-section" maxWidth={"xl"}>
+			<section className={"profile-section"}>
 				<Grid container direction={"row"} alignItems={"center"} >
 					<Grid lg={12} xs={12} container item alignItems={"center"} >
 						<Grid container item alignItems={"center"} xs={12}>
@@ -94,7 +94,7 @@ export default function Home() {
 
 					}}
 				/>
-			</Container>
+			</section>
 		</div>
 
 		<section>
