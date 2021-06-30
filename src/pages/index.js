@@ -11,7 +11,6 @@ import FsLightbox from 'fslightbox-react';
 
 import { Container, Grid } from "@material-ui/core"
 import { MdPhotoLibrary, MdZoomOutMap } from "react-icons/md";
-import { FiCamera } from "react-icons/fi";
 import { FaLinkedinIn, FaFacebookF, FaInstagram, FaGithub,   } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
