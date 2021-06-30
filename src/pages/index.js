@@ -14,7 +14,6 @@ import { MdPhotoLibrary, MdZoomOutMap } from "react-icons/md";
 import { FaLinkedinIn, FaFacebookF, FaInstagram, FaGithub,   } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
-
 import Box from "@material-ui/core/Box"
 
 import "swiper/swiper.scss"
@@ -35,8 +34,6 @@ export default function Home() {
 	});
 
 	function openLightboxOnSlide(number) {
-		var offset = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
-
 		setLightboxController({
 			toggler: !lightboxController.toggler,
 			slide: number
@@ -58,26 +55,26 @@ export default function Home() {
 					<Grid lg={12} xs={12} container item alignItems={"center"} >
 						<Grid container item alignItems={"center"} xs={12}>
 							<Grid item className={"profile-img"}>
-								<img src={CDN + "profile.jpg"} />
+								<img src={CDN + "profile.jpg"} alt="profile"/>
 							</Grid>
 							<Grid>
 								<h1>ERROLD</h1>
 								<h5 data-sal="slide-down" data-sal-duration="600" data-sal-delay="300">Full Stack Developer | Photographer | Musician</h5>
 								<Grid className={""} container xs={12} item spacing={2}>
 									<Grid item>
-										<a href="mailto:errold.tumaque@gmail.com" target="_blank"><SiGmail class="main-icon" /></a>
+										<a href="mailto:errold.tumaque@gmail.com" target="_blank" rel="noreferrer"><SiGmail class="main-icon" aria-label="email" /></a>
 									</Grid>
 									<Grid item>
-										<FaLinkedinIn class="main-icon" />
+										<a href="https://www.linkedin.com/in/errold/" target="_blank" rel="noreferrer"><FaLinkedinIn class="main-icon" aria-label="linked in"/></a>
 									</Grid>
 									<Grid item>
-										<FaFacebookF class="main-icon" />
+										<a href="https://github.com/erroldtumaque" target="_blank" rel="noreferrer"><FaFacebookF class="main-icon" aria-label="facebook"/></a>
 									</Grid>
 									<Grid item>
-										<FaInstagram class="main-icon" />
+										<a href="https://www.facebook.com/errold.tumaque" target="_blank" rel="noreferrer"><FaInstagram class="main-icon" aria-label="instagram" /></a>
 									</Grid>
 									<Grid item>
-										<FaGithub class="main-icon" />
+										<a href="https://www.instagram.com/erroldtumaque/?hl=ene"target="_blank" rel="noreferrer"><FaGithub class="main-icon" aria-label="github"/></a>
 									</Grid>
 								</Grid>
 							</Grid>

@@ -1,13 +1,8 @@
 import React from "react"
 import { Grid, Container } from "@material-ui/core"
 
-import {
-	IoLogoFacebook,
-	IoLogoInstagram,
-	IoLogoLinkedin,
-	IoLogoGithub,
-} from "react-icons/io5"
-import { SiGmail } from "react-icons/si"
+import { FaLinkedinIn, FaFacebookF, FaInstagram, FaGithub,   } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 export default function Footer() {
 	return (
@@ -16,11 +11,11 @@ export default function Footer() {
 			<Grid container>
 				<Grid item xs={12} alignContent={"center"} alignItems={"center"} justify={"center"} align="center">
 				<ul>
-					<li><a href="mailto:errold.tumaque@gmail.com" target="_blank">Email</a></li>
-					<li><a href="https://www.linkedin.com/in/errold/" target="_blank">LinkedIn</a></li>
-					<li><a href="https://github.com/erroldtumaque" target="_blank">	Github	</a></li>
-					<li><a href="https://www.facebook.com/errold.tumaque" target="_blank">	Facebook</a></li>
-					<li><a href="https://www.instagram.com/erroldtumaque/?hl=ene"target="_blank">Instagram</a></li>
+					<li><a href="mailto:errold.tumaque@gmail.com" target="_blank" rel="noreferrer">Email</a></li>
+					<li><a href="https://www.linkedin.com/in/errold/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+					<li><a href="https://github.com/erroldtumaque" target="_blank" rel="noreferrer">	Github	</a></li>
+					<li><a href="https://www.facebook.com/errold.tumaque" target="_blank" rel="noreferrer">	Facebook</a></li>
+					<li><a href="https://www.instagram.com/erroldtumaque/?hl=ene"target="_blank" rel="noreferrer">Instagram</a></li>
 				</ul>
 				</Grid>
 				</Grid>

@@ -1,3 +1,5 @@
 import "./src/styles/swiper.scss"
 import "./src/styles/utilities.scss"
 import "./src/styles/global.scss"
+import "./src/styles/faq.scss"
+import "./src/styles/icons.scss"
