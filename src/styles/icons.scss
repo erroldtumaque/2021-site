@@ -42,6 +42,12 @@ $icons-hover-color: white;
 	}
 }
 
+.footer-icon {
+	@extend .main-icon;
+
+	background: none;
+	display: block; 
+}
 .photoshop-icon {
 	color: #4fccfe;
 }

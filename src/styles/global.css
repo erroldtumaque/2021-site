@@ -221,7 +221,7 @@
   color: white;
 }
 
-.main-icon {
+.main-icon, .footer-icon {
   color: white;
   border-radius: 5px;
   font-size: 30px;
@@ -235,8 +235,13 @@
   z-index: 10;
 }
 
-.main-icon:hover {
+.main-icon:hover, .footer-icon:hover {
   background: #a4a4c6;
+}
+
+.footer-icon {
+  background: none;
+  display: block;
 }
 
 .photoshop-icon {

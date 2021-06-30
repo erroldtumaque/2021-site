@@ -17,10 +17,7 @@ import { SiGmail } from "react-icons/si";
 import Box from "@material-ui/core/Box"
 
 import "swiper/swiper.scss"
-import "swiper/components/navigation/navigation.scss"
-import "swiper/components/pagination/pagination.scss"
-import "swiper/components/scrollbar/scrollbar.scss"
-import "swiper/components/effect-coverflow/effect-coverflow.min.css"
+import 'swiper/swiper-bundle.css';
 
 import "../styles/global.scss"
 import { CDN } from "../components/constants"
@@ -100,8 +97,8 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-					<h4>Full Stack</h4>
-					<h2>Developer</h2>
+					<h4>Projects/</h4>
+					<h2>Websites</h2>
 				</Box>
 				<Swiper
 					data-sal="fade" data-sal-duration="600"
@@ -122,9 +119,9 @@ export default function Home() {
 						"slideShadows": false
 					}}
 					breakpoints={{
-						576: { slidesPerView: 2 },
-						768: { slidesPerView: 2 },
-						992: { slidesPerView: 2 },
+						576: { slidesPerView: 1 },
+						768: { initialSlide: 1, slidesPerView: 3 },
+						992: { initialSlide: 1, slidesPerView: 3 },
 						1200: {
 							initialSlide: 1,
 							slidesPerView: 3,
@@ -161,7 +158,7 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-					<h4>Daily UI</h4>
+					<h4>Daily UI/</h4>
 					<h2>Designs</h2>
 				</Box>
 				<Swiper
@@ -182,9 +179,9 @@ export default function Home() {
 					  "slideShadows": false
 					}}
 					breakpoints={{
-						576: { slidesPerView: 2 },
-						768: { slidesPerView: 2 },
-						992: { slidesPerView: 2 },
+						576: { slidesPerView: 1 },
+						768: { initialSlide: 3, slidesPerView: 3 },
+						992: { initialSlide: 3, slidesPerView: 3 },
 						1200: {
 							initialSlide: 3,
 							slidesPerView: 3,
@@ -248,7 +245,7 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-                    <h4>Shoots & </h4>
+                    <h4>Shoots/</h4>
                     <h2>PHOTOGRAPHY</h2>
 				</Box>
 				<Swiper
@@ -270,8 +267,8 @@ export default function Home() {
 					}}
 					breakpoints={{
 						576: { slidesPerView: 1 },
-						768: { slidesPerView: 1 },
-						992: { slidesPerView: 1 },
+						768: { initialSlide: 2, slidesPerView: 3 },
+						992: { initialSlide: 2, slidesPerView: 3 },
 						1200: {
 							initialSlide: 2,
 							slidesPerView: 3,
