@@ -655,10 +655,10 @@ footer ul li {
 
 @media only screen and (max-width: 600px) {
   .main-bar h1 {
-    font-size: 42px;
+    font-size: 28px;
   }
   h2 {
-    font-size: 28px;
+    font-size: 22px;
   }
   h5 {
     font-size: 14px;
