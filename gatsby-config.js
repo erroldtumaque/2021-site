@@ -6,13 +6,7 @@ module.exports = {
 	url: "https://www.errold.com", 
 	},
 	plugins: [
-	{
-		resolve: `gatsby-plugin-google-fonts`,
-		options: {
-		fonts: ["Krona One","Overpass", "Roboto"],
-		},
-		display: "swap",
-	},
+	
 	{
 		resolve: `gatsby-plugin-typography`,
 		options: {
