@@ -132,7 +132,7 @@ ul {
 	color: white;
 	position: relative;
 	display: block;
-	margin-bottom: -16px;
+	margin-bottom: -42px;
 	border-bottom: 5px solid rgba(255,255,255,0.2);
 	animation-name: rotate;
 	animation-duration: 10s;
@@ -163,7 +163,7 @@ section {
 	min-height: 600px;
 	max-width: 1440px;
 	margin: 0 auto;
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 	overflow-x: hidden;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
@@ -194,7 +194,7 @@ section {
 	@extend section;
 	margin-top: 0px;
 	min-height: 100px;
-	padding: 2rem 0rem;
+	padding: 3rem 0rem;
 	overflow: visible;
 	background: none;
 	margin-bottom: 0px;
