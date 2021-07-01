@@ -245,8 +245,8 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-                    <h4>Shoots</h4>
-                    <h2>PHOTOGRAPHY</h2>
+                    <h4>Photo</h4>
+                    <h2>ALBUMS</h2>
 				</Box>
 				<Swiper
 					data-sal="fade" data-sal-duration="600"
