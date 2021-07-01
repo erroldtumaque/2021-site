@@ -97,7 +97,7 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-					<h4>Projects/</h4>
+					<h4>Projects</h4>
 					<h2>Websites</h2>
 				</Box>
 				<Swiper
@@ -158,7 +158,7 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-					<h4>Daily UI/</h4>
+					<h4>Daily UI</h4>
 					<h2>Designs</h2>
 				</Box>
 				<Swiper
@@ -245,7 +245,7 @@ export default function Home() {
 		<section>
 			<Container maxWidth={"xl"}>
 				<Box class={"section-title"}>
-                    <h4>Shoots/</h4>
+                    <h4>Shoots</h4>
                     <h2>PHOTOGRAPHY</h2>
 				</Box>
 				<Swiper
