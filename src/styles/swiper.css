@@ -102,25 +102,15 @@
 }
 
 .swiper-slide h3 {
-  z-index: 4;
   margin-top: 15px;
   margin-bottom: 0px;
   margin-left: 5px;
   font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 300;
+  font-size: 18px;
   color: #606e7a;
-  letter-spacing: 1px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   display: block;
   text-transform: capitalize;
-}
-
-.swiper-slide h3 .position {
-  margin-left: 5px;
-  color: #aaa;
-  font-size: 75%;
 }
 
 .swiper-slide h4 {

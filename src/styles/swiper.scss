@@ -11,12 +11,15 @@ $bullet-color: #87aabb !important;
 	overflow: visible !important;
 	margin: 20px 0px;
 }
+
 .swiper-wrapper {
 	padding: 20px 0px;
 }
+
 .swiper-container-multirow-column > .swiper-wrapper {
 	flex-direction: inherit;
 }
+
 .swiper-slide {
 	position: relative;
 	transition: 250ms all;
@@ -82,25 +85,15 @@ $bullet-color: #87aabb !important;
 	}
 
 	h3 {
-		z-index: 4;
 		margin-top: 15px;
 		margin-bottom: 0px;
 		margin-left: 5px;
 		font-family: 'Roboto';
-		font-weight: 500;
-		font-size: 20px;
+		font-weight: 300;
+		font-size: 18px;
 		color: #606e7a;
-		letter-spacing: 1px;
-		transition: all 0.3s;
 		display: block;
 		text-transform: capitalize;
-
-		.position {
-			margin-left: 5px;
-			color: $position-color;
-			font-size: 75%;
-		}
-
 	}
 
 	h4 {
@@ -131,7 +124,3 @@ $bullet-color: #87aabb !important;
 	bottom: -32px !important;
 	z-index: 9;
 }
-//
-// :root {
-// 	--swiper-theme-color: #87aabb !important;
-// }
