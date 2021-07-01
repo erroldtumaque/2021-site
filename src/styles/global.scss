@@ -280,7 +280,6 @@ nav {
 
 footer {
 	padding: 40px 0px;
-	background: $footer-color;
 	grid-template-columns: 1fr 1fr 40px 2fr;
 	grid-template-rows: 100px 200px 100px;
 
@@ -300,11 +299,15 @@ footer {
 		margin-bottom: 0px;
 	}
 
-	ul li {
+	ul li a {
 		font-size: 14px;
 		margin: 0px 8px;
 		display: inline-block;
 	}
+
+    ul li a {
+        color: rgba(0,0,0,.4);
+    }
 }
 
 @keyframes rotate {
