@@ -51,9 +51,6 @@ export default function Home() {
 				<Grid container direction={"row"} alignItems={"center"} >
 					<Grid lg={12} xs={12} container item alignItems={"center"} >
 						<Grid container item alignItems={"center"} xs={12}>
-							<Grid item className={"profile-img"}>
-								<img src={CDN + "profile.jpg"} alt="profile"/>
-							</Grid>
 							<Grid>
 								<h1>ERROLD</h1>
 								<h5 data-sal="slide-down" data-sal-duration="600" data-sal-delay="300">Full Stack Developer | Photographer | Musician</h5>
